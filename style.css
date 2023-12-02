@@ -1,49 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=M+PLUS+Code+Latin:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'M PLUS Code Latin', monospace;
 }
 
 body {
     height: 100%;
     box-sizing: border-box;
     background-color: black;
-}
-
-/*Texto Central*/
-main {
-    padding: 1rem;
+    color: #FBF1EB;
 }
 
 .conteudo__central {
-    margin: 10% 17%;
+    margin: 10%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
 .bloco {
+    width: 630px;
     display: flex;
-    width: 500px;
     flex-direction: column;
-    gap: 35px;
+    gap: 40px;
 }
 
 #bloco__titulo {
-    color: #FBF1EB;
     font-size: 36px;
-    font-weight: 200;
-    line-height: 1.2;
+    font-weight: 300;
     text-align: justify;
+    font-family: 'Krona One', sans-serif;
 }
 
 /*texto de destaque no Titulo*/
 #titulo__destaque {
-    color: #FFC099;
-    font-weight: 500;
+    color: #FFC099; 
+}
+
+#bloco__paragrafo {
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #front__end {
@@ -52,33 +50,45 @@ main {
     padding: 0em 0.1em 0em 0.1em;
 }
 
-#bloco__paragrafo {
-    color: #FBF1EB;
+/*Botoes*/
+.bloco__botao__subt {
+    font-family: 'Krona One', sans-serif;
     font-size: 24px;
-    text-align: justify;
+    font-weight: 400px;
 }
 
-/*Botoes*/
 .bloco__botao {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
 
 .bloco__botao__text {
-    background-color: #664229;
-    border-radius: 16px;
-    width: 200px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #E6D6BB;
+    width: 378px;
     text-align: center;
     padding: 21.5px 0px;
     text-decoration: none;
-    color: #FBF1EB;
+    color: #E6D6BBff;
     font-size: 24px;
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/*Foto*/
-#minha__foto {
-    height: 50vh;
-    border-radius: 10%;
-    margin: 2rem;
+.bloco__botao__text:hover {
+    background-color: #492f1d;
+}
+
+#bloco__botao__inst:hover {
+    cursor: url(/landpage-front/img/assets/instagram.png), auto;
+}
+
+#minha__foto:hover {
+    cursor:no-drop;
 }
