@@ -133,6 +133,15 @@ body {
     font-weight: 400;
 }
 
+@media screen and (min-width: 1801px) {
+    .footer{
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+   }
+ }
+
 #footer__text {
     color: var(--cor-terciaria)
 }
