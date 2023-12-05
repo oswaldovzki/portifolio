@@ -1,0 +1,11 @@
+.plus__header {
+    display: flex;
+}
+
+main {
+    padding: 5%;
+}
+
+.plus__section {
+    margin: 2%;
+}
