@@ -1,11 +1,27 @@
+:root {
+    --branco-primario: #FFFFFF;
+    --cinza-primario: #C0C0C0;
+    --cinza-secundario: #F9F9F9;
+    --botao-azul: #167BF7;
+    --destaque-vermelho: #EC2F46;
+    --cor-background: #040814;
+    --preto-primario: #040814;
+}
+
 .plus__header {
     display: flex;
 }
 
 main {
-    padding: 5%;
+    margin: 5%;
+    width: 90%;
+    background-color: var(--cor-background);
+    color: var(--branco-primario);
+    border: solid #FFC099;
+    border-radius: 10px;
 }
 
 .plus__section {
     margin: 2%;
 }
+
