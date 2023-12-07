@@ -23,5 +23,21 @@ main {
 
 .plus__section {
     margin: 2%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
+.plus__header__backgound {
+    background-image: url(../projetos/proj-img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.plus__header__content__buttons {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(branco-primario);
+    display: block;
+}
