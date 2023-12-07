@@ -154,10 +154,6 @@ body {
 
 /*Mobile CSS*/
 @media (max-width: 1200px) {
-    .header {
-        padding: 15% 0% 15% 0%;
-    }
-
     .header__nav {
         justify-content: center;
         gap: 10%;
