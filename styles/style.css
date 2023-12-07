@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=M+PLUS+Code+Latin:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap');
 
 :root {
@@ -14,6 +13,8 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
 }
 
 body {
@@ -24,7 +25,11 @@ body {
 
 /*Header*/
 .header {
-    padding: 1% 0% 0% 15%;
+    padding: 1% 0% 1% 15%;
+    position: fixed;
+    background-color: var(--cor-fundo);
+    width: 100%;
+    top: 0
 }
 
 .header__nav {
@@ -149,10 +154,6 @@ body {
 
 /*Mobile CSS*/
 @media (max-width: 1200px) {
-    .header {
-        padding: 15% 0% 15% 0%;
-    }
-
     .header__nav {
         justify-content: center;
         gap: 10%;
@@ -170,177 +171,33 @@ body {
     #minha__foto {
         width: 100%;
     }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=M+PLUS+Code+Latin:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap');
-
-:root {
-    --cor-fundo: black;
-    --cor-primaria: #FBF1EB;
-    --cor-secundaria: #FFC099;
-    --cor-terciaria: #492f1d;
-
-    --fonte-titulo: 'Krona One', sans-serif;;
-    --fonte-texto: 'Montserrat', sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+/*Projetos*/
 
-body {
-    box-sizing: border-box;
-    background-color: var(--cor-fundo);
-    color: var(--cor-primaria);
-}
-
-/*Header*/
-.header {
-    padding: 1% 0% 0% 15%;
-}
-
-.header__nav {
-    display: flex;
-    gap: 80px
-}
-
-.header__nav__link {
-    font-family: var(--fonte-texto);
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: var(--cor-primaria);
-    text-decoration: none;
-}
-
-/*Conteudo Central*/
-.apresentacao {
-    padding: 5% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4%;
-}
-
-.apresentacao__conteudo {
-    width: 50%;
+.project {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    padding: 4%;
 }
 
-#apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
-    font-weight: 300;
-    font-family: var(--fonte-titulo);
-}
-
-/*texto de destaque no Titulo*/
-#titulo__destaque {
-    color: var(--cor-secundaria); 
-}
-
-#apresentacao__conteudo__texto {
-    font-size: 1.5rem;
-    font-family: var(--fonte-texto);
-}
-
-#front__end {
-    border-color: var(--cor-secundaria);
-    border: solid 0.05em;
-    padding: 0em 0.1em 0em 0.1em;
-}
-
-/*Botoes*/
-.apresentacao__botao__subt {
-    font-family: var(--fonte-titulo);
-    font-size: 1.5rem;
-    font-weight: 400px;
-}
-
-.apresentacao__links {
+.project__row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.project__squares {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 21px;
+    width: 25%;
+    gap: 1rem;
+    padding: 1%;
 }
 
-.apresentacao__botao__text {
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border: 2px solid var(--cor-secundaria);
-    width: 50%;
-    text-align: center;
-    padding: 21.5px 0px;
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-family: var(--fonte-texto);
-}
-
-.apresentacao__botao__text:hover {
-    background-color: var(--cor-terciaria);
-}
-
-/*Foto*/
-
-#minha__foto {
-    width: 50%;
-}
-
-
-#minha__foto:hover {
-    cursor:no-drop;
-}
-
-/*Footer*/
-.footer {
-    background-color: var(--cor-secundaria);
-    padding: 18px;
-    text-align: center;
-    font-family: var(--fonte-texto);
-    font-size: 1.375rem;
-    font-weight: 400;
-}
-
-@media screen and (min-width: 1801px) {
-    .footer{
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-   }
- }
-
-#footer__text {
-    color: var(--cor-terciaria)
-}
-
-/*Mobile CSS*/
-@media (max-width: 1200px) {
-    .header {
-        padding: 15% 0% 15% 0%;
-    }
-
-    .header__nav {
-        justify-content: center;
-        gap: 10%;
-    }
-
-    .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-    
-    .apresentacao__conteudo {
-        width: 100%;
-    }
-
-    #minha__foto {
-        width: 100%;
-    }
->>>>>>> 7f1ec7f89fe5298eece25513f80ec0f963dc1824
+.project__images {
+    width: 25rem;
+    border-radius: 2rem;
+    border: solid #FFC099;
 }
