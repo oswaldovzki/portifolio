@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --branco-primario: #FFFFFF;
+    --cinza-primario: #C0C0C0;
+    --cinza-secundario: #F9F9F9;
+    --botao-azul: #167BF7;
+    --destaque-vermelho: #EC2F46;
+    --cor-background: #040814;
+    --preto-primario: #040814;
+
+    --cor-fundo: black;
+    --cor-primaria: #FBF1EB;
+    --cor-secundaria: #FFC099;
+    --cor-terciaria: #492f1d;
+
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+.plus__header {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.alura_plus {
+    margin: 5% 5% 0 5%;
+    width: 90%;
+    background-color: var(--cor-background);
+    color: var(--branco-primario);
+    border: solid #FFC099;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+.section {
+    margin: 0.1em;
+    height: 55rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*-------------Primeira Sessao-------------*/
+
+.plus__header__backgound {
+    background-image: url(../projetos/alura-plus-img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.plus__header {
+    align-items: center;
+    text-align: center;
+}
+
+.plus__header__content {
+    margin: 0 6em;
+}
+
+.plus__header__content__title {
+    font-size: 1.75rem;
+}
+
+.plus__header__content__img {
+    margin: 1em 0 2em 0;
+}
+
+.plus__header__content__buttons {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(branco-primario);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.plus__header__content__button_transp {
+    background-color: transparent;
+    border: 1px solid var(--branco-primario);
+}
+
+.plus__header__content__detail {
+    color: var(--cinza-primario);
+    font-size: 0.75rem;
+}
+
+/*-------------Segunda Sessao-------------*/
+
+.seondary_section {
+    align-items: center;
+    margin: 0 10.3em;
+}
+
+.seondary_section__img {
+    width: 80%;
+}
+
+.seondary_section__titulo {
+    color: var(--branco-primario);
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.seondary_section__content__text {
+    color: var(--cinza-secundario);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/*-------------Terceira Sessao-------------*/
+
+.plus__subscription__content {
+    padding-right: 5em;
+}
+
+.plus__subscription__img {
+    width: 80%;
+}
+
+.plus__subscription__content__button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+
+/*-------------Quarta Sessao-------------*/
+
+.plus__devices {
+    text-align: center;
+    margin: 5rem;
+}
+
+.plus__devices__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2.5em 0;
+    gap: 3rem;
+}
+
+.plus__devices__itens {
+    color: var(--branco-primario);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.plus__devices__img {
+    width: 23rem;
+}
+
+/*-------------Quinta Sessao-------------*/
+
+.plus__footer {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    height: 13rem;
+    margin: 0 7.5rem;
+}
+
+.plus__footer__logo {
+    width: 7rem;
+}
+
+.plus__footer__nav {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.plus__footer__nav__item {
+    padding: 0 0.5rem;
+}
+
+.plus__footer__nav__item:hover {
+    color: var(--botao-azul);
+}
+
+.plus__footer__text {
+    color: var(--cinza-primario);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+
+/*----------Mobile Accessibility----------*/
+@media (max-width: 500px) {
+
+    .section {
+        margin: 0.1em;
+        height: 48rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .plus__header__content__img {
+        width: 50%;
+    }
+
+    .plus__devices__img {
+        width: 12rem;
+    }
+
+    .plus__footer {
+        display: flex;
+        list-style-type: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
