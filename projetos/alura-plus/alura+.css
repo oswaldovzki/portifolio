@@ -8,14 +8,37 @@
     --destaque-vermelho: #EC2F46;
     --cor-background: #040814;
     --preto-primario: #040814;
+
+    --cor-fundo: black;
+    --cor-primaria: #FBF1EB;
+    --cor-secundaria: #FFC099;
+    --cor-terciaria: #492f1d;
+
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
 }
 
 .plus__header {
     display: flex;
+    font-family: 'Inter', sans-serif;
 }
 
+
 .alura_plus {
-    margin: 5%;
+    margin: 5% 5% 0 5%;
     width: 90%;
     background-color: var(--cor-background);
     color: var(--branco-primario);
@@ -24,21 +47,21 @@
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    max-height: 46rem;
+    max-height: 75vh;
     overflow-y: auto;
 }
 
 .section {
     margin: 0.1em;
-    height: 85vh;
+    height: 55rem;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-/*Primeira Sessao*/
+/*-------------Primeira Sessao-------------*/
 
 .plus__header__backgound {
-    background-image: url(../projetos/proj-img/Background.png);
+    background-image: url(../projetos/alura-plus-img/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -79,7 +102,7 @@
     font-size: 0.75rem;
 }
 
-/*Segunda Sessao*/
+/*-------------Segunda Sessao-------------*/
 
 .seondary_section {
     align-items: center;
@@ -107,7 +130,7 @@
     line-height: 150%;
 }
 
-/*Terceira Sessao*/
+/*-------------Terceira Sessao-------------*/
 
 .plus__subscription__content {
     padding-right: 5em;
@@ -123,7 +146,8 @@
 }
 
 
-/*Quarta Sessao*/
+/*-------------Quarta Sessao-------------*/
+
 .plus__devices {
     text-align: center;
     margin: 5rem;
@@ -149,7 +173,8 @@
     width: 23rem;
 }
 
-/*Quarta Sessao*/
+/*-------------Quinta Sessao-------------*/
+
 .plus__footer {
     padding: 5rem 0;
     display: flex;
@@ -187,4 +212,32 @@
     font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
+}
+
+
+/*----------Mobile Accessibility----------*/
+@media (max-width: 500px) {
+
+    .section {
+        margin: 0.1em;
+        height: 48rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .plus__header__content__img {
+        width: 50%;
+    }
+
+    .plus__devices__img {
+        width: 12rem;
+    }
+
+    .plus__footer {
+        display: flex;
+        list-style-type: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
 }
