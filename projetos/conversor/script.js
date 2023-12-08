@@ -8,5 +8,4 @@ alert("R$ " + convertedMoney);
 
 document.getElementById("dolarExchange").innerHTML = dolarExchange;
 document.getElementById("convertedMoney").innerHTML = convertedMoney;
-
 console.log()

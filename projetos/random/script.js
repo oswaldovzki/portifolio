@@ -6,4 +6,3 @@ function exibirValorDaLista() {
     // Exibir o valor aleatório na tela
     const elementoHTML = document.getElementById('valorAleatorio');
     elementoHTML.textContent = valorAleatorio;
-}
