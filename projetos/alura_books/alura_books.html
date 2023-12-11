@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,21 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <title>AluraBooks</title>
 </head>
+<body>
     <header class="cabecalho">
         <div class="cabecalho__botoes">
-            <span class="cabecalho__menu-hamburguer cabecalho__imagem"></span>
+            <input type="checkbox" id="menu" class="cabecalho_menu">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer cabecalho__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-End</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design de UX</a></li>
+            </ul>
             <img src="./assets/Logo.svg" alt="Logo do AluraBooks">
         </div>
         <div>
@@ -18,8 +31,11 @@
             <a href="#"><img src="./assets/Usuario.svg" alt="Icone do usuário" class="cabecalho__imagem"></a>
         </div class="cabecalho__botoes">
     </header>
-<body>
-
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner_busca" placeholder="Qual será sua próxima leitura?">
+    </section>
 </body>
 
 </html>
