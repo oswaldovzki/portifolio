@@ -20,3 +20,83 @@
     position: initial;
     margin: 0.5em 0;
 }
+/*Card do Carrousel*/
+
+.carrousel__card{ 
+    background-color: var(--branco);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1.25em 1.5em;
+    box-shadow: var(--box-shadow);
+}
+
+.carrousel__card__first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carrousel__card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrousel__card__second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrousel__card__text {
+    padding: 0 1em 0.5em 0;
+}
+
+.carrousel__card__titulo {
+    color: var(--laranja);
+    font-family: var(--main-font);
+    font-size: 1em;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.carrousel__card__livro {
+    color: var(--azul-escuro);
+    font-family: var(--main-font);
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0.4em 0;
+}
+
+.carrousel__card__descricao {
+    color: var(--preto);
+    font-family: var(--main-font);
+    font-size: 0.87em;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.carrousel__card__bookIMG {
+    height: 10.5em;
+}
+
+.carrousel__card__icones {
+    padding: 0.1em 1em 0 0.5em;
+}
+
+.carrousel__card__saibaMais {
+    background-color: var(--laranja);
+    text-decoration: none;
+    padding: 0.5em 0em;
+    margin-top: 1em;
+    width: 100%;
+
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--main-font)
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
