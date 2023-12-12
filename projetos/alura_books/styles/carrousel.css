@@ -20,7 +20,7 @@
     position: initial;
     margin: 0.5em 0;
 }
-/*Card do Carrousel*/
+/*Card do Primeiro Carrousel*/
 
 .carrousel__card{ 
     background-color: var(--branco);
@@ -82,7 +82,19 @@
 }
 
 .carrousel__card__icones {
-    padding: 0.1em 1em 0 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 0.25em 0 0.25em 0.5em;
+    margin-top: 1em;
+}
+
+.carrousel__card__icones-favorito {
+    width: 1.6em;   
+}
+
+.carrousel__card__icones-compras{ 
+    width: 1.9em;
 }
 
 .carrousel__card__saibaMais {
@@ -94,9 +106,23 @@
 
     color: var(--branco);
     text-align: center;
-    font-family: var(--main-font)
+    font-family: var(--main-font);
     font-size: 1em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/*Card do Segundo Carrousel*/
+.carrousel__card__estrelinhas {
+    padding: 0.2em 0;
+}
+
+.carrousel__card__autora { 
+    color: var(--azul-escuro);
+    font-family: var(--main-font);
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0.4em 0;
 }

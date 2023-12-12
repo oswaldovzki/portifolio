@@ -38,8 +38,9 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner_busca" placeholder="Qual será sua próxima leitura?">
     </section>
+<!-- Primeira Linha de Carrousel + Card -->
     <section class="carrousel">
-        <h2 class="carrousel__titulo">Novos lançamentos</h2>
+        <h2 class="carrousel__titulo">últimos lançamentos</h2>
         <!-- Slider main container -->
         <div class="swiper">
             <div class="swiper-pagination"></div>
@@ -65,19 +66,56 @@
                     <p class="carrousel__card__descricao">Construindo uma aplicação integrada com a plataforma do
                         Google.</p>
                 </div>
-                <div>
-                    <a href="#"><img class="carrousel__card__icones" src="./assets/Favoritos.svg" alt="Icone de Favoritos"></a>
-                    <a href="#"><img class="carrousel__card__icones" src="./assets/Compras.svg" alt="Icone de compras"></a>
+                <div class="carrousel__card__icones">
+                    <a href="#"><img class="carrousel__card__icones-favorito" src="./assets/Favoritos.svg" alt="Icone de Favoritos"></a>
+                    <a href="#"><img class="carrousel__card__icones-compras" src="./assets/Compras.svg" alt="Icone de compras"></a>
                 </div>
             </div>
             <div class="carrousel__card__second">
                 <img class="carrousel__card__bookIMG" src="./img/Angular-Perfil.svg" alt="Livro de Angular">
                 <a class="carrousel__card__saibaMais" href="#">Saiba mais</a>
             </div>
-
         </div>
     </section>
-
+<!-- Segunda Linha de Carrousel + Card -->
+<section class="carrousel">
+    <h2 class="carrousel__titulo">Mais Vendidos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./img/Gestão.png" alt="Livro sobre Gestão"></div>
+            <div class="swiper-slide"><img src="./img/Gestão2.png" alt="Livro sobre Gestao"></div>
+            <div class="swiper-slide"><img src="./img/Liderança.png" alt="Livro de Liderança"></div>
+            <div class="swiper-slide"><img src="./img/Tuning.png" alt="Livro de Tuning"></div>
+            <div class="swiper-slide"><img src="./img/UX.png" alt="Livro sobre User Experience"></div>
+            <div class="swiper-slide"><img src="./img/Acessibilidade.png" alt="Livro sobre Acessibilidade"></div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="carrousel__card">
+        <div class="carrousel__card__first">
+            <div class="carrousel__card__text">
+                <img class="carrousel__card__estrelinhas" src="./assets/Estrelinhas.svg" alt="Estrelinhas de avaliação da Escritora em Destaque">
+                <h3 class="carrousel__card__titulo">Autora do Mês</h3>
+                <h2 class="carrousel__card__autora">Juliana Agarikov</h2>
+                <p class="carrousel__card__descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            </div>
+            <div class="carrousel__card__icones">
+                <a href="#"><img class="carrousel__card__icones-favorito" src="./assets/Favoritos.svg" alt="Icone de Favoritos"></a>
+                <a href="#"><img class="carrousel__card__icones-compras" src="./assets/Compras.svg" alt="Icone de compras"></a>
+            </div>
+        </div>
+        <div class="carrousel__card__second">
+            <img class="carrousel__card__bookIMG" src="./img/Perfil-escritora 1.png" alt="foto de perfil da Escritora em destaque">
+            <a class="carrousel__card__saibaMais" href="#">Saiba mais</a>
+        </div>
+    </div>
+</section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
