@@ -5,6 +5,7 @@
 @import url("contato.css");
 @import url("footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
 
   :root {
     --cor-de-fundo: #EBECEE;
@@ -14,6 +15,7 @@
     --preto: rgba(0, 0, 0, 0.85);
     --azul-degrade: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
     --main-font: 'Poppins', sans-serif;
+    --secondary-font: 'Josefin Sans', sans-serif;
     --box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     --footer-bg: #F9F9F9;
