@@ -1,0 +1,8 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--footer-bg);
+    padding: 1.5em;
+}
