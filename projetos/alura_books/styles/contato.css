@@ -35,6 +35,7 @@
     -webkit-text-fill-color: transparent;
     padding: 1em;
     width: 90%;
+    max-width: 470px;
 }
 
 .contato__email::placeholder {
@@ -48,4 +49,21 @@
     padding-left: 3em;
     background: url("../assets/Email.svg") no-repeat;
     background-position: 1em;
+}
+
+/*Tablet Size*/
+@media screen and (min-width: 900px) {
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5em;
+        padding: 2em 5em;
+    }
+    .contato__email{
+        width: 50%
+    }
+    .contato__titulo {
+        font-size: 1.5em;
+    }
 }

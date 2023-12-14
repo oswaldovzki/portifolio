@@ -32,3 +32,20 @@
     font-weight: 700;
     line-height: normal;
 }
+
+/*Tablet Size*/
+@media screen and (min-width: 900px) {
+    .topicos__Titulo {
+        font-size: 1.5em;
+    }
+    .topicos__link {
+        font-size: 1em;
+        padding: 1.5em;
+    }
+    .topicos__item {
+        margin: 1.9em 0.5em;
+    }
+    .topicos__lista{
+        margin: 0 3em;
+    }
+}

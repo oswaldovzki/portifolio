@@ -20,6 +20,7 @@
     position: initial;
     margin: 0.5em 0;
 }
+
 /*Card do Primeiro Carrousel*/
 
 .carrousel__card{ 
@@ -125,4 +126,25 @@
     font-weight: 700;
     line-height: normal;
     padding: 0.4em 0;
+}
+
+/*Tablet Size*/
+@media screen and (min-width: 900px) {
+    .carrousel__titulo {
+        font-size: 1.625em;
+    }
+    .swiper-pagination {
+        position: initial;
+        margin: 1em 0 3em 0;
+    }
+    .swiper {
+        width: 60%;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+    }
+    .carrousel__card {
+        width: 60%;
+        margin: 2em auto;
+    }
 }
