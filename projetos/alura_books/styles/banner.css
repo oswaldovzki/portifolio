@@ -22,6 +22,7 @@
     border-radius: 24px;
     padding: 1em;
     width: 100%;
+    max-width: 430px;
 }
 
 .banner_busca::placeholder {
@@ -32,4 +33,19 @@
     color: var(--branco);
     background: url("../assets/Pesquisa.svg") no-repeat;
     background-position: 1em;
+}
+
+/*Tablet Size*/
+@media screen and (min-width: 900px) {
+    .banner__titulo {
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
+/*Desktop Size*/
+@media screen and (min-width: 1400px) {
+    .banner {
+        padding: 5em 0;
+    }
 }

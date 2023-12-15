@@ -15,6 +15,14 @@
     background-position: center;
 }
 
+.cabecalho_menu:checked~.menu__active>.cabecalho__menu-hamburguer {
+    background-image: url("../assets/Menu Aberto.svg");
+}
+
+.cabecalho_menu:checked~.menu__active {
+    background: var(--azul-degrade);
+}
+
 .cabecalho__botoes {
     display: flex;
     align-items: center;
@@ -23,6 +31,7 @@
 .cabecalho__imagem {
     padding: 1em;
 }
+
 /*Exibir um elemento de acordo com uma interação na página sem JS*/
 
 .lista-menu {
@@ -30,6 +39,21 @@
     position: absolute;
     top: 100%;
     width: 60vw;
+}
+
+.opcoes__botao:checked~.opcoes__active>.opcoes__item {
+    background: var(--azul-degrade);
+    color: var(--branco);
+}
+
+.lista-menu__item:hover {
+    background: var(--azul-degrade);
+    color: var(--branco);
+}
+
+.lista-menu__item:hover>.lista-menu__link {
+    -webkit-text-fill-color:  var(--branco);
+    text-decoration: none;
 }
 
 .cabecalho_menu {
@@ -57,27 +81,32 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+    padding: 1em 2em;
 }
 
 /*Esconder elementos em mobile*/
 
-.cabecalho__titulo {
-    display: none;
-}
-.opcoes {
+.cabecalho__titulo,
+.opcoes,
+.cabecalho__perfil__texto {
     display: none;
 }
 
 /*Tablet Size*/
 @media screen and (min-width: 900px) {
+    .cabecalho__botoes{
+        padding: 0 2em 0 5em;
+    }
     .cabecalho__titulo,
     .cabecalho__titulo--negrito {
         font-family: var(--secondary-font);
     }
+
     .cabecalho__titulo {
         display: block;
         font-size: 1.8em;
     }
+
     .cabecalho__titulo--negrito {
         font-weight: 700;
     }
@@ -85,15 +114,55 @@
     .opcoes {
         display: flex;
     }
+
     .opcoes__item {
         padding: 1em;
         text-transform: uppercase;
     }
+
     .opcoes__link {
         text-decoration: none;
         color: var(--preto);
     }
+
     .cabecalho__imagem--transparente {
         display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+}
+
+/*Desktop Size*/
+@media screen and (min-width: 1400px) {
+    .cabecalho__botoes{
+        padding: 0 2em 0 5em;
+    }
+    .cabecalho__perfil__texto {
+        display: block;
+        font-size: 1.25em;
+        color: var(--preto);
+    }
+
+    .cabecalho__perfil-botoes {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .cabecalho__perfil {
+        display: flex;
+        margin: 0 3em;
+    }
+
+    .opcoes {
+        margin-right: auto;
     }
 }

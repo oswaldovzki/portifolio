@@ -20,6 +20,7 @@
     position: initial;
     margin: 0.5em 0;
 }
+
 /*Card do Primeiro Carrousel*/
 
 .carrousel__card{ 
@@ -125,4 +126,52 @@
     font-weight: 700;
     line-height: normal;
     padding: 0.4em 0;
+}
+
+.carrousel__card__saibaMais:hover {
+    color: var(--branco);
+    background-color: var(--laranja-destaque);
+}
+/*Tablet Size*/
+@media screen and (min-width: 900px) {
+    .carrousel__titulo {
+        font-size: 1.625em;
+    }
+    .swiper-pagination {
+        position: initial;
+        margin: 1em 0 3em 0;
+    }
+    .swiper {
+        width: 60%;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+    }
+    .carrousel__card {
+        width: 60%;
+        margin: 2em auto;
+    }
+}
+
+/*Desktop Size*/
+@media screen and (min-width: 1400px) {
+    .carrousel__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 5em;
+        margin: 0 10vw 3em 10vw;
+    }
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+    .carrousel__card__titulo {
+        font-size: 2em;
+    }
+    .carrousel__card {
+        margin-top: 48px;
+        margin-bottom: 0px;
+    }
+    .carrousel__titulo {
+        padding: 2em 0 1em 0;
+    }
 }
