@@ -12,7 +12,7 @@
     padding: 1em 0;
 }
 
-.topicos__lista { 
+.topicos__lista {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -33,19 +33,34 @@
     line-height: normal;
 }
 
+.topicos__link:hover {
+    color: var(--branco);
+    background-color: var(--laranja-destaque);
+}
+
 /*Tablet Size*/
 @media screen and (min-width: 900px) {
     .topicos__Titulo {
         font-size: 1.5em;
     }
+
     .topicos__link {
         font-size: 1em;
         padding: 1.5em;
     }
+
     .topicos__item {
         margin: 1.9em 0.5em;
     }
-    .topicos__lista{
+
+    .topicos__lista {
         margin: 0 3em;
+    }
+}
+
+/*Desktop Size*/
+@media screen and (min-width: 1400px) {
+    .topicos {
+        padding: 3em 25vw;
     }
 }

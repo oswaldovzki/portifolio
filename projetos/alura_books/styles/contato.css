@@ -36,6 +36,7 @@
     padding: 1em;
     width: 90%;
     max-width: 470px;
+    color: var(--azul-escuro);
 }
 
 .contato__email::placeholder {
@@ -65,5 +66,13 @@
     }
     .contato__titulo {
         font-size: 1.5em;
+    }
+}
+
+/*Desktop Size*/
+@media screen and (min-width: 1400px) {
+    .contato {
+        padding: 3em 25vw;
+        gap: 2em;
     }
 }

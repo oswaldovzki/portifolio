@@ -45,3 +45,17 @@ hr {
         color: var(--footer-item);
     }
 }
+
+/*Desktop Size*/
+@media screen and (min-width: 1400px) {
+    .rodape {
+        padding: 4em 5%;
+    }
+    .rodape__lista {
+        border-left: 1px solid var(--footer-cinza);
+        padding-left: 1em;
+    }
+    .rodape__item-link:hover {
+        color: var(--laranja);
+    }
+}

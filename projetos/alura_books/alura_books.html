@@ -14,7 +14,7 @@
     <header class="cabecalho">
         <div class="cabecalho__botoes">
             <input type="checkbox" id="menu" class="cabecalho_menu">
-            <label for="menu">
+            <label for="menu" class="menu__active">
                 <span class="cabecalho__menu-hamburguer cabecalho__imagem cabecalho__imagem--transparente"></span>
             </label>
             <ul class="lista-menu">
@@ -34,7 +34,7 @@
 
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-            <label for="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes__active">
                 <li class="opcoes__item">Categorias</li>
             </label>
             <ul class="lista-menu">
@@ -70,48 +70,52 @@
     <section class="carrousel">
         <h2 class="carrousel__titulo">últimos lançamentos</h2>
         <!-- Slider main container -->
-        <div class="swiper">
-            <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="./img/ApacheKafka.png" alt="Livro sobre Apache Kafka"></div>
-                <div class="swiper-slide"><img src="./img/Liderança.png" alt="Livro de Liderança em Design"></div>
-                <div class="swiper-slide"><img src="./img/Javascript.png" alt="Livro de Javascript"></div>
-                <div class="swiper-slide"><img src="./img/Guia Front-end.png" alt="Livro Guia Front End"></div>
-                <div class="swiper-slide"><img src="./img/Portugol.png" alt="Livro sobre Portugal"></div>
-                <div class="swiper-slide"><img src="./img/Acessibilidade.png" alt="Livro sobre Acessibilidade"></div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div class="carrousel__card">
-            <div class="carrousel__card__first">
-                <div class="carrousel__card__text">
-                    <h3 class="carrousel__card__titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="carrousel__card__livro">Angular 11 e Firebase</h2>
-                    <p class="carrousel__card__descricao">Construindo uma aplicação integrada com a plataforma do
-                        Google.</p>
+        <div class="carrousel__container">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/ApacheKafka.png" alt="Livro sobre Apache Kafka"></div>
+                    <div class="swiper-slide"><img src="./img/Liderança.png" alt="Livro de Liderança em Design"></div>
+                    <div class="swiper-slide"><img src="./img/Javascript.png" alt="Livro de Javascript"></div>
+                    <div class="swiper-slide"><img src="./img/Guia Front-end.png" alt="Livro Guia Front End"></div>
+                    <div class="swiper-slide"><img src="./img/Portugol.png" alt="Livro sobre Portugal"></div>
+                    <div class="swiper-slide"><img src="./img/Acessibilidade.png" alt="Livro sobre Acessibilidade">
+                    </div>
                 </div>
-                <div class="carrousel__card__icones">
-                    <a href="#"><img class="carrousel__card__icones-favorito" src="./assets/Favoritos.svg"
-                            alt="Icone de Favoritos"></a>
-                    <a href="#"><img class="carrousel__card__icones-compras" src="./assets/Compras.svg"
-                            alt="Icone de compras"></a>
-                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="carrousel__card__second">
-                <img class="carrousel__card__bookIMG" src="./img/Angular-Perfil.svg" alt="Livro de Angular">
-                <a class="carrousel__card__saibaMais" href="#">Saiba mais</a>
+            <div class="carrousel__card">
+                <div class="carrousel__card__first">
+                    <div class="carrousel__card__text">
+                        <h3 class="carrousel__card__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="carrousel__card__livro">Angular 11 e Firebase</h2>
+                        <p class="carrousel__card__descricao">Construindo uma aplicação integrada com a plataforma do
+                            Google.</p>
+                    </div>
+                    <div class="carrousel__card__icones">
+                        <a href="#"><img class="carrousel__card__icones-favorito" src="./assets/Favoritos.svg"
+                                alt="Icone de Favoritos"></a>
+                        <a href="#"><img class="carrousel__card__icones-compras" src="./assets/Compras.svg"
+                                alt="Icone de compras"></a>
+                    </div>
+                </div>
+                <div class="carrousel__card__second">
+                    <img class="carrousel__card__bookIMG" src="./img/Angular-Perfil.svg" alt="Livro de Angular">
+                    <a class="carrousel__card__saibaMais" href="#">Saiba mais</a>
+                </div>
             </div>
         </div>
     </section>
     <!-- Segunda Linha de Carrousel + Card -->
     <section class="carrousel">
-        <h2 class="carrousel__titulo">Mais Vendidos</h2>
+            <h2 class="carrousel__titulo">Mais Vendidos</h2>
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="carrousel__container">
+            <div class="swiper">
             <div class="swiper-pagination"></div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -149,7 +153,7 @@
                     alt="foto de perfil da Escritora em destaque">
                 <a class="carrousel__card__saibaMais" href="#">Saiba mais</a>
             </div>
-        </div>
+        </div></div>
     </section>
     <section class="topicos">
         <h2 class="topicos__Titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
