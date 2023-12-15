@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=M+PLUS+Code+Latin:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap');
+@import url("./projetos.css");
 
 :root {
     --cor-fundo: black;
@@ -171,33 +172,4 @@ body {
     #minha__foto {
         width: 100%;
     }
-}
-
-/*Projetos*/
-
-.project {
-    display: flex;
-    flex-direction: column;
-    padding: 4%;
-}
-
-.project__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.project__squares {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-    gap: 1rem;
-    padding: 1%;
-}
-
-.project__images {
-    width: 25rem;
-    border-radius: 2rem;
-    border: solid #FFC099;
 }
