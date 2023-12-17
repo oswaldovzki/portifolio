@@ -11,13 +11,28 @@
 
 <body>
     <header class="header">
+        <a href="index.html"><img class="header__logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site"></a>
         <nav class="header__nav">
             <a href="index.html" class="header__nav__link">Home</a>
             <a href="about.html" class="header__nav__link">Sobre mim</a>
             <a href="curriculo.html" class="header__nav__link">Curriculo</a>
             <a href="projetos.html" class="header__nav__link">Projetos</a>
-            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a>
+            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank"
+                rel="noopener noreferrer">Vitrina Dev</a>
         </nav>
+        <!--Menu Hamburguer para Mobile-->
+        <input type="checkbox" id="menu-hamburguer" class="header__menu-hamburguer__checkbox">
+        <label for="menu-hamburguer" class="header__menu-hamburguer__botao_ativo">
+            <img src="./img/assets/menu-hamburguer-azul.svg" alt="Menu Hamburguer" class="header__menu-hamburguer__img">
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__item"><a href="index.html" class="header__nav__link">Home</a></li>
+            <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
+            <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
+            <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
+            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki"
+                    class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
+        </ul>
     </header>
 
     <main class="apresentacao">

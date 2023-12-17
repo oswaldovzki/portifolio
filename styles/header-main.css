@@ -55,7 +55,7 @@
 @media screen and (max-width: 820px) {
     .header {
         justify-content: space-between;
-        background-color: var(--eggshell);
+        background-color: var(--cor-secundaria);
         margin-left: 0;
         margin-top: 0;
         padding-bottom: 0;
