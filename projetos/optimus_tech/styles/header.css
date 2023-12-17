@@ -1,0 +1,59 @@
+.header {
+    padding: 1.125em 5em;
+}
+
+.header__content {
+    display: flex;
+    font-family: var(--fonte-primaria);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav__itens {
+    padding:  0 2em;
+    color: var(--cinza);
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding: 0.625em 1.125em;
+}
+
+.header__nav__itens:hover {
+    border-bottom: solid 1px var(--bordo);
+}
+
+.header__logo_escondido{ 
+    width: 142px;
+}
+
+.header__botoes {
+    padding:  0 2em;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    display: flex;
+    gap: 0.75em;
+}
+
+.header__botoes-entrar {
+    color: var(--cinza);
+    padding: 0.625em 1.125em;
+}
+
+.header__botoes-entrar:hover {
+    border-bottom: solid 1px var(--bordo);
+}
+
+.header__botoes-cadastrar {
+    color: var(--branco);
+    background-color: var(--bordo);
+    border-radius: 8px;
+    border: 1px solid var(--bordo);
+    padding: 0.625em 1.125em;
+}
+
+.header__botoes-cadastrar:hover {
+    background-color: var(--bordo-hover);
+}
