@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=M+PLUS+Code+Latin:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap');
+@import url("./projetos.css");
+
+@import url("header-main.css");
 
 :root {
     --cor-fundo: black;
     --cor-primaria: #FBF1EB;
     --cor-secundaria: #FFC099;
     --cor-terciaria: #492f1d;
+    --gradinte-azul: linear-gradient(128deg, #2C3946 24.53%, rgba(46, 59, 71, 0.55) 169.13%);
+
+    --eggshell: #F6F2D9ff;
+    --champagne: #F1E3C8ff;
+    --dun: #DCCBB0ff;
+    --ash-gray: #B3B3A5ff;
+    --rust: #A74E20ff;
+    --charcoal: #2E3B47ff;
+    --field-drab: #5D5831ff;
 
     --fonte-titulo: 'Krona One', sans-serif;;
     --fonte-texto: 'Montserrat', sans-serif;
@@ -21,28 +33,6 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-fundo);
     color: var(--cor-primaria);
-}
-
-/*Header*/
-.header {
-    padding: 1% 0% 1% 15%;
-    position: fixed;
-    background-color: var(--cor-fundo);
-    width: 100%;
-    top: 0
-}
-
-.header__nav {
-    display: flex;
-    gap: 80px
-}
-
-.header__nav__link {
-    font-family: var(--fonte-texto);
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: var(--cor-primaria);
-    text-decoration: none;
 }
 
 /*Conteudo Central*/
@@ -137,67 +127,4 @@ body {
     font-family: var(--fonte-texto);
     font-size: 1.375rem;
     font-weight: 400;
-}
-
-@media screen and (min-width: 1801px) {
-    .footer{
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-   }
- }
-
-#footer__text {
-    color: var(--cor-terciaria)
-}
-
-/*Mobile CSS*/
-@media (max-width: 1200px) {
-    .header__nav {
-        justify-content: center;
-        gap: 10%;
-    }
-
-    .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-    
-    .apresentacao__conteudo {
-        width: 100%;
-    }
-
-    #minha__foto {
-        width: 100%;
-    }
-}
-
-/*Projetos*/
-
-.project {
-    display: flex;
-    flex-direction: column;
-    padding: 4%;
-}
-
-.project__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.project__squares {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-    gap: 1rem;
-    padding: 1%;
-}
-
-.project__images {
-    width: 25rem;
-    border-radius: 2rem;
-    border: solid #FFC099;
 }

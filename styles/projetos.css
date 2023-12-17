@@ -1,0 +1,38 @@
+/*Projetos*/
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 4% 3%;
+    width: 100%;
+}
+
+.project__row {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.project__squares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1%;
+}
+
+.project__preview {
+    width: 375px;
+    height: 667px;
+}
+
+.project__images {
+    width: 25rem;
+    border-radius: 2rem;
+    border: solid #FFC099;
+}
+
+.footer {
+    position: fixed;
+    width: -webkit-fill-available;
+}
