@@ -2,16 +2,19 @@
 
 @import url("reset.css");
 @import url("header.css");
+@import url("about.css");
 
 :root {
     --fonte-primaria: 'Inter', sans-serif;
 
     --branco: #FFFFFF;
     --cinza: #667085;
+    --preto: #101828;
     --bordo: #8E2424;
     --bordo-hover: #812525;
     --bordo-transparente: #8e24242e;
     --azul: #3A404E;
     --cinza-escuro: #667085;
+
 }
 
