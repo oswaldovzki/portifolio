@@ -13,7 +13,7 @@
 
 .header__logo{
     height: 3em;
-    padding: 0.2%;
+    padding: 0.3%;
     border-radius: 30px;
 }
 
@@ -30,6 +30,11 @@
     font-weight: 600;
     color: var(--cor-primaria);
     text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.header__nav__link:hover {
+    border-bottom: solid 1px var(--cor-secundaria);
 }
 
 .lista-menu {
@@ -40,7 +45,7 @@
 }
 
 /*Elementos Ocultados*/
-.header__menu-hamburguer, .header__menu-hamburguer__checkbox, .lista-menu {
+.header__menu-hamburguer, .header__menu-hamburguer__checkbox, .lista-menu, .header__menu-hamburguer__img {
     display: none;
 }
 
@@ -59,25 +64,60 @@
         margin-left: 0;
         margin-top: 0;
         padding-bottom: 0;
+        height: 48px;
     }
     .header__nav {
         display: none;
     }
     .header__menu-hamburguer__img {
-        display: block;
-        margin-right: 3%;
-        padding: 0.5em;
+        padding: 0.5em 1em;
+        background-image: url("/img/assets/menu-hamburguer-azul.svg");
+        width: 18px;
+        height: 32px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
     }
+    .header__menu-hamburguer__botao_ativo {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
     .header__menu-hamburguer__checkbox:checked~.header__menu-hamburguer__botao_ativo>.header__menu-hamburguer__img {
-        background: var(--charcoal);
+        background-image: url("/img/assets/menu-hamburguer-aberto.svg");
     }
+
+    .lista-menu {
+        background-color: var(--charcoal);
+        width: auto;
+        list-style: none;
+        line-height: 3em;
+        font-weight: 300;
+    }
+
+    .header__nav__link {
+        font-weight: 500;
+    }
+
     .header__menu-hamburguer__checkbox:checked~.lista-menu {
         display: block;
         position: absolute;
         top: 100%;
         right: 0;
         padding: 1em;
-        width: auto;
-        background: var(--gradinte-azul)
     }
+
+
+    /* .cabecalho__menu-hamburguer {
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        background-image: url("../assets/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .cabecalho_menu:checked~.menu__active>.cabecalho__menu-hamburguer {
+        background-image: url("../assets/Menu Aberto.svg");
+    } */
 }

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=M+PLUS+Code+Latin:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap');
 
-@import url("./projetos.css");
-
+@import url("projetos.css");
 @import url("header-main.css");
 @import url("footer-main.css");
 
@@ -32,28 +31,28 @@
 }
 
 body {
-    box-sizing: border-box;
     background-color: var(--cor-fundo);
-    color: var(--cor-primaria);
+    box-sizing: border-box;
 }
 
 /*Conteudo Central*/
-.apresentacao {
-    padding: 5% 15%;
+.main {
+    padding: 1% 6%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 4%;
+    margin: 70px 0;
 }
 
-.apresentacao__conteudo {
+.main__conteudo {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-#apresentacao__conteudo__titulo {
+#main__conteudo__titulo {
     font-size: 2.25rem;
     font-weight: 300;
     font-family: var(--fonte-titulo);
@@ -64,7 +63,7 @@ body {
     color: var(--cor-secundaria); 
 }
 
-#apresentacao__conteudo__texto {
+#main__conteudo__texto {
     font-size: 1.5rem;
     font-family: var(--fonte-texto);
 }
@@ -76,13 +75,13 @@ body {
 }
 
 /*Botoes*/
-.apresentacao__botao__subt {
+.main__botao__subt {
     font-family: var(--fonte-titulo);
     font-size: 1.5rem;
     font-weight: 400px;
 }
 
-.apresentacao__links {
+.main__links {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -90,7 +89,7 @@ body {
     gap: 21px;
 }
 
-.apresentacao__botao__text {
+.main__botao__text {
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -106,7 +105,7 @@ body {
     font-family: var(--fonte-texto);
 }
 
-.apresentacao__botao__text:hover {
+.main__botao__text:hover {
     background-color: var(--cor-terciaria);
 }
 
@@ -119,4 +118,30 @@ body {
 
 #minha__foto:hover {
     cursor:no-drop;
+}
+
+
+
+/*Mobile*/
+@media screen and (max-width: 820px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 60px 0;
+    }
+    #main__conteudo__titulo {
+        font-size: 1.5em;
+    }
+    .main__conteudo {
+        width: auto;
+    }
+    #minha__foto {
+        width: 50vw;
+        padding-bottom: 2em;
+    }
+    .main__botao__text {
+        width: 100%;
+    }
 }
