@@ -29,31 +29,28 @@
 
 .header__botoes {
     padding:  0 2em;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5em;
     display: flex;
     gap: 0.75em;
 }
 
 .header__botoes-entrar {
     color: var(--cinza);
-    padding: 0.625em 1.125em;
-}
-
-.header__botoes-entrar:hover {
-    border-bottom: solid 1px var(--bordo);
+    background-color: transparent;
+    border: none;
 }
 
 .header__botoes-cadastrar {
     color: var(--branco);
     background-color: var(--bordo);
     border-radius: 8px;
-    border: 1px solid var(--bordo);
-    padding: 0.625em 1.125em;
+    border: none
 }
 
-.header__botoes-cadastrar:hover {
-    background-color: var(--bordo-hover);
+.header__botoes-entrar, .header__botoes-cadastrar {
+    padding: 0.625em 1.125em;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    font-family: var(--fonte-primaria);
 }
