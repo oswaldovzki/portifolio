@@ -1,7 +1,7 @@
 .metricas {
     display: flex;
     justify-content: center;
-    padding-bottom: 20em;
+    padding-bottom: 6em;
     margin: 0 5em;
     gap: 2em;
 }
