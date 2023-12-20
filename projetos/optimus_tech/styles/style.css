@@ -3,18 +3,24 @@
 @import url("reset.css");
 @import url("header.css");
 @import url("about.css");
+@import url("metricas.css");
+@import url("vagas.css");
 
 :root {
     --fonte-primaria: 'Inter', sans-serif;
 
     --branco: #FFFFFF;
     --cinza: #667085;
+    --cinza-claro: #EAECF0;
     --preto: #101828;
     --bordo: #8E2424;
-    --bordo-hover: #812525;
+    --bordo-hover: rgba(142, 36, 36, 0.05);
     --bordo-transparente: #8e24242e;
     --azul: #3A404E;
     --cinza-escuro: #667085;
 
 }
 
+body {
+    font-family: var(--fonte-primaria);
+}

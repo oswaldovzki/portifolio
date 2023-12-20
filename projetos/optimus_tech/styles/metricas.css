@@ -1,0 +1,33 @@
+.metricas {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6em;
+    margin: 0 5em;
+    gap: 2em;
+}
+.metricas__numbers {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.metricas__numbers_big {
+    color: var(--bordo);
+    font-family: var(--fonte-primaria);
+    font-size: 3.75em;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+}
+.metricas__numbers_desc {
+    color: var(--preto);
+    font-family: var(--fonte-primaria);
+    font-size: 1.125em;
+    font-weight: 500;
+    padding: 12px 0 8px 0;
+}
+.metricas__numbers_text {
+    color: var(--cinza);
+    font-family: var(--fonte-primaria);
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 24px;
+}
