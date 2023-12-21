@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Alura Consultas</title>
+</head>
+
+<body>
+    <section class="header">
+        <img src="./assets/fotos/perfil-1.jpg" alt="Foto da pessoa médica" class="header__foto">
+        <span class="header__medic">
+            <h1 class="header__saudacao">Olá, Sônia</h1>
+            <p class="header__consultas">Mais 4 consultas hoje</p>
+        </span>
+    </section>
+    <section class="consultas">
+        <div id="consultas__hoje" class="consultas__lista">
+            <h2 class="consultas__titulo">Hoje</h2>
+            <!--Cards de Consulta-->
+            <div class="consultas__card">
+                <div class="consultas__card__paciente-top">
+                    <div class="consultas__card__paciente">
+                        <img src="./assets/fotos/perfil-2.jpg" alt="Foto do Paciente"
+                            class="consultas__card__paciente-foto foto__circular">
+                        <span class="consultas__paciente__info">
+                            <p class="consultas__paciente__nome">Luciana Dias</p>
+                            <span class="consultas__paciente__tipo">
+                                <img src="./assets/Camera.svg" alt="Icone de consulta remota"
+                                    class="consultas__paciente__tipo-icone ">
+                                <span class="consultas__paciente__tipo-texto">Consulta remota</span>
+                            </span>
+                        </span>
+                    </div>
+                    <img src="./assets/Chatcirculo1.svg" alt="Icone de chat" class="consultas__paciente__chat">
+                </div>
+                <div class="consultas__card__paciente-bottom">
+                    <span class="consultas__card__horario">14:00 - 15:00 (1 hora)</span>
+                    <span class="consultas__card__botoes">
+                        <button class="consultas__card__ligar-video">Ligar por vídeo</button>
+                        <button class="consultas__card__ligar-audio">Ligar por áudio</button>
+                    </span>
+                </div>
+            </div>
+            <!--Cards de Consulta-->
+        </div>
+    </section>
+</body>
+
+</html>
