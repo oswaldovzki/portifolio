@@ -26,13 +26,23 @@
     height: 667px;
 }
 
-.project__images {
-    width: 25rem;
-    border-radius: 2rem;
-    border: solid #FFC099;
-}
-
-.footer {
-    position: fixed;
-    width: -webkit-fill-available;
+/*Mobile*/
+@media screen and (max-width: 920px) {
+    .project{
+        justify-content: center;
+        margin: 63px 0 0 0;
+    }
+    .project__row {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .project__squares {
+        display: flex;
+        flex-direction: column;
+    }
+    .project__preview {
+        width: 330px;
+        height: 530px;
+        background-color: white;
+    }
 }
