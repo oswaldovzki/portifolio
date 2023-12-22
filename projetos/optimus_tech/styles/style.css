@@ -5,6 +5,7 @@
 @import url("about.css");
 @import url("metricas.css");
 @import url("vagas.css");
+@import url("depoimentos.css");
 
 :root {
     --fonte-primaria: 'Inter', sans-serif;
@@ -15,6 +16,7 @@
     --preto: #101828;
     --bordo: #8E2424;
     --bordo-hover: rgba(142, 36, 36, 0.05);
+    --fundo-depoimentos: rgba(195, 25, 25, 0.03);
     --bordo-transparente: #8e24242e;
     --azul: #3A404E;
     --cinza-escuro: #667085;
