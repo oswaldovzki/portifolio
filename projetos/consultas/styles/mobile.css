@@ -90,10 +90,9 @@
 }
 
 .consultas__card__paciente-bottom{
-    padding: 1rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .consultas__card__horario{
@@ -104,12 +103,53 @@
     line-height: 160%; /* 19.2px */
 }
 
+.consultas__card__botoes{ 
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25em;
+    align-items: center;
+}
+
 .consultas__card__ligar-video{
-    padding: 0.8rem 1rem;
     background: var(--botao-laranja);
     border: none;
     border-radius: 0.5rem;
     margin: 0.5rem 0;
+
+    color: var(--branco);
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.consultas__card__ligar-audio{
+    background: var(--branco);
+    border: solid 1px var(--borda-botao);
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.consultas__card__ligar-audio, .consultas__card__ligar-video {
+    padding: 0.8rem 1.5rem;
+
+}
+
+.consultas__card__ligar-endereco {
+    background: var(--azul-botao);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    padding: 0.8rem 1.5rem;
+    width: -webkit-fill-available;
 
     color: var(--branco);
     text-align: center;
