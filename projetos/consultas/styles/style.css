@@ -1,0 +1,21 @@
+@import url("reset.css");
+@import url("menu-flutuante.css");
+@import url("mobile.css");
+@import url("tablet.css");
+
+:root {
+    --cor-de-fundo: #FAF8F8;
+    --branco: #FFFFFF;
+    --cor-primaria: #464646;
+    --cor-primaria-transp: #4646461f;
+    --cor-secundaria: #A3A3A3;
+    --botao-laranja: #FFB050;
+    --borda-botao: #ECECEC;
+    --azul-botao: #4894FF;
+
+    --fonte-principal: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria-transp);
+}

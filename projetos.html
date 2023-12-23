@@ -11,40 +11,59 @@
 
 <body>
     <header class="header">
+        <a href="index.html"><img class="header__logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site"></a>
         <nav class="header__nav">
             <a href="index.html" class="header__nav__link">Home</a>
             <a href="about.html" class="header__nav__link">Sobre mim</a>
             <a href="curriculo.html" class="header__nav__link">Curriculo</a>
             <a href="projetos.html" class="header__nav__link">Projetos</a>
-            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a>
+            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank"
+                rel="noopener noreferrer">Vitrine Dev</a>
         </nav>
+        <!--Menu Hamburguer para Mobile-->
+        <input type="checkbox" id="menu-hamburguer" class="header__menu-hamburguer__checkbox">
+        <label for="menu-hamburguer" class="header__menu-hamburguer__botao_ativo">
+            <img src="./img/assets/menu-hamburguer-azul.svg" alt="Menu Hamburguer" class="header__menu-hamburguer__img">
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__item"><a href="index.html" class="header__nav__link">Home</a></li>
+            <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
+            <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
+            <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
+            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki"
+                    class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
+        </ul>
     </header>
 
     <main class="project">
         <section class="project__row">
             <div class="project__squares">
                 <iframe class="project__preview" src="./projetos/alura-plus/alura+_standalone.html"></iframe>
-                <a href="./projetos/alura+.html" class="header__nav__link">Alura+</a>
+                <a href="./projetos/alura-plus/alura+_standalone.html" class="header__nav__link" target="_blank">Alura+</a>
             </div>
             <div class="project__squares">
                 <iframe class="project__preview" src="./projetos/mentalista/dist/index.html"></iframe>
-                <a href="" class="header__nav__link">Mentalista</a>
+                <a href="" class="header__nav__link" target="_blank">Mentalista</a>
             </div>
             <div class="project__squares">
                 <iframe class="project__preview" src="./projetos/conversor/index.html"></iframe>
-                <a href="" class="header__nav__link">Conversor</a>
+                <a href="" class="header__nav__link" target="_blank">Conversor</a>
             </div>
             <div class="project__squares">
                 <iframe class="project__preview" src="./projetos/alura_books/alura_books.html"></iframe>
-                <a href="./projetos/alura_books/alura_books.html" class="header__nav__link">Alura Books</a>
+                <a href="./projetos/alura_books/alura_books.html" class="header__nav__link" target="_blank">Alura Books</a>
             </div>
             <div class="project__squares">
-                <img src="./img/oswaldovzki_logo_full.jpg" class="project__preview" alt="Imagem gerada pelo Dall-e no que ele entendeu de PLACEHOLDER">
-                <a href="" class="header__nav__link">Unannouced Project</a>
+                <iframe class="project__preview" src="./projetos/optimus_tech/index.html"></iframe>
+                <a href="./projetos/optimus_tech/index.html" target="_blank" class="header__nav__link" target="_blank">OptimusTech</a>
             </div>
             <div class="project__squares">
-                <img src="./img/placeholder.jpg" class="project__preview" alt="Imagem gerada pelo Dall-e no que ele entendeu de PLACEHOLDER">
-                <a href="" class="header__nav__link">Unannouced Project</a>
+                <iframe class="project__preview" src="./projetos/consultas/index.html"></iframe>
+                <a href="./projetos/consultas/index.html" class="header__nav__link" target="_blank">AluraMed</a>
+            </div>
+            <div class="project__squares">
+                <img src="./img/oswaldovzki_logo_full_alternate.jpg" class="project__preview" alt="Logo do portifolio">
+                <a href="" class="header__nav__link" target="_blank">Unannouced Project</a>
             </div>
         </section>
     </main>

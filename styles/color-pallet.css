@@ -7,6 +7,12 @@ CSS HEX
     --charcoal: #2E3B47ff;
     --field-drab: #5D5831ff;
     --ash-gray: #B3B3A5ff;
+
+    --cor-fundo: black;
+    --cor-primaria: #FBF1EB;
+    --cor-secundaria: #FFC099;
+    --cor-terciaria: #492f1d;
+    --gradinte-azul: linear-gradient(128deg, #2C3946 24.53%, rgba(46, 59, 71, 0.55) 169.13%);
 }
 
 CSS HSL

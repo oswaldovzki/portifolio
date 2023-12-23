@@ -1,0 +1,13 @@
+.menu__flutuante {
+    position: fixed;
+    right: 0;
+    bottom: 6rem;
+
+    background-color: transparent;
+    border: none;
+}
+
+.menu__flutuante__img{
+    width: 56px;
+    height: 56px;
+}   

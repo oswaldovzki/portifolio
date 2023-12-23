@@ -1,0 +1,19 @@
+/*Footer*/
+.footer {
+    background-color: var(--cor-secundaria);
+    padding: 18px;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 1.375em;
+    font-weight: 400;
+    bottom: 0;
+    position: fixed;
+    width: -webkit-fill-available;
+}
+
+@media screen and (max-width: 820px) {
+    .footer {
+    font-size: 1em;
+    padding: 10px;
+    }
+}
