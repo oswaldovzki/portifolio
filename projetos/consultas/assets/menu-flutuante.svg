@@ -1,0 +1,10 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="56" height="56" fill="#E5E5E5"/>
+<g id="Bot&#195;&#163;o flutuante">
+<circle id="Ellipse 2" cx="28" cy="28" r="28" fill="#4894FF"/>
+<g id="maisicone">
+<path id="maisstroke1" fill-rule="evenodd" clip-rule="evenodd" d="M28 20C28.5523 20 29 20.4477 29 21V35C29 35.5523 28.5523 36 28 36C27.4477 36 27 35.5523 27 35V21C27 20.4477 27.4477 20 28 20Z" fill="white"/>
+<path id="maisstroke2" fill-rule="evenodd" clip-rule="evenodd" d="M20 28C20 27.4477 20.4477 27 21 27H35C35.5523 27 36 27.4477 36 28C36 28.5523 35.5523 29 35 29H21C20.4477 29 20 28.5523 20 28Z" fill="white"/>
+</g>
+</g>
+</svg>
