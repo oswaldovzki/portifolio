@@ -54,3 +54,19 @@
     line-height: 1.5em;
     font-family: var(--fonte-primaria);
 }
+
+@media screen and (max-width: 900px) {
+    .header{
+        padding: 1rem 0 0 0;
+    }
+    .header__content{
+        width: fit-content;
+        flex-direction: column;
+    }
+    .header__logo {
+        margin: 0 2rem;
+    }
+    .header__nav {
+        display: flex;
+    }
+}
