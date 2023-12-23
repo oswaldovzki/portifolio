@@ -1,10 +1,10 @@
 @media screen and (min-width: 768px) {
-    .header__foto{
+    .header__foto {
         width: 5rem;
         height: 5rem;
     }
 
-    .foto__circular{
+    .foto__circular {
         width: 3rem;
         height: 3rem;
     }
@@ -17,24 +17,25 @@
 }
 
 @media screen and (min-width: 768px) {
-    .header__foto{
+    .header__foto {
         width: 7rem;
         height: 7rem;
     }
 
-    .foto__circular{
+    .foto__circular {
         width: 4rem;
         height: 4rem;
     }
 
-    .consultas__lista{
+    .consultas__lista {
         display: flex;
     }
 
-    .consultas__card__paciente-bottom{
-    padding: 0.5rem 1rem;
+    .consultas__card__paciente-bottom {
+        padding: 0.5rem 1rem;
     }
-    .consultas__card{
+
+    .consultas__card {
         min-width: 23rem;
     }
 }
