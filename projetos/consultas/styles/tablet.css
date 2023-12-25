@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px) {
-    .header__foto {
+    .home__foto {
         width: 5rem;
         height: 5rem;
     }
@@ -16,8 +16,8 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .header__foto {
+@media screen and (min-width: 1024px) {
+    .home__foto {
         width: 7rem;
         height: 7rem;
     }
