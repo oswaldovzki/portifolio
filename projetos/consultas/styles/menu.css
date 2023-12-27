@@ -11,6 +11,7 @@
     bottom: 0;
 
     border-top-right-radius: 0.75rem;
+    padding: 2rem;
 }
 
 .menu__item {
@@ -43,7 +44,7 @@
 @media screen and (min-width: 1024px) {
     .menu {
         flex-direction: column;
-        width: auto;
+        width: 9rem;
         height: -webkit-fill-available;
         justify-content: flex-start;
         gap: 2rem;
@@ -66,6 +67,7 @@
     .menu__link:hover {
         color: var(--azul-botao);
         text-decoration: none;
-        font-size: 1.2rem
-    }
+        font-size: 1.2rem;
+        font-weight: 500;
+}
 }

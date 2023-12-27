@@ -4,6 +4,7 @@
 @import url("./consultas.css");
 @import url("./menu.css");
 @import url("./botao__flutuante.css");
+@import url("./formulario.css");
 
 :root {
     --cor-de-fundo: #FAF8F8;

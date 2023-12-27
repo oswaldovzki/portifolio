@@ -43,6 +43,7 @@
 @media screen and (min-width: 1024px) {
     .home {
         justify-content: center;
+        margin-left: 14rem;
     }
 
     .home__foto {

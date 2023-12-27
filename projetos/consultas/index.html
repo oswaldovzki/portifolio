@@ -356,6 +356,50 @@
                 </li>
             </ul>
         </div>
+
+        <section class="formulario">
+            <div class="formulario__container">
+                <h2 class="formulario__titulo">Adicionar Nova Consula</h2>
+                <form class="formulario__campos">
+                    <div class="fomulario__campos__titulo-container">
+                        <label class="fomulario__campos__titulo" for="nome">Nome do Paciente</label><br>
+                        <input class="fomulario__campos__input formulario__campos__caixa" type="text" id="nome"
+                            name="nome">
+                    </div>
+                    <div class="fomulario__campos__titulo-container">
+                        <span class="fomulario__campos__titulo">Tipo de Consulta</span>
+                        <label class="fomulario__campos__titulo tipo-de-consulta" for="remota">Remota
+                            <input class="fomulario__campos__input formulario__campos__tipo" type="radio" id="remota"
+                                name="tipo_consulta" value="Remota">
+                            <span class="radio-label"></span>
+                        </label>
+                        <label class="fomulario__campos__titulo tipo-de-consulta" for="presencial">Presencial
+                            <input class="fomulario__campos__input formulario__campos__tipo" type="radio"
+                                id="presencial" name="tipo_consulta" value="Presencial">
+                            <span class="radio-label"></span>
+                        </label>
+                    </div>
+                    <div class="fomulario__campos__data-container">
+                        <div class="fomulario__campos__titulo-container">
+                            <label class="fomulario__campos__titulo" for="data">Dia da consulta</label><br>
+                            <input class="fomulario__campos__input formulario__campos__caixa" type="date" id="data"
+                                name="Dia da Consulta">
+                        </div>
+                        <div class="fomulario__campos__titulo-container">
+                            <label class="fomulario__campos__titulo" for="hora">Hora da consulta</label><br>
+                            <input class="fomulario__campos__input formulario__campos__caixa" type="time" id="hora"
+                                name="Hora da Consulta">
+                        </div>
+                    </div>
+                    <div class="fomulario__campos__titulo-container">
+                        <label class="fomulario__campos__titulo" for="observacoes">Observações</label><br>
+                        <input class="fomulario__campos__input formulario__campos__caixa" type="text" id="observacoes"
+                            name="Observações">
+                    </div>
+                </form>
+                <button class="formulario__salvar">Salvar</button>
+            </div>
+        </section>
     </main>
 </body>
 

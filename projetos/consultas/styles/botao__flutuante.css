@@ -94,3 +94,9 @@ button.botao__flutuante-item span.local {
 button.botao__flutuante-item span.remoto {
   background-image: url('../assets/Camera.svg');
 }
+
+@media screen and (min-width: 1024px) {
+  .botao__flutuante-cadastro {
+    display: none;
+  }
+}

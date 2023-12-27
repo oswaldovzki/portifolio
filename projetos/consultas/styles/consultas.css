@@ -128,6 +128,15 @@
     line-height: 160%;
 }
 
+.formulario{
+    display: none;
+}
+
+.consultas__card__ligar-video:hover, .consultas__card__ligar-audio:hover, .consultas__paciente__chat:hover, .consultas__card__ligar-endereco:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 @media screen and (min-width: 768px) {
     .foto__circular {
         width: 3rem;
@@ -148,7 +157,7 @@
     }
 
     .consultas {
-        margin: 1rem 1rem 1rem 12rem;
+        margin: 1rem 1rem 1rem 14rem;
     }
 
     .consultas__lista {
