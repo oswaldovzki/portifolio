@@ -1,40 +1,3 @@
-/*Header*/
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    margin: 2rem 1rem;
-}
-
-.header__medic{
-    display: flex;
-    flex-direction: column;
-}
-
-.header__foto {
-    border-radius: 57px;
-    width: 3.6rem;
-    height: 3.6rem;
-}
-
-.header__saudacao {
-    color: var(--cor-primaria);
-    font-size: 1.375rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-}
-
-.header__consultas {
-    color: var(--cor-secundaria);
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-}
-
-/*Lista de Consultas*/
 .consultas {
     margin-bottom: 8rem;
 }
@@ -57,7 +20,7 @@
     flex-direction: column;
 }
 
-.consultas__card__paciente-top{
+.consultas__card__paciente-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,19 +28,19 @@
     padding: 1rem;
 }
 
-.consultas__card__paciente{
+.consultas__card__paciente {
     display: flex;
     align-items: center;
 }
 
-.foto__circular{
+.foto__circular {
     border-radius: 2rem;
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
 }
 
-.consultas__paciente__nome{
+.consultas__paciente__nome {
     color: var(--cor-primaria);
     font-size: 0.875rem;
     font-style: normal;
@@ -85,7 +48,7 @@
     line-height: 160%;
 }
 
-.consultas__paciente__tipo-texto{ 
+.consultas__paciente__tipo-texto {
     color: var(--cor-secundaria);
     font-size: 0.75rem;
     font-style: normal;
@@ -93,28 +56,29 @@
     line-height: 160%;
 }
 
-.consultas__card__paciente-bottom{
+.consultas__card__paciente-bottom {
     display: flex;
     flex-direction: column;
     padding: 0.5rem 1rem;
 }
 
-.consultas__card__horario{
+.consultas__card__horario {
     color: var(--cor-primaria);
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 160%; /* 19.2px */
+    line-height: 160%;
+    /* 19.2px */
 }
 
-.consultas__card__botoes{ 
+.consultas__card__botoes {
     display: flex;
     justify-content: space-between;
     gap: 1.25em;
     align-items: center;
 }
 
-.consultas__card__ligar-video{
+.consultas__card__ligar-video {
     background: var(--botao-laranja);
     border: none;
     border-radius: 0.5rem;
@@ -128,7 +92,7 @@
     line-height: 160%;
 }
 
-.consultas__card__ligar-audio{
+.consultas__card__ligar-audio {
     background: var(--branco);
     border: solid 1px var(--borda-botao);
     border-radius: 0.5rem;
@@ -142,7 +106,8 @@
     line-height: 160%;
 }
 
-.consultas__card__ligar-audio, .consultas__card__ligar-video {
+.consultas__card__ligar-audio,
+.consultas__card__ligar-video {
     padding: 0.8rem 1.5rem;
 
 }
@@ -163,46 +128,48 @@
     line-height: 160%;
 }
 
-/* Footer */
-
-.rodape {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: var(--branco);
-    width: -webkit-fill-available;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-
-    position: fixed;
-    bottom: 0;
-
-    border-top-right-radius: 0.75rem;
+.formulario{
+    display: none;
 }
 
-.rodape__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.consultas__card__ligar-video:hover, .consultas__card__ligar-audio:hover, .consultas__paciente__chat:hover, .consultas__card__ligar-endereco:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
-.rodape__icone {
-    height: 1.85rem;
-    width: 1.85rem;
+@media screen and (min-width: 768px) {
+    .foto__circular {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .consultas__card__paciente-bottom {
+        padding: 0.5rem 10rem;
+        align-items: stretch;
+        text-align: center;
+    }
 }
 
-.rodape__link{
-    color: var(--cor-primaria);
-    text-decoration: none;
-    
-    font-size: 0.75rem;
-    line-height: 160%;
-}
+@media screen and (min-width: 1024px) {
+    .foto__circular {
+        width: 4rem;
+        height: 4rem;
+    }
 
-.rodape__link:hover{
-    color: var(--azul-botao);
-    text-decoration: none;
-    
-    font-size: 0.75rem;
-    line-height: 160%;
+    .consultas {
+        margin: 1rem 1rem 1rem 14rem;
+    }
+
+    .consultas__lista {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .consultas__card__paciente-bottom {
+        padding: 0.5rem 1rem;
+    }
+
+    .consultas__card {
+        min-width: 23rem;
+    }
 }
