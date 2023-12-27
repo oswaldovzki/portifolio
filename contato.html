@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, IE=edge">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="icon" href="/img/oswaldovzki_logo_png.png" type="image/png">
+    <title>Portifólio do Filipe "0swaldovzki_" Lima</title>
+</head>
+
+<body class="corpo">
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="./img/oswaldovzki_logo_art_half.jpg"
+                alt="Logo artístico do site"></a>
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav__link">Home</a>
+            <a href="about.html" class="header__nav__link">Sobre mim</a>
+            <a href="curriculo.html" class="header__nav__link">Curriculo</a>
+            <a href="projetos.html" class="header__nav__link">Projetos</a>
+            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank"
+                rel="noopener noreferrer">Vitrine Dev</a>
+            <a href="contato.html" class="header__nav__link">Contato</a>
+        </nav>
+
+        <!--Menu Hamburguer para Mobile-->
+
+        <input type="checkbox" id="menu-hamburguer" class="header__menu-hamburguer__checkbox">
+        <label for="menu-hamburguer" class="header__menu-hamburguer__botao_ativo">
+            <span class="header__menu-hamburguer__img cabecalho__imagem cabecalho__imagem--transparente"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__item"><a href="index.html" class="header__nav__link">Home</a></li>
+            <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
+            <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
+            <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
+            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki"
+                    class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+        <script>
+            (function () {
+                window.onload = function () {
+                    new BlipChat()
+                        .withAppKey('b3N3YWxkb3Z6a2k6NzQyMDk4MjItYmYzMi00OGJmLTkwOTMtYjU0NmU4YjA1ODIz')
+                        .withButton({"color":"#0096fa","icon":""})
+                        .withCustomCommonUrl('https://filipe-lima-j48b7.chat.blip.ai/')
+                        .build();
+                }
+            })();
+        </script>                    
+    </main>
+
+    <footer class="footer">
+        <p id="footer__text">
+            Desenvolvido por @oswaldovzki
+        </p>
+    </footer>
+</body>
