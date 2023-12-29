@@ -27,11 +27,11 @@ Atualmente o projeto está disponível em dois locais:
 
 [GitHub Pages](https://oswaldovzki.github.io/landing-front/index.html): que representa a mais atual versão em desenvolvimento.
 # Tecnologias Utilizadas
-![Static Badge](https://img.shields.io/badge/Technology-HTML-red?style=plastic&logo=html5)
-![Static Badge](https://img.shields.io/badge/Technology-CSS-blue?style=plastic&logo=css3&logoColor=%231572B6)
-![Static Badge](https://img.shields.io/badge/Technology-JavaScript-yellow?style=plastic&logo=javascript&logoColor=%23F7DF1E)
+![Static Badge](https://img.shields.io/badge/HTML-red?style=plastic&logo=html5)
+![Static Badge](https://img.shields.io/badge/CSS-blue?style=plastic&logo=css3&logoColor=%231572B6)
+![Static Badge](https://img.shields.io/badge/JavaScript-yellow?style=plastic&logo=javascript&logoColor=%23F7DF1E)
 # Sobre Mim
-[<img loading="lazy" src="./img/oswaldovzki_logo_full.jpg" width=115><br><sub>Filipe "0swaldovzki_" Lima</sub>](https://github.com/oswaldovzki)
+[<img loading="lazy" src="./img/oswaldovzki_logo_full_alternate.jpg" width=115><br><sub>Filipe "0swaldovzki_" Lima</sub>](https://github.com/oswaldovzki)
 
 
 Sou Biólogo de Formação e atuei na rede publica de ensino como professor de Biologia e Ciências. Em algum momento do espaço tempo, decidi entrar para o mundo profissional da tecnologia, área que sempre fui fascinado mas nunca meu aventurei. 
