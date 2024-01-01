@@ -37,10 +37,10 @@ body {
 
 /*Conteudo Central*/
 .main {
-    padding: 1% 6%;
+    padding: 3% 6%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 4%;
     margin: 70px 0;
 }
@@ -112,15 +112,8 @@ body {
 /*Foto*/
 
 #minha__foto {
-    width: 50%;
+    width: 30%;
 }
-
-
-#minha__foto:hover {
-    cursor:no-drop;
-}
-
-
 
 /*Mobile*/
 @media screen and (max-width: 820px) {
