@@ -22,21 +22,21 @@ Aqui você também encontra projetos próprios e aplicações de diversas técni
 <h4>Em Desenvolvimento</h4>
 
 # Projetos
-📚 Alura Books
-    Landing Page de uma plataforma de Streaming
-📺 Alura +
-    Página de venda de livros
-🧑‍⚕️ Alura Med
-    Página de consultas médicas
-    🚧Em Desenvolvimento🚧
-🪙 Conversor de Moedas
-    Converte Moedas dos Países da União Européia, UK, Brazil e USA.
-    🚧Em Desenvolvimento🚧
-🔢 Mentalista
-    Jogo em JavaScript de adivinhar números, com tabela de pontos.
-    🚧Em Desenvolvimento🚧
-⚒️ Optimus Tech
-    Página de Contratação de uma empresa fictícia
+📚 Alura Books <br>
+    Landing Page de uma plataforma de Streaming <br><br>
+📺 Alura + <br>
+    Página de venda de livros <br><br>
+🧑‍⚕️ Alura Med <br>
+    Página de consultas médicas <br>
+    🚧Em Desenvolvimento🚧 <br><br>
+🪙 Conversor de Moedas <br>
+    Converte Moedas dos Países da União Européia, UK, Brazil e USA. <br>
+    🚧Em Desenvolvimento🚧 <br><br>
+🔢 Mentalista <br>
+    Jogo em JavaScript de adivinhar números, com tabela de pontos. <br>
+    🚧Em Desenvolvimento🚧 <br><br>
+⚒️ Optimus Tech <br>
+    Página de Contratação de uma empresa fictícia<br>
 
 # Acesso ao Projeto
 Atualmente o projeto está disponível em dois locais:
