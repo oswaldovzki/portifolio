@@ -4,9 +4,7 @@
     position: fixed;
     display: flex;
     background-color: var(--cor-fundo);
-    margin-left: 5px;
-    margin-top: 5px;
-    padding-bottom: 5px;
+    padding: 0.5rem;
     width: 100%;
     top: 0
 }
@@ -20,8 +18,8 @@
 .header__nav {
     display: flex;
     align-items: center;
-    padding: 0.2% 0% 0.2% 5%;
-    gap: 80px
+    padding-left: 3rem;
+    gap: 3rem
 }
 
 .header__nav__link {
@@ -31,6 +29,7 @@
     color: var(--cor-primaria);
     text-decoration: none;
     border: 1px solid transparent;
+    white-space: nowrap;
 }
 
 .header__nav__link:hover {

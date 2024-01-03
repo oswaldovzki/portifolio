@@ -99,7 +99,7 @@ body {
     font-size: 14px;
 }
 
-.menu__itens:hover {
+.menu__lista>li:hover {
     background-color: var(--azul-medio);
     transition: .5s;
 }
@@ -216,8 +216,8 @@ body {
     padding: 153px 20px 10px 20px;
 }
 
-.videos__item:hover {
-    transform: scale(1.3);
+.videos__item>iframe:hover {
+    transform: scale(1.1);
     background-color: var(--azul-claro);
     z-index: 2;
     transition: .5s;
@@ -286,8 +286,8 @@ body {
         padding-right: 17px;
     }
 
-    .videos__item:hover {
-        transform: scale(1.3);
+    .videos__item>iframe:hover {
+        transform: scale(1.1);
     }
 
     /* ESTILOS RODAPÉ */
@@ -311,6 +311,11 @@ body {
 
     .menu__lista {
         border-bottom: 1.5px solid var(--azul-medio);
+        margin-right: 1rem;
+    }
+
+    .menu__itens {
+        padding: 0.8rem 0 0.8rem 1rem;
     }
 
     /* ESTILOS VIDEOS */
