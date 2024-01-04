@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1023px) {
+
     .menu-lateral,
     .rodape,
     .cabecalho__botao,
@@ -16,12 +17,12 @@
 
     .navbar {
         display: block;
-    }   
+    }
 
     .secao-horizontal .cartao__imagem {
         height: 4.58rem;
     }
- 
+
     .secao-horizontal .cartao__titulo {
         font: 700 14px/20px Open Sans, sans-serif;
     }
@@ -43,6 +44,10 @@
     .cabecalho .cabecalho__logo,
     .cabecalho__botao__avancar {
         display: none;
+    }
+
+    .menu-lateral {
+        width: 208px;
     }
 
     .navbar {
@@ -75,4 +80,7 @@
         display: none;
     }
 
+    .menu-lateral {
+        width: 228px;
+    }
 }
