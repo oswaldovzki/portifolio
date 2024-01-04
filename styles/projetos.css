@@ -1,7 +1,41 @@
 body {
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+main {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1rem 1rem;
+}
+
+.project__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+    height: 78vh;
+}
+
+.project__squares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: -webkit-fill-available;
+}
+
+.project__preview {
+    height: 100%;
+    width: 320px;
+    background-color: white;
+
+}
+
+.project__squares {
+    text-align: center;
+}
 
 
 /* body {

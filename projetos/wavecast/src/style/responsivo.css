@@ -19,6 +19,10 @@
         display: block;
     }
 
+    .cabecalho {
+        justify-self: center;
+    }
+
     .secao-horizontal .cartao__imagem {
         height: 4.58rem;
     }
