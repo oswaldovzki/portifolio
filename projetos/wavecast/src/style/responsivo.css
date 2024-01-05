@@ -29,6 +29,7 @@
 
     .secao-horizontal .cartao__titulo {
         font: 700 14px/20px Open Sans, sans-serif;
+        align-self: center;
     }
 
     .secao-vertical .cartao {
