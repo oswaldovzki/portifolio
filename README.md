@@ -8,6 +8,7 @@
 # Índice
 * [Descrição](#Descrição)
 * [Status do Projeto](#Status-do-Projeto)
+* [Projetos](#Projetos)
 * [Acesso ao Projeto](#Acesso)
 * [Tecnologias Utilizadas](#Tecnologias-utilizadas)
 * [Sobre Mim](#Sobre-Mim)
@@ -20,16 +21,35 @@ Aqui você também encontra projetos próprios e aplicações de diversas técni
 # Status do Projeto
 <h4>Em Desenvolvimento</h4>
 
+# Projetos
+📚 Alura Books <br>
+    Landing Page de uma plataforma de Streaming <br><br>
+📺 Alura + <br>
+    Página de venda de livros <br><br>
+🧑‍⚕️ Alura Med <br>
+    Página de consultas médicas <br>
+    🚧Em Desenvolvimento🚧 <br><br>
+🪙 Conversor de Moedas <br>
+    Converte Moedas dos Países da União Européia, UK, Brazil e USA. <br>
+    🚧Em Desenvolvimento🚧 <br><br>
+🔢 Mentalista <br>
+    Jogo em JavaScript de adivinhar números, com tabela de pontos. <br>
+    🚧Em Desenvolvimento🚧 <br><br>
+⚒️ Optimus Tech <br>
+    Página de Contratação de uma empresa fictícia<br>
+
 # Acesso ao Projeto
 Atualmente o projeto está disponível em dois locais:
 
 [Vercel](https://meu-portifolio-ft1nzugng-filipe-paixao-de-limas-projects.vercel.app/index.html): que representa a versão principal e final do projeto.
 
 [GitHub Pages](https://oswaldovzki.github.io/landing-front/index.html): que representa a mais atual versão em desenvolvimento.
+
 # Tecnologias Utilizadas
 ![Static Badge](https://img.shields.io/badge/HTML-red?style=plastic&logo=html5)
 ![Static Badge](https://img.shields.io/badge/CSS-blue?style=plastic&logo=css3&logoColor=%231572B6)
 ![Static Badge](https://img.shields.io/badge/JavaScript-yellow?style=plastic&logo=javascript&logoColor=%23F7DF1E)
+
 # Sobre Mim
 [<img loading="lazy" src="./img/oswaldovzki_logo_full_alternate.jpg" width=115><br><sub>Filipe "0swaldovzki_" Lima</sub>](https://github.com/oswaldovzki)
 
