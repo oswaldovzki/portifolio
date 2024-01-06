@@ -79,7 +79,7 @@
 }
 
 .carrousel__card__bookIMG {
-    height: 10.5em;
+    height: 6.5em;
 }
 
 .carrousel__card__icones {
@@ -150,6 +150,9 @@
     .carrousel__card {
         width: 60%;
         margin: 2em auto;
+    }
+    .carrousel__card__bookIMG {
+        height: 10.5em;
     }
 }
 

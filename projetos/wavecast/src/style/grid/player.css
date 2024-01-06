@@ -74,3 +74,9 @@
     border-radius: 5px;
     margin-bottom: 4px;
 }
+
+@media screen and (max-width: 820px) {
+    .secao-player {
+        display: none;
+    }
+}

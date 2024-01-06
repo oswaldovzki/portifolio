@@ -1,0 +1,20 @@
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: var(--cinza-claro);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: var(--bordo);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--bordo-transparente);
+    }
+

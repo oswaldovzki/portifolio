@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("scrollbar.css");
 
 :root {
     --branco-primario: #FFFFFF;
@@ -23,6 +24,7 @@
     padding: 0;
     text-decoration: none;
     color: var(--cor-primaria);
+    overflow-x: hidden;
 }
 
 body {
@@ -158,7 +160,6 @@ body {
     justify-content: center;
     list-style-type: none;
     margin: 2.5em 0;
-    gap: 3rem;
 }
 
 .plus__devices__itens {
@@ -169,8 +170,13 @@ body {
     font-weight: 700;
 }
 
+.plus__devices__lista li {
+    width: 20rem;
+
+}
+
 .plus__devices__img {
-    width: 23rem;
+    width: 20rem;
 }
 
 /*-------------Quinta Sessao-------------*/
@@ -223,40 +229,63 @@ body {
         height: auto;
         margin-bottom: 40%;
     }
-    .plus__header__backgound{
+
+    .plus__header__backgound {
         background-image: none;
     }
+
     .plus__header__content {
         margin: 2em 2em;
     }
-    .plus__header__content__img, .seondary_section__img, .plus__subscription__img, .plus__devices__img  {
+
+    .plus__header__content__img,
+    .seondary_section__img,
+    .plus__subscription__img,
+    .plus__devices__img {
         width: 50vw;
         padding: 1em;
     }
+
     .container {
-        margin: 2em 2em;
+        margin: 2rem 1rem;
         text-align: center;
     }
-    .plus__subscription__content{
+
+    .plus__subscription__content {
         padding: 0;
     }
-    .plus__subscription__content__button{
+
+    .plus__subscription__content__button {
         font-family: var(--fonte-texto);
     }
-    .plus__devices{
+
+    .seondary_section__titulo {
+        font-size: 2.7rem;
+    }
+
+    .plus__devices {
         margin: 0;
     }
-    .plus__devices__lista{
+
+    .plus__devices__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        margin: 0 17px;
+    }
+
+    .plus__footer__nav {
         display: block;
     }
-    .plus__footer__nav{
-        display: block;
-    }
+
     .plus__footer {
         display: flex;
         list-style-type: none;
         font-family: 'Inter', sans-serif;
-        font-size: 16px;
+        font-size: 0.9rem;
         font-weight: 400;
         line-height: 150%;
         margin: 0 0.1em;

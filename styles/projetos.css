@@ -29,7 +29,7 @@ main {
 
 .project__preview {
     height: 100%;
-    width: 320px;
+    width: 321px;
     background-color: white;
     border: solid 1px var(--eggshell);
     border-radius: 0.5rem;
@@ -53,15 +53,11 @@ main {
 
 .project__row::-webkit-scrollbar {
     background-color: var(--cor-secundaria);
-    height: 0.5rem;
-    border-radius: 1rem;
+    height: 0.2rem;
 }
 
 .project__row::-webkit-scrollbar-thumb {
     background-color: var(--cor-terciaria);
-    border-radius: 0.5rem;
-    border: solid 1px var(--cor-secundaria);
-
 }
 
 

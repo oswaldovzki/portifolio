@@ -5,6 +5,7 @@
 @import url("./menu.css");
 @import url("./botao__flutuante.css");
 @import url("./formulario.css");
+@import url("./scrollbar.css");
 
 :root {
     --cor-de-fundo: #FAF8F8;
