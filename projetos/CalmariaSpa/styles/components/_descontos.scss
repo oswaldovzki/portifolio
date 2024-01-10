@@ -47,6 +47,9 @@
             background: variables.$cor-secundaria;
             border-radius: 0 65px 65px 0;
 
+            cursor: pointer;
+            transition: 0.3s;
+
             &:hover {
                 background: variables.$cor-terciaria;
                 color: variables.$cor-primaria;

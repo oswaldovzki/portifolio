@@ -1,0 +1,96 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+#contatos {
+    @include mixins.margem-central(80%);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .contatos-imgs {
+        max-width: 50%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        gap: 1rem;
+        justify-content: space-around;
+
+        img {
+            width: 100%;
+
+            &:nth-child(n+2) {
+                width: 48%;
+            }
+        }
+    }
+
+    .contatos-form {
+        max-width: 50%;
+        background: variables.$gradiente-primario;
+        padding: 2rem 3rem;
+        border-radius: 2rem;
+
+        .titulo {
+            @include mixins.ff-fs-cl(variables.$ft-titulo, 1.9rem, variables.$cor-secundaria);
+        }
+
+        .infos {
+            @include mixins.ff-fs-cl(variables.$ft-texto, 1.2rem, variables.$cor-primaria);
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            align-self: stretch;
+
+            ::placeholder {
+                @include mixins.ff-fs-cl(variables.$ft-texto, 1rem, variables.$cor-primaria);
+            }
+
+            input {
+                border-radius: 25px;
+                padding: 1rem;
+                border: none;
+                @include mixins.ff-fs-cl(variables.$ft-texto, 1rem, variables.$cor-primaria);
+            }
+
+            .form-group {
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                label {
+                    @extend .infos;
+                    font-weight: bold;
+                }
+
+                textarea {
+                    @extend input;
+                }
+            }
+
+            .btn {
+                @extend input;
+                background: variables.$cor-terciaria;
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+                width: 100%;
+
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background: variables.$cor-secundaria;
+                }
+            }
+        }
+    }
+}

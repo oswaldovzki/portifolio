@@ -68,6 +68,8 @@ header {
                 font-weight: 600;
                 line-height: 18px;
 
+                transition: 0.3s;
+
                 &:hover {
                     background-color: variables.$cor-secundaria;
                     cursor: pointer;
