@@ -1,0 +1,407 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis */
+/* Cores */
+/* Fontes */
+header {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFF 96.87%);
+  padding: 2rem;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+header nav .linha {
+  border-top: 1px solid black;
+  width: 80%;
+}
+header nav ul {
+  display: inline-flex;
+  gap: 2rem;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul a {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+  font-weight: 400;
+}
+header nav ul a:hover {
+  font-weight: 600;
+}
+header #home {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #home .textos-home {
+  max-width: 464px;
+}
+header #home .textos-home h1 {
+  font-family: Krona One, sans-serif;
+  font-size: 2rem;
+  color: #0C0421;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+header #home .textos-home h1 span {
+  color: #4E75FF;
+}
+header #home .textos-home .btn-main {
+  border-radius: 40px;
+  background-color: #85A0FF;
+  padding: 1.5rem 3.75rem;
+  border: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 18px;
+  transition: 0.3s;
+}
+header #home .textos-home .btn-main:hover {
+  background-color: #4E75FF;
+  cursor: pointer;
+}
+header #home .img-home {
+  max-width: 474px;
+}
+header #home .img-home img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 0.5rem;
+  }
+  header #home {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 95%;
+  }
+  header #home .textos-home .btn-main {
+    text-wrap: nowrap;
+  }
+  header #home .img-home {
+    padding: 1rem 0;
+  }
+  header nav ul {
+    padding: 0;
+    align-items: center;
+    text-wrap: nowrap;
+  }
+}
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+}
+#nosso-espaco .detalhes {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+#nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
+  max-width: 500px;
+}
+#nosso-espaco .detalhes .espaco-textos .titulo {
+  font-family: Krona One, sans-serif;
+  font-size: 1.8rem;
+  color: #4E75FF;
+  font-weight: 500;
+}
+#nosso-espaco .detalhes .espaco-textos .infos {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+#nosso-espaco .detalhes .espaco-textos .separador {
+  width: 100%;
+}
+#nosso-espaco .detalhes:nth-child(2) {
+  flex-direction: row-reverse;
+}
+#nosso-espaco .detalhes .imgs-espaco-comp {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #nosso-espaco .detalhes {
+    flex-direction: column;
+  }
+  #nosso-espaco .detalhes:nth-child(2) {
+    flex-direction: column;
+  }
+  #nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
+    max-width: 320px;
+    overflow: scroll;
+  }
+  #nosso-espaco .detalhes .imgs-espaco img, #nosso-espaco .detalhes .espaco-textos img {
+    width: 310px;
+  }
+}
+#servico {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFF 96.87%);
+  padding: 5rem 0;
+}
+#servico .cards {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  gap: 1.5rem;
+}
+#servico .cards .card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 2rem;
+}
+#servico .cards .card-titulo {
+  font-family: Krona One, sans-serif;
+  font-size: 1.6rem;
+  color: #0C0421;
+}
+#servico .cards .card-texto {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+#desconto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#desconto h4 {
+  font-family: Krona One, sans-serif;
+  font-size: 1.6rem;
+  color: #0C0421;
+}
+#desconto p {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+#desconto .input-btn {
+  width: 790px;
+  height: 65px;
+  border: solid 1px #4E75FF;
+  border-radius: 60px;
+  margin: 0 auto;
+  display: inline-flex;
+}
+#desconto .input-btn input {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+  width: 513.5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 1rem;
+}
+#desconto .input-btn button {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  color: #CAD4FA;
+  font-weight: 600;
+  width: 276.5px;
+  border: none;
+  outline: none;
+  background: #4E75FF;
+  border-radius: 0 65px 65px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#desconto .input-btn button:hover {
+  background: #85A0FF;
+  color: #0C0421;
+}
+
+@media screen and (max-width: 1024px) {
+  #desconto {
+    padding-bottom: 5rem;
+  }
+  #desconto img {
+    display: none;
+  }
+  #desconto h4 {
+    font-size: 1.5rem;
+  }
+  #desconto p {
+    font-size: 1rem;
+  }
+  #desconto .input-btn {
+    width: 300px;
+    height: 55px;
+  }
+  #desconto .input-btn input {
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    color: #0C0421;
+    width: 180px;
+  }
+  #desconto .input-btn button {
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    color: #CAD4FA;
+    width: 120px;
+  }
+}
+#contatos {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#contatos .contatos-imgs {
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+#contatos .contatos-imgs img {
+  width: 100%;
+}
+#contatos .contatos-imgs img:nth-child(n+2) {
+  width: 48%;
+}
+#contatos .contatos-form {
+  max-width: 50%;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFF 96.87%);
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+#contatos .contatos-form .titulo {
+  font-family: Krona One, sans-serif;
+  font-size: 1.9rem;
+  color: #4E75FF;
+}
+#contatos .contatos-form .infos, #contatos .contatos-form .inputs .form-group label {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+#contatos .contatos-form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+#contatos .contatos-form .inputs ::-moz-placeholder {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+}
+#contatos .contatos-form .inputs ::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+}
+#contatos .contatos-form .inputs input, #contatos .contatos-form .inputs .btn, #contatos .contatos-form .inputs .form-group textarea {
+  border-radius: 25px;
+  padding: 1rem;
+  border: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+}
+#contatos .contatos-form .inputs .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contatos .contatos-form .inputs .form-group label {
+  font-weight: bold;
+}
+#contatos .contatos-form .inputs .btn {
+  background: #85A0FF;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#contatos .contatos-form .inputs .btn:hover {
+  background: #4E75FF;
+}
+
+@media screen and (max-width: 1024px) {
+  #contatos {
+    margin: 0 auto;
+    width: 95%;
+    display: block;
+  }
+  #contatos .contatos-imgs {
+    display: none;
+  }
+  #contatos .contatos-form {
+    max-width: 100%;
+    padding: 1rem 2rem;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E8F5C8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4E75FF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #85A0FF;
+}
+
+footer {
+  background: #E8F5C8;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 5rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

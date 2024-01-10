@@ -1,0 +1,93 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+#desconto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    h4 {
+        @include mixins.ff-fs-cl(variables.$ft-titulo, 1.6rem, variables.$cor-primaria);
+    }
+
+    p {
+        @include mixins.ff-fs-cl(variables.$ft-texto, 1.2rem, variables.$cor-primaria);
+    }
+
+    .input-btn {
+        $largura-input: 790px;
+        width: $largura-input;
+        height: 65px;
+
+        border: solid 1px variables.$cor-secundaria;
+        border-radius: 60px;
+        margin: 0 auto;
+
+        display: inline-flex;
+
+        input {
+            @include mixins.ff-fs-cl(variables.$ft-texto, 1.2rem, variables.$cor-primaria);
+            width: calc($largura-input * 0.65);
+
+            border: none;
+            outline: none;
+            background: transparent;
+            margin-left: 1rem;
+        }
+
+        button {
+            @include mixins.ff-fs-cl(variables.$ft-texto, 1.2rem, variables.$cor-quaternaria);
+            font-weight: 600;
+            width: calc($largura-input * 0.35);
+
+            border: none;
+            outline: none;
+            background: variables.$cor-secundaria;
+            border-radius: 0 65px 65px 0;
+
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: variables.$cor-terciaria;
+                color: variables.$cor-primaria;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #desconto {
+        padding-bottom: 5rem;
+
+        img {
+            display: none;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .input-btn {
+            $largura-input: 300px;
+            width: $largura-input;
+            height: 55px;
+
+            input {
+                @include mixins.ff-fs-cl(variables.$ft-texto, 1rem, variables.$cor-primaria);
+                width: calc($largura-input * 0.60);
+            }
+
+            button {
+                @include mixins.ff-fs-cl(variables.$ft-texto, 1rem, variables.$cor-quaternaria);
+                width: calc($largura-input * 0.40);
+            }
+        }
+    }
+}

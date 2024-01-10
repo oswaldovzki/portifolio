@@ -1,0 +1,13 @@
+@use '../abstract/_variables.scss'
+@use '../abstract/_mixins.scss'
+
+footer
+    background: variables.$cor-default
+    padding: 1.5rem
+    text-align: center
+    margin-top: 5rem
+    @include mixins.ff-fs-cl(variables.$ft-texto, 1rem, variables.$cor-primaria)
+
+@media screen and (max-width: 1024px)
+    footer
+        margin-top: 1rem

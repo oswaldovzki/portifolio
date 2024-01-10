@@ -1,0 +1,22 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: variables.$cor-default;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: variables.$cor-secundaria;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: variables.$cor-terciaria;
+}
