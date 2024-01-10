@@ -43,3 +43,24 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    #nosso-espaco {
+        .detalhes {
+            flex-direction: column;
+
+            &:nth-child(2) {
+                flex-direction: column;
+            }
+            
+            .imgs-espaco{
+                max-width: 320px;
+                overflow: scroll;
+
+                img {
+                    width: 310px;
+                }
+            }
+        }
+    }
+}

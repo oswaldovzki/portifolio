@@ -94,3 +94,19 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    #contatos {
+        @include mixins.margem-central(95%);
+        display: block;
+
+        .contatos-imgs {
+            display: none;
+        }
+
+        .contatos-form {
+            max-width: 100%;
+            padding: 1rem 2rem;
+        }
+    }
+}

@@ -48,7 +48,7 @@ header {
             max-width: 464px;
 
             h1 {
-                @include mixins.ff-fs-cl(variables.$ft-titulo, 2.6rem, variables.$cor-primaria);
+                @include mixins.ff-fs-cl(variables.$ft-titulo, 2rem, variables.$cor-primaria);
                 font-weight: 400;
                 line-height: 150%;
                 margin-bottom: 2rem;
@@ -82,6 +82,34 @@ header {
 
             img {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 0.5rem;
+        #home {
+            flex-direction: column;
+            @include mixins.margem-central(95%);
+
+            .textos-home {
+                .btn-main {
+                    text-wrap: nowrap;
+                }
+            }
+
+            .img-home {
+                padding: 1rem 0;
+            }
+        }
+
+        nav {
+            ul {
+                padding: 0;
+                align-items: center;
+                text-wrap: nowrap;
             }
         }
     }

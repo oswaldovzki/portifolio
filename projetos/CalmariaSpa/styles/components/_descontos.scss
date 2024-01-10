@@ -57,3 +57,37 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    #desconto {
+        padding-bottom: 5rem;
+
+        img {
+            display: none;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .input-btn {
+            $largura-input: 300px;
+            width: $largura-input;
+            height: 55px;
+
+            input {
+                @include mixins.ff-fs-cl(variables.$ft-texto, 1rem, variables.$cor-primaria);
+                width: calc($largura-input * 0.60);
+            }
+
+            button {
+                @include mixins.ff-fs-cl(variables.$ft-texto, 1rem, variables.$cor-quaternaria);
+                width: calc($largura-input * 0.40);
+            }
+        }
+    }
+}
