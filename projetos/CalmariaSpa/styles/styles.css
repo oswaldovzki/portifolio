@@ -151,7 +151,6 @@ header #home .img-home img {
   }
   #nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
     max-width: 320px;
-    overflow: scroll;
   }
   #nosso-espaco .detalhes .imgs-espaco img, #nosso-espaco .detalhes .espaco-textos img {
     width: 310px;
@@ -245,6 +244,7 @@ header #home .img-home img {
 @media screen and (max-width: 1024px) {
   #desconto {
     padding-bottom: 5rem;
+    justify-content: space-around;
   }
   #desconto img {
     display: none;
