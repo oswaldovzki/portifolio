@@ -17,13 +17,14 @@ main {
     gap: 2rem;
     overflow-x: scroll;
     height: 78vh;
+    padding-bottom: 40px;
 }
 
 .project__squares {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: -webkit-fill-available;
+    height: 100%;
     text-align: center;
 }
 
