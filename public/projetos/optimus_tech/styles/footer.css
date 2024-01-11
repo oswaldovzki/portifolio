@@ -1,0 +1,77 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    background-color: var(--fundo-depoimentos);
+    padding: 6rem 21rem;
+}
+.footer__cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.footer__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer__texto__titulo {
+    color: var(--preto);
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    letter-spacing: -0.045rem;
+}
+.footer__texto__sub {
+    color: var(--cinza);
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+.footer__email {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.footer__email__input {
+    padding: 12px 14px 12px 16px;
+
+    border-radius: 8px;
+    border: 1px solid var(--cinza-borda);
+    background: var(--branco);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    width: 32%;
+    max-width: 27rem;
+}
+
+.footer__email__input::placeholder{
+    color: var(--cinza);
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.footer__email__botao {
+    padding: 12px 20px;
+
+    color: var(--branco);   
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    border-radius: 8px;
+    border: 1px solid var(--bordo);
+    background: var(--bordo);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.footer__copyright {
+    color: var(--cinza);
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .footer{
+        padding: 0;
+    }
+}

@@ -1,0 +1,175 @@
+.consultas {
+    margin-bottom: 8rem;
+}
+
+.consultas__titulo {
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+
+    margin: 0.5rem 1rem;
+}
+
+.consultas__card {
+    background-color: var(--branco);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.consultas__card__paciente-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px var(--cor-primaria-transp);
+    padding: 1rem;
+}
+
+.consultas__card__paciente {
+    display: flex;
+    align-items: center;
+}
+
+.foto__circular {
+    border-radius: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.consultas__paciente__nome {
+    color: var(--cor-primaria);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.consultas__paciente__tipo-texto {
+    color: var(--cor-secundaria);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.consultas__card__paciente-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
+
+.consultas__card__horario {
+    color: var(--cor-primaria);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    /* 19.2px */
+}
+
+.consultas__card__botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25em;
+    align-items: center;
+}
+
+.consultas__card__ligar-video {
+    background: var(--botao-laranja);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+
+    color: var(--branco);
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.consultas__card__ligar-audio {
+    background: var(--branco);
+    border: solid 1px var(--borda-botao);
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.consultas__card__ligar-audio,
+.consultas__card__ligar-video {
+    padding: 0.8rem 1.5rem;
+
+}
+
+.consultas__card__ligar-endereco {
+    background: var(--azul-botao);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    padding: 0.8rem 1.5rem;
+    width: -webkit-fill-available;
+
+    color: var(--branco);
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.formulario{
+    display: none;
+}
+
+.consultas__card__ligar-video:hover, .consultas__card__ligar-audio:hover, .consultas__paciente__chat:hover, .consultas__card__ligar-endereco:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+    .foto__circular {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .consultas__card__paciente-bottom {
+        padding: 0.5rem 10rem;
+        align-items: stretch;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .foto__circular {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .consultas {
+        margin: 1rem 1rem 1rem 14rem;
+    }
+
+    .consultas__lista {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .consultas__card__paciente-bottom {
+        padding: 0.5rem 1rem;
+    }
+
+    .consultas__card {
+        min-width: 23rem;
+    }
+}
