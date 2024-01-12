@@ -19,7 +19,20 @@
                         },
                     },
                     fontFamily: {
-                        inter: ['Inter', 'sans-serif']
+                        inter: ['Inter', 'sans-serif'] 
+                    },
+                    keyframes: {
+                        sino_kf: {
+                            '0%, 100%': {
+                                transform: 'rotate(-10deg)'
+                            },
+                            '50%': {
+                                transform: 'rotate(10deg)'
+                            }
+                        }
+                    },
+                    animation: {
+                        sino:'sino_kf 0.31s ease-in-out infinite'
                     }
                 }
             }
@@ -27,18 +40,18 @@
     </script>
 </head>
 
-<body class="bg-azul-claro font-inter">
+<body class="bg-azul-claro font-inter flex justify-center items-center h-screen">
 
-    <main class="">
+    <main class="flex px-6 drop-shadow-2xl lg:w-3/4">
 
-        <section class="bg-azul-escuro hidden">
-            <img class="" src="image/icone-mergulhador.svg" alt="icone de mergulhador">
+        <section class="bg-azul-escuro hidden lg:block w-1/2 rounded-l-lg">
+            <img class="p-6 mx-auto" src="image/icone-mergulhador.svg" alt="icone de mergulhador">
         </section>
 
-        <section class="bg-white">
+        <section class="bg-white p-10 flex flex-col gap-6 rounded-lg lg:w-1/2 justify-center lg:rounded-l-none">
 
-            <div class="">
-                <svg class="" width="35" height="20" viewBox="0 0 44 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="self-center relative group">
+                <svg class="fill-azul-escuro absolute top-0 left-1 opacity-0 group-hover:opacity-100 group-hover:animate-ping" width="35" height="20" viewBox="0 0 44 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M41.1738 0.994633C40.8556 1.10918 40.6199 1.34129 40.4506 1.70905C40.3201 1.99542 40.2881 2.17026 40.3041 2.53199C40.3178 2.86056 40.3659 3.0776 40.4734 3.28861C40.5444 3.42728 41.7665 5.17565 41.9221 5.36254C41.9748 5.42584 42.0984 5.52834 42.1945 5.58561C42.3661 5.69413 42.373 5.69714 42.6545 5.69714C42.9291 5.69714 42.9474 5.69413 43.1237 5.59465C43.3663 5.45599 43.5722 5.19373 43.6912 4.86818C43.8034 4.56673 43.8285 4.34366 43.7874 4.00303C43.753 3.69255 43.7004 3.52374 43.5814 3.31574C43.4784 3.13789 42.4096 1.60958 42.2242 1.37445C41.9519 1.03081 41.5171 0.874056 41.1738 0.994633Z" />
                     <path
@@ -48,22 +61,22 @@
                     <path
                         d="M6.00014 11.0928C5.69804 11.1802 5.49893 11.3671 5.00688 12.0303C3.94497 13.4651 3.16455 15.102 2.62215 17.0463C2.44822 17.6672 2.44822 17.9838 2.62215 18.442C2.72743 18.7223 2.92882 18.9906 3.13022 19.1202C3.63143 19.4427 4.27453 19.2106 4.58349 18.5987C4.67274 18.4209 4.69792 18.3425 4.85583 17.7758C4.97484 17.3537 5.25176 16.6182 5.48062 16.1208C5.8674 15.2768 6.22442 14.692 6.8309 13.9083C7.21997 13.4018 7.2932 13.2662 7.35271 12.9436C7.48316 12.2111 7.24743 11.5208 6.76453 11.2164C6.50134 11.0506 6.27248 11.0144 6.00014 11.0928Z" />
                 </svg>
-                <svg class="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-12 h-12 fill-azul-claro stroke-azul-escuro group-hover:animate-sino" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
                     </path>
                 </svg>
             </div>
 
-            <div class="">
-                <h1 class="">Alura Newsletter</h1>
-                <p class="">Mergulhe em uma plataforma que respira tecnologia!</p>
+            <div class="text-center">
+                <h1 class="text-4xl mb-2">Alura Newsletter</h1>
+                <p class="text-xl text-gray-700 mb-2">Mergulhe em uma plataforma que respira tecnologia!</p>
             </div>
 
             <form>
-                <label class="" for="email">Email</label>
-                <input class="" id="email" type="email" placeholder="Digite seu endereço de email">
-                <button class="" type="button">Inscreva-se</button>
+                <label class="text-sm font-bold text-gray-700" for="email">Email</label>
+                <input class="text-sm w-full mb-4 pl-3 py-2 rounded border shadow focus:outline-none hover:border-azul-claro hover:ring-1 hover:ring-azul-escuro focus:border-azul-escuro focus:ring-1 focus:ring-azul-escuro" id="email" type="email" placeholder="Digite seu endereço de email">
+                <button class="font-bold text-white bg-azul-escuro w-full py-2 rounded-full shadow-2xl hover:bg-azul-hover duration-150" type="button">Inscreva-se</button>
             </form>
         </section>
     </main>
