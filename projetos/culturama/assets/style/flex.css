@@ -48,9 +48,24 @@
     max-width: 400px;
 }
 
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.rodape__logo {
+    align-self: self-end;
+}
+
 @media (min-width: 768px) {
     .menu {
         column-gap: 75px;
+    }
+
+    .banner {
+        column-gap: 1.5rem;
     }
 
     .categorias__lista {
@@ -65,8 +80,6 @@
     .agenda__lista {
         justify-content: end;
     }
-
-
 }
 
 @media (min-width: 1440px) {
