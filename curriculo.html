@@ -9,30 +9,51 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html"><img class="header__logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site"></a>
-        <nav class="header__nav">
-            <a href="index.html" class="header__nav__link">Home</a>
-            <a href="about.html" class="header__nav__link">Sobre mim</a>
-            <a href="curriculo.html" class="header__nav__link">Curriculo</a>
-            <a href="projetos.html" class="header__nav__link">Projetos</a>
-            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank"
-                rel="noopener noreferrer">Vitrine Dev</a>
-            <a href="contato.html" class="header__nav__link">Contato</a>
-        </nav>
-        <!--Menu Hamburguer para Mobile-->
-        <input type="checkbox" id="menu-hamburguer" class="header__menu-hamburguer__checkbox">
-        <label for="menu-hamburguer" class="header__menu-hamburguer__botao_ativo">
-            <img src="./img/assets/menu-hamburguer-azul.svg" alt="Menu Hamburguer" class="header__menu-hamburguer__img">
-        </label>
-        <ul class="lista-menu">
-            <li class="lista-menu__item"><a href="index.html" class="header__nav__link">Home</a></li>
-            <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
-            <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
-            <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
-            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki"
-                    class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
-        </ul>
+    <header class="fixed w-full top-0 bg-header">
+        <!--Menu cabeçalho em linha-->
+        <div class="hidden relatve md:flex p-2 w-full">
+            <a href="index.html">
+                <img class="w-16 min-w-16 rounded-full p-2" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site">
+            </a>
+            <nav class="m-auto hidden md:block">
+                <ul class="flex items-center gap-12 font-title text-3xl font-semibold whitespace-nowrap">
+                    <li class="hidden xl:block">
+                        <a href="index.html" class="">Home</a>
+                    </li>
+                    <li class="hidden lg:block">
+                        <a href="about.html" class="">Sobre mim</a>
+                    </li>
+                    <li class="">
+                        <a href="curriculo.html" class="">Curriculo</a>
+                    </li>
+                    <li class="">
+                        <a href="projetos.html" class="">Projetos</a>
+                    </li>
+                    <li class="">
+                        <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="" target="_blank" rel="noopener noreferrer">Vitrine Dev</a>
+                    </li>
+                    <li class="">
+                        <a href="contato.html" class="">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <!-- Hamburger icon for small screens -->
+            <button id="toggleBtn" class="md:hidden text-white focus:outline-none">
+                <img class="w-16 min-w-16 rounded-full p-2" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site">
+            </button>            
+            <!-- Mobile navigation menu -->
+            <nav id="mobileMenu" class="hidden absolute left-0 md:hidden bg-header font-title text-2xl font-semibold whitespace-nowrap px-5 w-fit">
+                <!-- Your navigation links -->
+                <a href="index.html" class="block py-2">Home</a>
+                <a href="about.html" class="block py-2">Sobre mim</a>
+                <a href="curriculo.html" class="block py-2">Curriculo</a>
+                <a href="projetos.html" class="block py-2">Projetos</a>
+                <a href="contato.html" class="block py-2">Contato</a>
+                <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="block py-2" target="_blank" rel="noopener noreferrer">Vitrina Dev</a>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
@@ -65,4 +86,11 @@
             Desenvolvido por @oswaldovzki
         </p>
     </footer>
+
+    <script>
+        // JavaScript to handle the toggle functionality
+        document.getElementById('toggleBtn').addEventListener('click', function () {
+          document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+      </script>
 </body>
