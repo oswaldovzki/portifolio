@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #FBF1EB;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #262B3A;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #1A1E28;
+}
+.header .header_mobile_btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin: 0.5rem;
+}
+.header .header_mobile_btn_logo {
+  width: 4rem;
+  border-radius: 999px;
+}
+.header .lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 50%;
+  background-color: #1A1E28;
+}
+.header .lista-menu .lista-menu__item {
+  padding: 0.3rem 0.5rem;
+}
+.header .lista-menu .lista-menu__item .header__nav__link {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  border-left: solid 2px transparent;
+  padding-left: 0.6rem;
+  transition: border 400ms;
+}
+.header .lista-menu .lista-menu__item .header__nav__link:hover {
+  border-left: solid 2px #FFC099;
+  transition-timing-function: ease;
+}
+.header .lista-menu.show {
+  display: block;
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    flex-direction: row;
+  }
+  .header .header_mobile_btn {
+    display: block;
+  }
+  .header .lista-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    text-wrap: nowrap;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 5rem;
+  }
+  .header .lista-menu .lista-menu__item .header__nav__link {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    border-left: none;
+    padding-left: 0;
+    border-bottom: solid 2px transparent;
+    padding-bottom: 0.6rem;
+    transition: border 400ms;
+  }
+  .header .lista-menu .lista-menu__item .header__nav__link:hover {
+    border-left: none;
+    border-bottom: solid 2px #FFC099;
+    transition-timing-function: ease;
+  }
+}
+
+.main {
+  margin: 6rem 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+.main .main__conteudo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.main .main__conteudo .main__conteudo__titulo {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+}
+.main .main__conteudo .main__conteudo__texto {
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  text-align: justify;
+}
+.main .main__conteudo .main__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.main .main__conteudo .main__links .main__botao__subt {
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  align-self: center;
+}
+
+.footer {
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background-color: #E6D6BB;
+  bottom: 0;
+  width: 100%;
+  padding: 0.625rem;
+}
+.footer .footer__text {
+  color: #262B3A;
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    position: fixed;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=styles.css.map */

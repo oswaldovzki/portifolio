@@ -1,0 +1,24 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.footer {
+    font-size: 1rem;
+    font-family: variables.$ft-texto;
+    font-weight: 400;
+    text-align: center;
+
+    background-color: variables.$cor-footer;
+    bottom: 0;
+    width: 100%;
+    padding: 0.625rem;
+
+    .footer__text{
+        color: variables.$cor-fundo;
+    }
+
+    @media screen and (min-width: 1440px) {
+        position: fixed;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}

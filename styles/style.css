@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=M+PLUS+Code+Latin:wght@300;400;500&family=Montserrat:wght@200;300;400;500&display=swap');
 
-@import url("projetos.css");
 @import url("header-main.css");
 @import url("footer-main.css");
+@import url("projetos.css");
 
 :root {
-    --cor-fundo: black;
+    --cor-branca: #F6F6F6;
+    --cor-apoio: #E6C081;
+
     --cor-primaria: #FBF1EB;
     --cor-secundaria: #FFC099;
     --cor-terciaria: #492f1d;
-    --gradinte-azul: linear-gradient(128deg, #2C3946 24.53%, rgba(46, 59, 71, 0.55) 169.13%);
 
-    --eggshell: #F6F2D9ff;
-    --champagne: #F1E3C8ff;
-    --dun: #DCCBB0ff;
-    --ash-gray: #B3B3A5ff;
-    --rust: #A74E20ff;
-    --charcoal: #2E3B47ff;
-    --field-drab: #5D5831ff;
+    --cor-header: #1A1E28;
+    --cor-fundo: #262B3A;
+    --cor-footer: #E6D6BB;
 
     --fonte-titulo: 'Krona One', sans-serif;;
     --fonte-texto: 'Montserrat', sans-serif;
@@ -27,12 +24,12 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: var(--cor-primaria);
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--cor-fundo);
-    box-sizing: border-box;
+    color: var(--cor-primaria);
 }
 
 /*Conteudo Central*/

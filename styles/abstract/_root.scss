@@ -1,0 +1,17 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: variables.$cor-primaria;
+
+}
+
+body {
+    font-family: variables.$ft-texto;
+    background-color: variables.$cor-fundo;
+}

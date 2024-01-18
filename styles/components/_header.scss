@@ -1,0 +1,101 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: variables.$cor-header;
+
+    .header_mobile_btn {
+        outline: none;
+        border: none;
+        background: transparent;
+        margin: 0.5rem;
+
+        &_logo {
+            width: 4rem;
+            border-radius: 999px;
+        }
+    }
+    .lista-menu {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        width: 50%;
+
+        background-color: variables.$cor-header;
+
+        .lista-menu__item {
+            padding: 0.3rem 0.5rem;
+
+            .header__nav__link {
+                font-family: variables.$ft-titulo;
+                font-size: 1.8rem;
+                letter-spacing: 0.1rem;
+
+                border-left: solid 2px transparent;
+                padding-left: .6rem;
+                transition: border 400ms;
+
+                &:hover {
+                    border-left: solid 2px variables.$cor-secundaria;
+                    transition-timing-function: ease
+                    
+                }
+            }
+        }
+    }
+
+    .lista-menu.show {
+        display: block;
+    }
+
+    @media screen and (min-width: 1440px) {
+        flex-direction: row;
+        
+        .header_mobile_btn {
+            display: block;
+        }
+
+        .lista-menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            text-wrap: nowrap;
+            gap: 2rem;
+            width: 100%;
+            margin-left: 5rem;
+
+            .lista-menu__item {
+                .header__nav__link {
+                    font-family: variables.$ft-titulo;
+                    font-size: 1.8rem;
+                    letter-spacing: 0.1rem;
+    
+                    border-left: none;
+                    padding-left: 0;
+
+                    border-bottom: solid 2px transparent;
+                    padding-bottom: .6rem;
+
+                    transition: border 400ms;
+    
+                    &:hover {
+                        border-left: none;
+
+                        border-bottom: solid 2px variables.$cor-secundaria;
+                        transition-timing-function: ease
+                        
+                    }
+                }
+            }
+        }
+    }
+}

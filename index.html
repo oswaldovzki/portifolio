@@ -5,34 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <meta name="description" content="Meu portifólio de Projetos e trabalhos em Web Design">
     <meta name="keywords" content="HTML, CSS, SASS, JavaScript">
     <meta name="author" content="Filipe Lima">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon_io//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon_io//favicon-16x16.png">
-    <link rel="manifest" href="./img/assets/favicon_io//site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon//favicon-16x16.png">
+    <link rel="manifest" href="./img/assets/favicon//site.webmanifest">
     
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
 
     <title>Filipe "oswaldovzki" Lima</title>
 </head>
 
-<body class="corpo">
+<body>
+
     <header class="header">
+        <button type="button" id="toggleBtn" class="header_mobile_btn">
+            <img class="header_mobile_btn_logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site">
+        </button>
+        <ul class="lista-menu" id="mobileMenu">
+            <li class="lista-menu__item"><a href="index.html" class="header__nav__link">Home</a></li>
+            <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
+            <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
+            <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
+            <li class="lista-menu__item"><a href="contato.html" class="header__nav__link">Contato</a></li>
+            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
+        </ul>
+    </header>
+
+    <!-- <header class="header">
         <a href="index.html"><img class="header__logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site"></a>
         <nav class="header__nav">
             <a href="index.html" class="header__nav__link">Home</a>
             <a href="about.html" class="header__nav__link">Sobre mim</a>
             <a href="curriculo.html" class="header__nav__link">Curriculo</a>
             <a href="projetos.html" class="header__nav__link">Projetos</a>
-            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrine Dev</a>
             <a href="contato.html" class="header__nav__link">Contato</a>
+            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrine Dev</a>
         </nav>
-
-        <!--Menu Hamburguer para Mobile-->
-
         <input type="checkbox" id="menu-hamburguer" class="header__menu-hamburguer__checkbox">
         <label for="menu-hamburguer" class="header__menu-hamburguer__botao_ativo">
             <span class="header__menu-hamburguer__img cabecalho__imagem cabecalho__imagem--transparente"></span>
@@ -42,22 +59,22 @@
             <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
             <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
             <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
+            <li class="lista-menu__item"><a href="contato.html" class="header__nav__link">Contato</a></li>
             <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
         </ul>
-
-    </header>
+    </header> -->
 
     <main class="main">
         <section class="main__conteudo">
-            <h1 id="main__conteudo__titulo">Eleve seu negócio digital a outro nível <strong id="titulo__destaque">com um
-                    <span id="front__end">Front-end</span> de qualidade!</strong></h1>
-            <p id="main__conteudo__texto">Olá! Sou Filipe Lima, desenvolvedor Front-end com especialidade em
-                <strong id="titulo__destaque">HTML</strong> e <strong id="titulo__destaque">CSS</strong>.
+            <h1 class="main__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo__destaque">com um
+                    <span class="front__end">Front-end</span> de qualidade!</strong></h1>
+            <p class="main__conteudo__texto">Olá! Sou Filipe Lima, desenvolvedor Front-end com especialidade em
+                <strong class="titulo__destaque">HTML</strong> e <strong class="titulo__destaque">CSS</strong>.
                 Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
             </p>
             <div class="main__links">
-                <h2 class="main__botao__subt">Acesse minhas redes:</h2>
-                <a class="main__botao__text" id="main__botao__inst" href="https://www.instagram.com/oswaldovzki/ "
+                <h2 class="main__botao__subt">Acesse minhas redes</h2>
+                <a class="main__botao__text" class="main__botao__inst" href="https://www.instagram.com/oswaldovzki/ "
                     target="_blank" rel="noopener noreferrer">
                     <img src="./img/assets/instagram.png" alt="Logo do Instagram">
                     Instagram</a>
@@ -71,12 +88,12 @@
                     GitHub</a>
             </div>
         </section>
-        <img id="minha__foto" src="./img/guy-coding-dragons.png"
+        <img class="minha__foto" src="./img/guy-coding-dragons.png"
             alt="Pessoa homem programando em um laptop no colo, em frente a uma janela e ao fundo tem uma paisagem de campos verdes com dragões. Criado por DALL-e">
     </main>
 
     <footer class="footer">
-        <p id="footer__text">
+        <p class="footer__text">
             Desenvolvido por @oswaldovzki
         </p>
     </footer>
