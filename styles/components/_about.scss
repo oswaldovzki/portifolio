@@ -1,7 +1,7 @@
 @use '../abstract/variables';
 @use '../abstract/mixins';
 
-.main {
+.about {
     margin: 6rem 1rem;
 
     display: flex;
@@ -10,44 +10,39 @@
     align-items: center;
     gap: 2rem;
 
-    .main__conteudo {
+    .about__conteudo {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         gap: 1rem;
 
-        .main__conteudo__titulo {
-            font-size: 2rem;
+        .about__conteudo__titulo {
+            font-size: 3rem;
             font-weight: 500;
             font-family: variables.$ft-titulo;
-            text-align: center;
-
-            @media screen and (min-width: 1440px) {
-                font-size: 3rem;
-            }
         }
 
-        .main__conteudo__texto {
+        .about__conteudo__texto {
             font-weight: 300;
             letter-spacing: 0.05rem;
             text-align: justify;
         }
 
-        .main__links {
+        .about__links {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             gap: 1rem;
 
-            .main__botao__subt {
+            .about__botao__subt {
                 font-weight: 500;
                 letter-spacing: 0.05rem;
                 align-self: center;
             }
 
-            .main__botao__text {
+            .about__botao__text {
                 align-self: center;
-                @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 100%);
+                @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%)
             }
         }
     }
@@ -63,26 +58,26 @@
 
         padding: 0 10rem;
 
-        .main__conteudo {
+        .about__conteudo {
             justify-content: center;
             align-items: center;
             padding: 5% 4rem 0 4rem;
 
             &__titulo {
-                font-size: 3.5rem;
+                font-size: 2.5rem;
             }
 
             &__texto {
                 font-size: 1.8rem;
             }
 
-            .main__links {
+            .about__links {
                 width: 100%;
-                .main__botao__subt {
+                .about__botao__subt {
                     font-size: 1.8rem;
                 }
 
-                .main__botao__text {
+                .about__botao__text {
                     font-size: 1.6rem;
                     @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%)
                 }

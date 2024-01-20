@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -121,6 +122,11 @@ body {
   font-family: "Chakra Petch", sans-serif;
   text-align: center;
 }
+@media screen and (min-width: 1440px) {
+  .main .main__conteudo .main__conteudo__titulo {
+    font-size: 3rem;
+  }
+}
 .main .main__conteudo .main__conteudo__texto {
   font-weight: 300;
   letter-spacing: 0.05rem;
@@ -144,7 +150,7 @@ body {
   justify-content: center;
   gap: 16px;
   border: 2px solid #FFC099;
-  width: 70%;
+  width: 100%;
   text-align: center;
   padding: 21.5px 0px;
   text-decoration: none;
@@ -157,7 +163,6 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .main {
-    height: 80vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -166,10 +171,10 @@ body {
   .main .main__conteudo {
     justify-content: center;
     align-items: center;
-    padding: 0 4rem;
+    padding: 5% 4rem 0 4rem;
   }
   .main .main__conteudo__titulo {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .main .main__conteudo__texto {
     font-size: 1.8rem;
@@ -200,6 +205,170 @@ body {
   }
 }
 
+.about {
+  margin: 6rem 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2rem;
+}
+.about .about__conteudo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.about .about__conteudo .about__conteudo__titulo {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+}
+.about .about__conteudo .about__conteudo__texto {
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  text-align: justify;
+}
+.about .about__conteudo .about__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.about .about__conteudo .about__links .about__botao__subt {
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  align-self: center;
+}
+.about .about__conteudo .about__links .about__botao__text {
+  align-self: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid #FFC099;
+  width: 70%;
+  text-align: center;
+  padding: 21.5px 0px;
+  text-decoration: none;
+  color: #FBF1EB;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.about .minha__foto {
+  width: 60%;
+}
+@media screen and (min-width: 1440px) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10rem;
+  }
+  .about .about__conteudo {
+    justify-content: center;
+    align-items: center;
+    padding: 5% 4rem 0 4rem;
+  }
+  .about .about__conteudo__titulo {
+    font-size: 2.5rem;
+  }
+  .about .about__conteudo__texto {
+    font-size: 1.8rem;
+  }
+  .about .about__conteudo .about__links {
+    width: 100%;
+  }
+  .about .about__conteudo .about__links .about__botao__subt {
+    font-size: 1.8rem;
+  }
+  .about .about__conteudo .about__links .about__botao__text {
+    font-size: 1.6rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #FFC099;
+    width: 70%;
+    text-align: center;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: #FBF1EB;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .about .minha__foto {
+    width: 50%;
+  }
+}
+
+.cv {
+  margin: 6rem 1rem 3rem 1rem;
+}
+.cv .cv__conteudo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.cv .cv__conteudo .cv__conteudo__titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Chakra Petch", sans-serif;
+}
+.cv .cv__conteudo .cv__conteudo__titulo p {
+  text-align: end;
+}
+.cv .cv__conteudo .cv__conteudo__texto {
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+.cv .cv__conteudo .cv__conteudo__subtitulo {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  align-self: center;
+  margin-top: 2rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid #FFC099;
+  width: 100%;
+  text-align: center;
+  padding: 21.5px 0px;
+  text-decoration: none;
+  color: #FBF1EB;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.cv .cv__conteudo .cv__conteudo__experiência li {
+  padding-top: 0.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.cv .cv__conteudo .cv__conteudo__experiência li p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.cv .cv__conteudo .cv__conteudo__cursos li {
+  padding-top: 0.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.cv .cv__conteudo .cv__conteudo__cursos li a {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #FFC099;
+}
+.cv .cv__conteudo .cv__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
 .footer {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;

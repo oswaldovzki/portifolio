@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Meu portifólio de Projetos e trabalhos em Web Design">
+    <meta name="keywords" content="HTML, CSS, SASS, JavaScript">
+    <meta name="author" content="Filipe Lima">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon//favicon-16x16.png">
+    <link rel="manifest" href="./img/assets/favicon//site.webmanifest">
     
-        <meta name="description" content="Meu portifólio de Projetos e trabalhos em Web Design">
-        <meta name="keywords" content="HTML, CSS, SASS, JavaScript">
-        <meta name="author" content="Filipe Lima">
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/assets/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon_io//favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon_io//favicon-16x16.png">
-        <link rel="manifest" href="./img/assets/favicon_io//site.webmanifest">
-        
-        <link rel="stylesheet" href="./styles/style.css">
-    
-        <title>Currículo - Filipe "oswaldovzki" Lima</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Currículo - Filipe "oswaldovzki" Lima</title>
     </head>
 
 <body>
     <header class="header">
-        <a href="index.html"><img class="header__logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site"></a>
-        <nav class="header__nav">
-            <a href="index.html" class="header__nav__link">Home</a>
-            <a href="about.html" class="header__nav__link">Sobre mim</a>
-            <a href="curriculo.html" class="header__nav__link">Curriculo</a>
-            <a href="projetos.html" class="header__nav__link">Projetos</a>
-            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank"
-                rel="noopener noreferrer">Vitrine Dev</a>
-            <a href="contato.html" class="header__nav__link">Contato</a>
-        </nav>
-        <!--Menu Hamburguer para Mobile-->
-        <input type="checkbox" id="menu-hamburguer" class="header__menu-hamburguer__checkbox">
-        <label for="menu-hamburguer" class="header__menu-hamburguer__botao_ativo">
-            <img src="./img/assets/menu-hamburguer-azul.svg" alt="Menu Hamburguer" class="header__menu-hamburguer__img">
-        </label>
-        <ul class="lista-menu">
+        <button type="button" id="toggleBtn" class="header_mobile_btn">
+            <img class="header_mobile_btn_logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site">
+        </button>
+        <ul class="lista-menu" id="mobileMenu">
             <li class="lista-menu__item"><a href="index.html" class="header__nav__link">Home</a></li>
             <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
             <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
             <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
-            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki"
-                    class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
+            <li class="lista-menu__item"><a href="contato.html" class="header__nav__link">Contato</a></li>
+            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
         </ul>
     </header>
 
-    <main class="main">
-        <section class="main__conteudo">
-            <h1 id="main__conteudo__titulo">Currículo</h1>
-            <p id="main__conteudo__texto">
-                Mestre em Ensino de Ciências, graduado em Ciências Biologicas e <span id="front__end">Desenvolvedor Front-end</span>
+    <main class="cv">
+        <section class="cv__conteudo">
+            <h1 class="cv__conteudo__titulo">
+                Desenvolvedor Front-end<br>
+                HTML | CSS | JS
+            </h1>
+            <p>
+                &
+                <br>
+                Bíologo e Mestre em Ensino de Ciências
             </p>
-            <h2 id="main__conteudo__titulo">Experiências</h2>
-            <ul id="main__conteudo__texto">
-                <li> Empresa tal (2023 - 2024) - Suporte Técnico em Chatbots </li>
-                <li> Stilingue (2019 - 2023) - Customer Care, Social Listening e Quality Assurance </li>
+            <h2 class="cv__conteudo__subtitulo">Experiências</h2>
+            <ul class="cv__conteudo__experiência">
+                <li> Blip (2023 - Atual)
+                    <p>Analista de Suporte Técnico (N2)</p>
+                </li>
+                <li> Stilingue (2019 - 2023)
+                    <p>Analista de Suporte Técnico (2021 - 2023)</p>
+                    <p>Analista de Quality Assurance (2020 - 2021)</p>
+                    <p>Analista de Atendimento ao Cliente (2019 - 2020)</p>
+                </li>
             </ul>
-            <h2 id="main__conteudo__titulo">Estudos</h2>
-            <div id="main__conteudo__texto">
-            <ul id="main__conteudo__texto">
-                <li>HTML e CSS - Alura Cursos<a href="linkdocertificado">com certificado</a></li>
-                <li>JavaScript - Alura Cursos<a href="linkdocertificado">com certificado</a></li>
-                <li>TypeScript - Alura Cursos<a href="linkdocertificado">com certificado</a></li>
-                <li><a href="https://cursos.alura.com.br/user/oswaldovzki/fullCertificate/70c35dea02b345e12c388fc9730cc015" target="_blank">Certificação completa</a></li>
-            </ul>
-            </div>    
+            <h2 class="cv__conteudo__subtitulo">Certificações</h2>
+            <div class="cv__conteudo__certificados">
+                <ul class="cv__conteudo__cursos">
+                    <li>HTML<br>
+                        <a href="linkdocertificado">Alura Cursos com certificado</a>
+                    </li>
+                    <li>CSS<br>
+                        <a href="linkdocertificado">Alura Cursos com certificado</a>
+                    </li>
+                    <li>JavaScript<br>
+                        <a href="linkdocertificado">Alura Cursos com certificado</a>
+                    </li>
+                    <br>
+                    <li class="certification_full">
+                        <a rel="noopener" href="https://cursos.alura.com.br/user/oswaldovzki/fullCertificate/70c35dea02b345e12c388fc9730cc015" target="_blank">🎓 Certificação completa 🎓</a>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <img id="minha__foto" src="./img/guy-coding-dragons.png"
-            alt="Pessoa homem programando em um laptop no colo, em frente a uma janela e ao fundo tem uma paisagem de campos verdes com dragões. Criado por DALL-e">
+
     </main> 
 
     <footer class="footer">
-        <p id="footer__text">
+        <p class="footer__text">
             Desenvolvido por @oswaldovzki
         </p>
     </footer>
+
+    <script>
+        document.getElementById('toggleBtn').addEventListener('click', function () {
+            // Check screen width before redirecting
+            if (window.innerWidth <= 1024) {
+                document.getElementById('mobileMenu').classList.toggle('show');
+            } else {
+                // Redirect to a link when screen width is larger than 768 pixels
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+
 </body>
