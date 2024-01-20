@@ -1,0 +1,38 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.project {
+    margin: 6rem 1rem 3rem 1rem;
+
+    .project__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .project__squares {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            height: 450px;
+
+            .project__preview {
+                height: 100%;
+            }
+
+            .project__title{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .project__row{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        }
+    }
+}

@@ -369,6 +369,89 @@ body {
   flex-wrap: nowrap;
   gap: 1rem;
 }
+@media screen and (min-width: 1440px) {
+  .cv {
+    margin-bottom: 6rem;
+  }
+  .cv .cv__conteudo .cv__conteudo__titulo {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .cv .cv__conteudo .cv__conteudo__titulo-menor {
+    text-align: end;
+  }
+  .cv .cv__conteudo .cv__conteudo__texto {
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+  }
+  .cv .cv__conteudo .cv__conteudo__subtitulo {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    align-self: center;
+    margin-top: 2rem;
+    width: 80%;
+  }
+  .cv .cv__conteudo .cv__conteudo__experiência li {
+    padding-top: 0.5rem;
+    letter-spacing: 0.05rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .cv .cv__conteudo .cv__conteudo__experiência li p {
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+  .cv .cv__conteudo .cv__conteudo__cursos li {
+    padding-top: 0.5rem;
+    letter-spacing: 0.05rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .cv .cv__conteudo .cv__conteudo__cursos li a {
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #FFC099;
+  }
+  .cv .cv__conteudo .cv__links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+}
+
+.project {
+  margin: 6rem 1rem 3rem 1rem;
+}
+.project .project__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.project .project__row .project__squares {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+}
+.project .project__row .project__squares .project__preview {
+  height: 100%;
+}
+.project .project__row .project__squares .project__title {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .project .project__row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
 .footer {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;
@@ -387,5 +470,9 @@ body {
     position: fixed;
     font-size: 1.2rem;
     font-weight: 500;
+    background-image: url("../../img/assets/Technologies.svg");
+    background-repeat: no-repeat;
+    background-position: 99%;
+    background-size: 11rem;
   }
 }/*# sourceMappingURL=styles.css.map */

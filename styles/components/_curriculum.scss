@@ -75,6 +75,72 @@
     }
 
     @media screen and (min-width: 1440px) {
+        margin-bottom: 6rem;
 
+        .cv__conteudo {
+    
+            .cv__conteudo__titulo {
+                font-size: 4rem;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .cv__conteudo__titulo-menor {
+                text-align: end;
+            }
+    
+            .cv__conteudo__texto {
+                font-weight: 300;
+                letter-spacing: 0.05rem;
+            }
+    
+            .cv__conteudo__subtitulo { 
+                font-family: variables.$ft-titulo;
+                font-size: 3rem;
+                font-weight: 600;
+    
+                align-self: center;
+                margin-top: 2rem;
+                
+                width: 80%;
+            }
+    
+            .cv__conteudo__experiência {
+                li {
+                        padding-top: .5rem;
+                        letter-spacing: 0.05rem;
+                        font-size: 2.5rem;
+                        text-align: center;
+    
+                    p {
+                        font-weight: 300;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+    
+            .cv__conteudo__cursos {
+                li {
+                    padding-top: .5rem;
+                    letter-spacing: 0.05rem;
+                    font-size: 2.5rem;
+                    text-align: center;
+    
+                    a {
+                        font-weight: 300;
+                        font-size: 1.8rem;
+                        color: variables.$cor-secundaria;
+                    }
+                }
+            }
+    
+    
+            .cv__links {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 1rem;
+            }
+        }
     }
 }
