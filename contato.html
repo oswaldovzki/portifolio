@@ -1,62 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, IE=edge">
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <link rel="icon" href="/img/oswaldovzki_logo_png.png" type="image/png">
-    <title>Portifólio do Filipe "0swaldovzki_" Lima</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Meu portifólio de Projetos e trabalhos em Web Design">
+    <meta name="keywords" content="HTML, CSS, SASS, JavaScript">
+    <meta name="author" content="Filipe Lima">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon//favicon-16x16.png">
+    <link rel="manifest" href="./img/assets/favicon//site.webmanifest">
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
+    <title>Filipe "oswaldovzki" Lima</title>
 </head>
 
-<body class="corpo">
-    <header class="header">
-        <a href="index.html"><img class="header__logo" src="./img/oswaldovzki_logo_art_half.jpg"
-                alt="Logo artístico do site"></a>
-        <nav class="header__nav">
-            <a href="index.html" class="header__nav__link">Home</a>
-            <a href="about.html" class="header__nav__link">Sobre mim</a>
-            <a href="curriculo.html" class="header__nav__link">Curriculo</a>
-            <a href="projetos.html" class="header__nav__link">Projetos</a>
-            <a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank"
-                rel="noopener noreferrer">Vitrine Dev</a>
-            <a href="contato.html" class="header__nav__link">Contato</a>
-        </nav>
+<body>
 
-        <!--Menu Hamburguer para Mobile-->
-        <input type="checkbox" id="menu-hamburguer" class="header__menu-hamburguer__checkbox">
-        <label for="menu-hamburguer" class="header__menu-hamburguer__botao_ativo">
-            <span class="header__menu-hamburguer__img cabecalho__imagem cabecalho__imagem--transparente"></span>
-        </label>
-        <ul class="lista-menu">
+    <header class="header">
+        <button type="button" id="toggleBtn" class="header_mobile_btn">
+            <img class="header_mobile_btn_logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site">
+        </button>
+        <ul class="lista-menu" id="mobileMenu">
             <li class="lista-menu__item"><a href="index.html" class="header__nav__link">Home</a></li>
             <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
             <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
             <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
-            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki"
-                    class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
+            <li class="lista-menu__item"><a href="contato.html" class="header__nav__link">Contato</a></li>
+            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrina Dev</a></li>
         </ul>
     </header>
 
-    <main>
-        <!--Chatbot widget-->
-        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
-        <script>
-            (function () {
-                window.onload = function () {
-                    new BlipChat()
-                        .withAppKey('b3N3YWxkb3Z6a2k6NzQyMDk4MjItYmYzMi00OGJmLTkwOTMtYjU0NmU4YjA1ODIz')
-                        .withButton({ "color": "#0096fa", "icon": "" })
-                        .withCustomCommonUrl('https://filipe-lima-j48b7.chat.blip.ai/')
-                        .build();
-                }
-            })();
-        </script>
+    <main class="main">
+        <img class="minha__foto" src="./img/guy-coding-dragons.png"
+            alt="Pessoa homem programando em um laptop no colo, em frente a uma janela e ao fundo tem uma paisagem de campos verdes com dragões. Criado por DALL-e">
     </main>
 
     <footer class="footer">
-        <p id="footer__text">
+        <p class="footer__text">
             Desenvolvido por @oswaldovzki
         </p>
     </footer>
+
+    <!--Bottom Mobile-->
+    <script>
+        document.getElementById('toggleBtn').addEventListener('click', function () {
+            // Check screen width before redirecting
+            if (window.innerWidth <= 1024) {
+                document.getElementById('mobileMenu').classList.toggle('show');
+            } else {
+                // Redirect to a link when screen width is larger than 768 pixels
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+
+    <!--ChatBot-->
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('b3N3YWxkb3Z6a2k6NzQyMDk4MjItYmYzMi00OGJmLTkwOTMtYjU0NmU4YjA1ODIz')
+                    .withButton({ "color": "#0096fa", "icon": "" })
+                    .withCustomCommonUrl('https://filipe-lima-j48b7.chat.blip.ai/')
+                    .build();
+            }
+        })();
+    </script>
+
 </body>

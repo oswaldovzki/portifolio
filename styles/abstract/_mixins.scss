@@ -1,0 +1,27 @@
+@mixin margem-central($width){
+    margin: 0 auto;
+    width: $width;
+}
+
+@mixin ff-fs-cl($f-family, $f-size, $f-color){
+    font-family: $f-family;
+    font-size: $f-size;
+    color: $f-color;
+}
+
+// Buttons
+
+@mixin botao-transparente ($b-color, $b-border, $b-width) {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid $b-border;
+    width: $b-width;
+    text-align: center;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: $b-color;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
