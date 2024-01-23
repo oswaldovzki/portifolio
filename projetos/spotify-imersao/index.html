@@ -4,26 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&display=swap" rel="stylesheet">
+
   <title>Imersão Alura</title>
+
   <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href=".src/styles/reset.css" />
-    <link rel="stylesheet" href=".src/styles/vars.css" />
-    <link rel="stylesheet" href=".src/styles/main-content.css" />
-    <link rel="stylesheet" href=".src/styles/sidebar-footer.css" />
-    <link rel="stylesheet" href=".src/styles/media-query.css" /> <!--Media queries devem ser chamados depois do CSS principal -->
-
-
   <link rel="stylesheet" href=".src/styles/reset.css" />
   <link rel="stylesheet" href=".src/styles/vars.css" />
-  <link rel="stylesheet" href=".src/styles/media-query.css" />
   <link rel="stylesheet" href=".src/styles/main-content.css" />
   <link rel="stylesheet" href=".src/styles/sidebar-footer.css" />
+  <link rel="stylesheet" href=".src/styles/media-query.css" /> <!--Media queries devem ser chamados depois do CSS principal -->
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
-    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
-    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -37,14 +33,14 @@
       <ul>
         <li>
           <a href="">
-            <span class="fa fa-home"></span>
-            <span>Início</span>
+            <span class="fa fa-home sidebar__text"></span>
+            <span class="sidebar__text">Início</span>
           </a>
         </li>
         <li>
           <a href="">
-            <span class="fa fa-search"></span>
-            <span>Buscar</span>
+            <span class="fa fa-search sidebar__text"></span>
+            <span class="sidebar__text">Buscar</span>
           </a>
         </li>
       </ul>
@@ -54,7 +50,7 @@
       <div class="library__content">
         <button class="library__button">
           <span class="fa fas fa-book"></span>
-          <span>Sua biblioteca</span>
+          <span class="sidebar__text">Sua biblioteca</span>
         </button>
         <span class="fa fa-plus"></span>
       </div>
