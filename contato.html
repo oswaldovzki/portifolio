@@ -23,7 +23,9 @@
     <link rel="manifest" href="./img/assets/favicon//site.webmanifest">
     
     <link rel="stylesheet" href="./styles/styles.css">
-
+    <script src="./scripts/hamburguer-menu.js" defer></script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript" defer></script>
+    <script src="./scripts/chat-bot.js" defer></script>
 
     <title>Filipe "oswaldovzki" Lima</title>
 </head>
@@ -53,37 +55,10 @@
             alt="Pessoa homem programando em um laptop no colo, em frente a uma janela e ao fundo tem uma paisagem de campos verdes com dragões. Criado por DALL-e">
     </main>
 
-    <footer class="footer">
+    <footer class="footer" style="position: absolute;">
         <p class="footer__text">
             Desenvolvido por @oswaldovzki
         </p>
     </footer>
-
-    <!--Bottom Mobile-->
-    <script>
-        document.getElementById('toggleBtn').addEventListener('click', function () {
-            // Check screen width before redirecting
-            if (window.innerWidth <= 1024) {
-                document.getElementById('mobileMenu').classList.toggle('show');
-            } else {
-                // Redirect to a link when screen width is larger than 768 pixels
-                window.location.href = 'index.html';
-            }
-        });
-    </script>
-
-    <!--ChatBot-->
-    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
-    <script>
-        (function () {
-            window.onload = function () {
-                new BlipChat()
-                    .withAppKey('b3N3YWxkb3Z6a2k6NzQyMDk4MjItYmYzMi00OGJmLTkwOTMtYjU0NmU4YjA1ODIz')
-                    .withButton({ "color": "#0096fa", "icon": "" })
-                    .withCustomCommonUrl('https://filipe-lima-j48b7.chat.blip.ai/')
-                    .build();
-            }
-        })();
-    </script>
 
 </body>

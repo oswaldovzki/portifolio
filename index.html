@@ -21,8 +21,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon//favicon-16x16.png">
     <link rel="manifest" href="./img/assets/favicon//site.webmanifest">
     
+    <script src="./scripts/hamburguer-menu.js" defer></script>
     <link rel="stylesheet" href="./styles/styles.css">
-
 
     <title>Filipe "oswaldovzki" Lima</title>
 </head>
@@ -80,17 +80,5 @@
             Desenvolvido por @oswaldovzki
         </p>
     </footer>
-
-    <script>
-        document.getElementById('toggleBtn').addEventListener('click', function () {
-            // Check screen width before redirecting
-            if (window.innerWidth <= 1024) {
-                document.getElementById('mobileMenu').classList.toggle('show');
-            } else {
-                // Redirect to a link when screen width is larger than 768 pixels
-                window.location.href = 'index.html';
-            }
-        });
-    </script>
-    
+   
 </body>
