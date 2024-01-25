@@ -1,6 +1,10 @@
 .sidebar {
-    width: 350px;
-    padding: 1rem;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    padding:12px;
+    width:300px;
 
     display: flex;
     flex-direction: column;
@@ -12,13 +16,13 @@
     margin-bottom: 1rem;
     padding: .5rem;
 
-    border-radius: 1rem;
+    border-radius: .5rem;
     border: none;
     
 }
 
 .sidebar__navigation .logo a img {
-    width: 70%;
+    width: 90px;
     padding: .4rem;
 }
 
@@ -28,10 +32,6 @@
     gap: 1rem;
 
     padding: .3rem 0 .8rem .8rem;
-}
-
-.sidebar ul li:hover {
-    color: rgb(8, 85, 154);
 }
 
 .sidebar__text {
@@ -48,7 +48,7 @@
     margin-bottom: 1rem;
     padding: .5rem;
 
-    border-radius: 1rem;
+    border-radius: .5rem;
     border: none;
 
     display: flex;
@@ -69,7 +69,7 @@
     margin-bottom: 1rem;
     padding: .5rem;
 
-    border-radius: 1rem;
+    border-radius: .5rem;
     border: none;
 
     display: flex;
@@ -115,10 +115,10 @@
 .languages {
     border: solid white 2px;
     border-radius: 5rem;
-    background-color: black;
+    background-color: var(--bg-color);
 
     padding: .5rem 1rem;
-    width: fit-content;
+    width: 170px;
 }
 
 .languages__button {
@@ -129,4 +129,45 @@
 
 .languages__button span {
     font-weight: 600;
+}
+
+/* Footer */
+
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
