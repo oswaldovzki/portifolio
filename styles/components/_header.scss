@@ -8,6 +8,7 @@
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     background-color: variables.$cor-header;
 
@@ -52,12 +53,27 @@
         }
     }
 
+    .header__nav__title {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        padding-right: 2rem;
+
+        font-size: 1.5rem;
+        font-family: variables.$ft-titulo;
+    }
+
     .lista-menu.show {
         display: block;
     }
 
     @media screen and (min-width: 1024px) {
         flex-direction: row;
+
+        .header__nav__title {
+            display: none;
+        }
 
         .header_mobile_btn {
             display: block;

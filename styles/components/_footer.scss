@@ -16,12 +16,12 @@
         color: variables.$cor-fundo;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
         position: fixed;
         font-size: 1.2rem;
         font-weight: 500;
 
-        background-image: url("../../img/assets/Technologies.svg");
+        background-image: url("../img/assets/technologies.svg");
         background-repeat: no-repeat;
         background-position: 99%;
         background-size: 11rem ;

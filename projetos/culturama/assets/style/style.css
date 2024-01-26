@@ -18,6 +18,7 @@
 
 body {
     font-family: var(--fonte-primaria);
+    background-color: #FFF;
     height: 100vh;
 }
 
@@ -144,10 +145,11 @@ img:hover {
     padding: 1.5rem;
     text-transform: uppercase;
     cursor: pointer;
+    -webkit-user-select: none;
     user-select: none;
     transition: 0.5s;
     opacity: 1;
-    min-width: 282px;
+    min-width: 272px;
 }
 
 .categorias__item:hover {
@@ -307,7 +309,7 @@ img:hover {
 
 .agenda__item .agenda__atracao {
     text-align: center;
-    padding: 1rem;
+    padding: .4rem;
 }
 
 .agenda__atracao h6 {

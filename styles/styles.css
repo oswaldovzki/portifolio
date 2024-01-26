@@ -19,6 +19,7 @@ body {
   top: 0;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: #1A1E28;
 }
 .header .header_mobile_btn {
@@ -53,12 +54,23 @@ body {
   border-left: solid 2px #FFC099;
   transition-timing-function: ease;
 }
+.header .header__nav__title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  font-family: "Chakra Petch", sans-serif;
+}
 .header .lista-menu.show {
   display: block;
 }
 @media screen and (min-width: 1024px) {
   .header {
     flex-direction: row;
+  }
+  .header .header__nav__title {
+    display: none;
   }
   .header .header_mobile_btn {
     display: block;
@@ -439,6 +451,7 @@ body {
 }
 .project .project__row .project__squares .project__preview {
   height: 100%;
+  width: 320px;
 }
 .project .project__row .project__squares .project__title {
   font-size: 1.5rem;
@@ -465,12 +478,12 @@ body {
 .footer .footer__text {
   color: #262B3A;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .footer {
     position: fixed;
     font-size: 1.2rem;
     font-weight: 500;
-    background-image: url("../../img/assets/Technologies.svg");
+    background-image: url("../img/assets/technologies.svg");
     background-repeat: no-repeat;
     background-position: 99%;
     background-size: 11rem;

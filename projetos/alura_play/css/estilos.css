@@ -28,7 +28,6 @@ body {
     background-color: white;
     height: 80px;
     width: 100%;
-    padding: 0 25px;
 }
 
 .logo__item {
@@ -305,6 +304,10 @@ body {
 
     .superior__secao__container {
         left: 247px;
+        }
+
+    .cabecalho__container {
+        padding: 0 25px;
     }
 
     /* ESTILOS DO MENU LATERAL */
