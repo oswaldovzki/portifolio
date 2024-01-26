@@ -1,7 +1,4 @@
 .main-container {
-    max-width: 80vw;
-    height: 100vh;
-
     margin-left: 320px;
     margin-right: 56px;
 }
@@ -205,6 +202,10 @@
     min-width: var(--min-container-width);
   }
   
+  #result-playlists {
+    padding: .5rem;
+  }
+
   .artist-card {
     background: #181818;
     border-radius: 8px;
@@ -299,7 +300,7 @@
 
   .playlist-container {
     padding-top: 16px;
-    margin: 10px;
+    margin: .8rem .8rem 6rem .8rem;
     border-radius: 10px;
     background-color: #121212;
   }

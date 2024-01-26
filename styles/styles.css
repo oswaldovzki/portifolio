@@ -451,6 +451,7 @@ body {
 }
 .project .project__row .project__squares .project__preview {
   height: 100%;
+  width: 320px;
 }
 .project .project__row .project__squares .project__title {
   font-size: 1.5rem;
