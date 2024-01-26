@@ -145,6 +145,7 @@ img:hover {
     padding: 1.5rem;
     text-transform: uppercase;
     cursor: pointer;
+    -webkit-user-select: none;
     user-select: none;
     transition: 0.5s;
     opacity: 1;
