@@ -3,3 +3,67 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media screen and (max-width: 425px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+    }
+
+    .languages {
+        align-self: center;
+    }
+
+    .header__navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .header__search{
+        width: 100%;
+        margin: 0 .5rem;
+    }
+
+    .header__search input{
+padding: 0 .5rem;
+    }
+
+    .main-container{ 
+        margin: 0;
+    }
+
+    .header__login {
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .playlist-container {
+        height: 100vh;
+        overflow: scroll;
+        margin-bottom: 30px;
+    }
+
+    .disclaimer-premium{
+        padding: .5rem;
+        position: relative;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .text{
+        text-wrap: wrap;
+        text-align: center;
+        width: 90%;
+    }
+}
