@@ -315,32 +315,24 @@ body {
 }
 
 .cv {
-  margin: 6rem 1rem 3rem 1rem;
+  margin: 6rem 1rem;
 }
 .cv .cv__conteudo {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 .cv .cv__conteudo .cv__conteudo__titulo {
   font-size: 2rem;
   font-weight: 700;
   font-family: "Chakra Petch", sans-serif;
-}
-.cv .cv__conteudo .cv__conteudo__titulo p {
-  text-align: end;
-}
-.cv .cv__conteudo .cv__conteudo__texto {
-  font-weight: 300;
-  letter-spacing: 0.05rem;
+  text-align: center;
 }
 .cv .cv__conteudo .cv__conteudo__subtitulo {
   font-family: "Chakra Petch", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   align-self: center;
-  margin-top: 2rem;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -355,8 +347,6 @@ body {
   font-weight: 500;
 }
 .cv .cv__conteudo .cv__conteudo__experiência li {
-  padding-top: 0.5rem;
-  letter-spacing: 0.05rem;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -385,46 +375,51 @@ body {
   .cv {
     margin-bottom: 6rem;
   }
+  .cv .cv__conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: center;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+    row-gap: 1rem;
+    padding: 0 3%;
+  }
   .cv .cv__conteudo .cv__conteudo__titulo {
     font-size: 4rem;
-    font-weight: 700;
     text-align: center;
-  }
-  .cv .cv__conteudo .cv__conteudo__titulo-menor {
-    text-align: end;
-  }
-  .cv .cv__conteudo .cv__conteudo__texto {
-    font-weight: 300;
-    letter-spacing: 0.05rem;
+    grid-area: 1/1/1/3;
   }
   .cv .cv__conteudo .cv__conteudo__subtitulo {
-    font-family: "Chakra Petch", sans-serif;
     font-size: 3rem;
     font-weight: 600;
-    align-self: center;
-    margin-top: 2rem;
-    width: 80%;
+  }
+  .cv .cv__conteudo .exp {
+    grid-area: 2/1/3/2;
+  }
+  .cv .cv__conteudo .cv__conteudo__experiência {
+    grid-area: 3/1/4/2;
   }
   .cv .cv__conteudo .cv__conteudo__experiência li {
-    padding-top: 0.5rem;
-    letter-spacing: 0.05rem;
+    padding-bottom: 2.5rem;
+    letter-spacing: 0.15rem;
     font-size: 2.5rem;
-    text-align: center;
   }
   .cv .cv__conteudo .cv__conteudo__experiência li p {
     font-weight: 300;
     font-size: 1.8rem;
   }
+  .cv .cv__conteudo .certificados {
+    grid-area: 2/2/3/3;
+  }
+  .cv .cv__conteudo .cv__conteudo__certificados {
+    grid-area: 3/2/4/3;
+  }
   .cv .cv__conteudo .cv__conteudo__cursos li {
-    padding-top: 0.5rem;
-    letter-spacing: 0.05rem;
     font-size: 2.5rem;
-    text-align: center;
   }
   .cv .cv__conteudo .cv__conteudo__cursos li a {
-    font-weight: 300;
     font-size: 1.8rem;
-    color: #FFC099;
   }
   .cv .cv__conteudo .cv__links {
     display: flex;
