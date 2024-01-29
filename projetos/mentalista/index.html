@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - _Mentalista - Projeto</title>
-  <link rel="stylesheet" href="./style.css">
-  <!-- <script  src="./script.js"></script> -->
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="container">
-  <h1 class="page-title">
-    Mentalista
-  </h1>
-  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-</div>
-<a href="https://alura.com.br/" target="_blank">
-  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-  <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Ilustra%C3%A7%C3%A3o-c%C3%A9rebro+1.png">
-</a>
-<!-- partial -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/site.webmanifest">
   
+  <meta name="description" content="Jogo Desenvolvido para o aprendizado de javaScript">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Game, Adivinhação">
+  <meta name="author" content="Filipe Lima">
+
+  <title>_Mentalista - Jogo de Adivinhação</title>
+
+  <link rel="stylesheet" href="./style/styles.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="main">
+    <img src="./assets/img/mentalist-img.jpg" alt="Mentalista adivinhando o número" class="mentalist-img" />
+    <div class="container">
+      <h1 class="container__titulo">Bem vindo ao jogo Mentalista!</h1>
+      <h2 class="container__subtitulo">Tente adivinhar qual o número secreto.</h2>
+      <p class="container__text">Chute um número entre 1 e 1000</p>
+      <input id="container__input" title="chute" type="text">
+    </div>
 
 </body>
+
 </html>
