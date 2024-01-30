@@ -1,0 +1,32 @@
+@use '../abstract/variables';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+
+    img {
+        width: 50%;
+    }
+
+    .container {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+
+        #container__input {
+            color: variables.$cor-azul;
+        }
+
+        .container__button {
+            color: variables.$cor-azul;
+        }
+    }
+}
