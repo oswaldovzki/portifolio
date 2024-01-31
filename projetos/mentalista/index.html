@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
@@ -22,14 +26,25 @@
 <body>
 
   <div class="main">
+    <button id="settings" onclick="settingsMenu()" title="settings">
+      <img class="settings_icon" src="./assets/icons/gear-solid.svg" alt="settings">
+    </button>
     <img src="./assets/img/mentalist-img.jpg" alt="Mentalista adivinhando o número" class="mentalist-img" />
     <div class="container">
       <h1 class="container__titulo">Bem vindo ao jogo Mentalista!</h1>
-      <h2 class="container__subtitulo">Tente adivinhar qual o número secreto.</h2>
-      <p class="container__text">Chute um número entre 1 e 1000</p>
-      <input id="container__input" title="chute" type="text">
-      <button class="container__button" onclick="adivinharNumero()">Enviar Chute</button>
+      <h2 class="container__subtitulo">Tente adivinhar qual o número secreto</h2>
+      <div class="container__input">
+        <p class="container__text" id="instructions"></p>
+        <input id="container__input" title="chute" type="number">
+        <button class="container__button" onclick="adivinharNumero()">Enviar Chute</button>
+      </div>
+      <div class="container__results" id="results"></div>
     </div>
+  </div>
+
+  <div id="settings__menu">
+    <p class="settings__difficulty">Selecione a Dificuldade Fácil (10 | 4) Médio (100 | 7) Difícil (1000 | 10)</p>
+  </div>
 
 </body>
 

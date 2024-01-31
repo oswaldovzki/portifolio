@@ -15,23 +15,106 @@ body {
 
 .main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 5rem;
+  justify-content: center;
+  height: 100%;
 }
-.main img {
-  width: 50%;
+@media screen and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    gap: 5rem;
+  }
+}
+.main #settings {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+}
+.main #settings .settings_icon {
+  width: 2rem;
+}
+.main .mentalist-img {
+  padding: 2rem 0.5rem;
+  width: 100%;
+  max-width: 425px;
 }
 .main .container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+  max-width: 390px;
+  max-height: 382px;
 }
-.main .container #container__input {
-  color: #0C2D57;
+.main .container .container__titulo {
+  font-size: 2rem;
 }
-.main .container .container__button {
+.main .container .container__subtitulo {
+  font-size: 1.5rem;
+}
+.main .container .container__input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main .container .container__input .container__text {
+  font-size: 1.2rem;
+}
+.main .container .container__input #container__input {
+  color: #EFECEC;
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+  background-color: transparent;
+  border-radius: 2rem;
+  border: solid 2px #FC6736;
+  padding: 0.5rem 0.2rem;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.main .container .container__input #container__input::-webkit-inner-spin-button, .main .container .container__input #container__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.main .container .container__input #container__input:hover {
+  background-color: rgba(255, 176, 176, 0.2);
+}
+.main .container .container__input #container__input:focus {
+  background-color: rgba(255, 176, 176, 0.2);
+  outline: none;
+}
+.main .container .container__input .container__button {
   color: #0C2D57;
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: #FFB0B0;
+  border-radius: 0.5rem;
+  border: solid 2px #FC6736;
+  padding: 0.2rem 0.5rem;
+  align-self: center;
+  width: 60%;
+  cursor: pointer;
+}
+.main .container .container__input .container__results {
+  font-size: 1.2rem;
+  font-weight: 200;
+  max-width: 390px;
+}
+
+#settings__menu {
+  display: none;
+}
+
+#settings__menu.show {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
