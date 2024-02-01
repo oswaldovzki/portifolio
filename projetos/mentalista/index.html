@@ -43,7 +43,18 @@
   </div>
 
   <div id="settings__menu">
-    <p class="settings__difficulty">Selecione a Dificuldade Fácil (10 | 4) Médio (100 | 7) Difícil (1000 | 10)</p>
+    <p class="settings__difficulty">Selecione a Dificuldade:</p>
+    <div class="btn__difficulty">
+      <button id="btn-easy" onclick="difficultyChoice(10)" class="settings__btn">Fácil</button>
+      <button id="btn-medium" onclick="difficultyChoice(100)" class="settings__btn">Médio</button>
+      <button id="btn-hard" onclick="difficultyChoice(1000)" class="settings__btn">Difícil</button>
+    </div>
+    <div class="settings__number">
+      <input type="range" min="10" max="1000" value="100" class="slider" id="secretNumber" title="Secret Number">
+    </div>
+    <div class="settings_tries">
+      <input type="range" min="1" max="100" value="5" class="slider" id="numberTries" title="Number of tries">
+    </div>
   </div>
 
 </body>

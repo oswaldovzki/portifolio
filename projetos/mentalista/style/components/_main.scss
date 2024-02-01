@@ -17,7 +17,7 @@
     }
 
     #settings {
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         padding: 1rem;
@@ -43,8 +43,10 @@
         text-align: center;
         gap: 1rem;
 
-        max-width: 390px;
-        max-height: 382px;
+        background-color: variables.$cor-azul-bg;
+        padding: 2rem;
+        border-radius: 1rem;
+        margin: 1rem;
 
         .container__titulo {
             font-size: 2rem;
@@ -105,12 +107,17 @@
                 background-color: variables.$cor-rosa;
                 border-radius: .5rem;
                 border: solid 2px variables.$cor-laranja;
+                outline: none;
 
                 padding: .2rem .5rem;
                 align-self: center;
                 width: 60%;
 
                 cursor: pointer;
+
+                &:hover {
+                    background-color: variables.$cor-laranja;
+                }
             }
 
             .container__results{ 
@@ -120,12 +127,4 @@
             }
         }
     }
-}
-
-#settings__menu {
-    display: none;
-}
-
-#settings__menu.show {
-    display: block;
 }
