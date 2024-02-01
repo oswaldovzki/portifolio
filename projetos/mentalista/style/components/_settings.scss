@@ -1,0 +1,105 @@
+@use '../abstract/variables';
+
+
+#settings__menu {
+    display: none;
+}
+
+#settings__menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#settings__menu {
+    width: 80%;
+    max-width: 340px;
+    padding: .5rem 1rem;
+    background-color: variables.$cor-rosa;
+
+    border-radius: 1rem;
+
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+
+    .settings__difficulty {
+        color: variables.$cor-azul;
+        font-weight: 600;
+        font-size: 1.8rem;
+        text-align: center;
+        font-family: variables.$ft-titulo;
+    }
+
+    .btn__difficulty{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+
+        margin: 1rem 0;
+
+        .settings__btn{
+            padding: .2rem .5rem;
+
+            background-color: variables.$cor-rosa-bg;
+            border: solid 1px variables.$cor-laranja;
+            border-radius: .5rem;
+
+            color: variables.$cor-azul;
+            font-family: variables.$ft-titulo;
+            font-weight: 600;
+            font-size: 1.2rem;
+
+
+            cursor: pointer;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: variables.$cor-laranja;
+                border-radius: solid 2px variables.$cor-laranja;
+                outline: none;
+            }
+
+            
+        }
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        appearance: none;
+
+        width: 100%;
+        height: 25px;
+
+        background: variables.$cor-azul-bg;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+
+        &:hover {
+            opacity: 1;
+        }
+    
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: variables.$cor-laranja;
+            cursor: pointer;
+        }
+    
+        &::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background:  variables.$cor-laranja;
+            cursor: pointer;
+        }
+    }
+
+
+}

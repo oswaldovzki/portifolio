@@ -1,31 +1,46 @@
-//Math.random pega um numero entre 0 e 0,999... e parseInte arredonda o numero. multiplica por 1001 para pegar o range de 0 a 1000.
-var numeroSecreto = parseInt(Math.random() * 1001);
 
-//enquanto o chute for diferente do numero secreto
-while (chute != numeroSecreto) {
-  var chute = prompt("Digite um número entre 0 e 1000");
-  //se o chute for igual ao numero secreto, faça um alert de sucesso
-  if (chute == numeroSecreto) {
-    alert("Acertou!");
-  }
-  //valor para exibição do resultado
-  else if (chute == 1001) {
-    alert("O numero secreto é " + numeroSecreto);
-    //se nao, diga se é menor ou maior que o numero secreto.
-  } else if (chute < numeroSecreto) {
-    alert("Errou! O número Secreto é maior que " + chute);
-  } else if (chute > numeroSecreto) {
-    alert("Errou! O número Secreto é menor que o " + chute);
-  }
+//variables
+var dificuldade = 100;
+var contador = 7;
+
+//settings
+function settingsMenu() {
+  document.getElementById('settings__menu').classList.toggle('show')
 }
 
-/*
-//tratamento de exceções
-  if (chute < 1) {
-    alert(
-      "Ops... O número digitado é menor que 1. Digite um número entre 1 e 1000"
-    );
-  } else if (chute > 1000) {
-    alert("Ops... o número digitado é maior que 1000");
+function difficultyChoice(choice) {
+  dificuldade = choice
+}
+
+//Numero Secreto
+var numeroSecreto = parseInt(Math.random() * dificuldade + 1);
+console.log('O número secreto é ' + numeroSecreto);
+
+
+//HTML elements
+document.getElementById('instructions').innerHTML = `Chute um número entre 1 e ${dificuldade}`;
+
+
+// Game Code
+let tentativas = 1;
+
+function adivinharNumero() {
+  let chute = document.getElementById('container__input').value;
+  contador--;
+
+  if (chute == numeroSecreto) {
+    let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+    document.getElementById('results').innerHTML = `Isso Ai! Você descobriu o número secreto (${numeroSecreto}) com ${tentativas} ${palavraTentativa}!`;
+  } else {
+    if (chute > numeroSecreto) {
+      document.getElementById('results').innerHTML = `O número secreto é menor que ${chute}. Chutes restantes: ${contador}`;
+    } else {
+      document.getElementById('results').innerHTML = `O número secreto é maior que ${chute}. Chutes restantes: ${contador}`;
+    }
+    tentativas++;
   }
-*/
+
+  if (contador <= 0) {
+    document.getElementById('results').innerHTML = `Poxa vida! Não foi dessa vez. O número secreto era ${numeroSecreto}. Atualize a página jogar novamente.`;
+  }
+}

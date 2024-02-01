@@ -1,0 +1,130 @@
+@use '../abstract/variables';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 1024px) {
+        gap: 5rem;
+    }
+
+    #settings {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+
+        background-color: transparent;
+        border: none;
+
+        .settings_icon {
+            width: 2rem;
+        }
+    }
+
+    .mentalist-img {
+        padding: 2rem .5rem;
+        width: 100%;
+        max-width: 425px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+        background-color: variables.$cor-azul-bg;
+        padding: 2rem;
+        border-radius: 1rem;
+        margin: 1rem;
+
+        .container__titulo {
+            font-size: 2rem;
+        }
+
+        .container__subtitulo {
+            font-size: 1.5rem;
+        }
+
+        .container__input {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .container__text {
+                font-size: 1.2rem;
+            }
+
+
+            #container__input {
+                color: variables.$cor-branca;
+                text-align: center;
+                font-family: variables.$ft-mono;
+
+                background-color: transparent;
+                border-radius: 2rem;
+                border: solid 2px variables.$cor-laranja;
+
+                padding: .5rem .2rem;
+
+                -webkit-appearance: textfield;
+                -moz-appearance: textfield;
+                appearance: textfield;
+
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                }
+
+                &:hover {
+                    background-color: variables.$cor-rosa-bg;
+                }
+
+                &:focus {
+                    background-color: variables.$cor-rosa-bg;
+                    outline: none;
+                }
+
+            }
+
+            .container__button {
+                color: variables.$cor-azul;
+                text-align: center;
+                font-family: variables.$ft-titulo;
+                font-weight: 700;
+                font-size: 1.2rem;
+
+                background-color: variables.$cor-rosa;
+                border-radius: .5rem;
+                border: solid 2px variables.$cor-laranja;
+                outline: none;
+
+                padding: .2rem .5rem;
+                align-self: center;
+                width: 60%;
+
+                cursor: pointer;
+
+                &:hover {
+                    background-color: variables.$cor-laranja;
+                }
+            }
+
+            .container__results{ 
+                font-size: 1.2rem;
+                font-weight: 200;
+                max-width: 390px;
+            }
+        }
+    }
+}
