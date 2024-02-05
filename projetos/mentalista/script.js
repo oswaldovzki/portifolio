@@ -1,7 +1,62 @@
-
 //variables
-var dificuldade = 100;
+let dificuldade = 100;
 var contador = 7;
+var tentativas = 1;
+
+//Numero Secreto
+var numeroSecreto = parseInt(Math.random() * dificuldade + 1);
+console.log('O número secreto é ' + numeroSecreto);
+
+//HTML elements
+instructions (`Chute um número entre 1 e ${dificuldade}`);
+
+// Game Code
+function adivinharNumero() {
+  let chute = document.getElementById('container__input').value;
+  contador--;
+
+  if (chute == numeroSecreto) {
+    let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+    printResult(`Isso Ai! Você descobriu o número secreto (${numeroSecreto}) com ${tentativas} ${palavraTentativa}!`);
+    document.getElementById('reset').removeAttribute('disabled');
+  } else {
+    if (chute > numeroSecreto) {
+      printResult(`O número secreto é menor que ${chute}. Chutes restantes: ${contador}`);
+    } else {
+      printResult(`O número secreto é maior que ${chute}. Chutes restantes: ${contador}`);
+    }
+    tentativas++;
+    limparCampo();
+  }
+
+  if (contador <= 0) {
+    printResult(`Poxa vida! Não foi dessa vez. O número secreto era ${numeroSecreto}. Atualize a página jogar novamente.`);
+  }
+}
+
+
+// Functions
+function printResult(textResult) {
+  document.getElementById('results').innerHTML = textResult;
+}
+
+function instructions(instructions) {
+  document.getElementById('instructions').innerHTML = instructions;
+}
+
+function geraNumeroSecreto(dificuldade) {
+  var numeroSecreto = parseInt(Math.random() * dificuldade + 1);
+  console.log('O número secreto é ' + numeroSecreto);
+}
+
+function resetGame() {
+  console.log("O botão de reiniciar foi clicado mas nenhuma função está atribuída no momento. Desculpe pelo Transtorno")
+}
+
+function limparCampo() {
+  chute = document.querySelector('input');
+  chute.value = '';
+}
 
 //settings
 function settingsMenu() {
@@ -9,38 +64,7 @@ function settingsMenu() {
 }
 
 function difficultyChoice(choice) {
-  dificuldade = choice
-}
-
-//Numero Secreto
-var numeroSecreto = parseInt(Math.random() * dificuldade + 1);
-console.log('O número secreto é ' + numeroSecreto);
-
-
-//HTML elements
-document.getElementById('instructions').innerHTML = `Chute um número entre 1 e ${dificuldade}`;
-
-
-// Game Code
-let tentativas = 1;
-
-function adivinharNumero() {
-  let chute = document.getElementById('container__input').value;
-  contador--;
-
-  if (chute == numeroSecreto) {
-    let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
-    document.getElementById('results').innerHTML = `Isso Ai! Você descobriu o número secreto (${numeroSecreto}) com ${tentativas} ${palavraTentativa}!`;
-  } else {
-    if (chute > numeroSecreto) {
-      document.getElementById('results').innerHTML = `O número secreto é menor que ${chute}. Chutes restantes: ${contador}`;
-    } else {
-      document.getElementById('results').innerHTML = `O número secreto é maior que ${chute}. Chutes restantes: ${contador}`;
-    }
-    tentativas++;
-  }
-
-  if (contador <= 0) {
-    document.getElementById('results').innerHTML = `Poxa vida! Não foi dessa vez. O número secreto era ${numeroSecreto}. Atualize a página jogar novamente.`;
-  }
+  dificuldade = choice;
+  console.log(dificuldade);
+  instructions (`Chute um número entre 1 e ${dificuldade}`);
 }

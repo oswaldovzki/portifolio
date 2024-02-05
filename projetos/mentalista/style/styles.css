@@ -93,6 +93,13 @@ body {
   background-color: rgba(255, 176, 176, 0.2);
   outline: none;
 }
+.main .container .container__input .container__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 .main .container .container__input .container__button {
   color: #0C2D57;
   text-align: center;
@@ -110,6 +117,10 @@ body {
 }
 .main .container .container__input .container__button:hover {
   background-color: #FC6736;
+}
+.main .container .container__input #reset:disabled {
+  background-color: rgba(255, 176, 176, 0.2);
+  cursor: not-allowed;
 }
 .main .container .container__input .container__results {
   font-size: 1.2rem;

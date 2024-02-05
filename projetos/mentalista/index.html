@@ -36,7 +36,10 @@
       <div class="container__input">
         <p class="container__text" id="instructions"></p>
         <input id="container__input" title="chute" type="number">
-        <button class="container__button" onclick="adivinharNumero()">Enviar Chute</button>
+        <div class="container__buttons">
+          <button class="container__button" onclick="adivinharNumero()" id="guess" type="button">Enviar Chute</button>
+          <button class="container__button" onclick="resetGame()" id="reset" type="button" disabled>Reiniciar Jogo</button>
+        </div>
       </div>
       <div class="container__results" id="results"></div>
     </div>

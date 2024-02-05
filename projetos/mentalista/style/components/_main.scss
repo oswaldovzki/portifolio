@@ -97,6 +97,15 @@
 
             }
 
+            .container__buttons {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                
+                gap: 1rem;
+            }
+
             .container__button {
                 color: variables.$cor-azul;
                 text-align: center;
@@ -118,6 +127,11 @@
                 &:hover {
                     background-color: variables.$cor-laranja;
                 }
+            }
+
+            #reset:disabled {
+                background-color: variables.$cor-rosa-bg;
+                cursor: not-allowed;
             }
 
             .container__results{ 
