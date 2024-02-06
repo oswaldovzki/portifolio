@@ -1,14 +1,12 @@
 //variables
-let dificuldade = 100;
+var dificuldade = 10;
 var contador = 7;
 var tentativas = 1;
-
-//Numero Secreto
-var numeroSecreto = parseInt(Math.random() * dificuldade + 1);
+var numeroSecreto = geraNumeroSecreto();
 console.log('O número secreto é ' + numeroSecreto);
 
 //HTML elements
-instructions (`Chute um número entre 1 e ${dificuldade}`);
+instructions(`Chute um número entre 1 e ${dificuldade}`);
 
 // Game Code
 function adivinharNumero() {
@@ -44,13 +42,16 @@ function instructions(instructions) {
   document.getElementById('instructions').innerHTML = instructions;
 }
 
-function geraNumeroSecreto(dificuldade) {
-  var numeroSecreto = parseInt(Math.random() * dificuldade + 1);
-  console.log('O número secreto é ' + numeroSecreto);
+function geraNumeroSecreto() {
+  return parseInt(Math.random() * dificuldade + 1);
 }
 
 function resetGame() {
-  console.log("O botão de reiniciar foi clicado mas nenhuma função está atribuída no momento. Desculpe pelo Transtorno")
+  numeroSecreto = geraNumeroSecreto();
+  document.getElementById('reset').setAttribute('disabled', true);
+  console.log('O novo número secreto é ' + numeroSecreto);
+  printResult('');
+  limparCampo();
 }
 
 function limparCampo() {
@@ -60,11 +61,17 @@ function limparCampo() {
 
 //settings
 function settingsMenu() {
-  document.getElementById('settings__menu').classList.toggle('show')
+  document.getElementById('settings__menu').classList.toggle('show');
+  document.body.addEventListener('click', function (event) {
+    if (!event.target.closest('#settings__menu') && !event.target.closest('#settings')) {
+      document.getElementById('settings__menu').classList.remove('show');
+    }
+  });
 }
 
 function difficultyChoice(choice) {
   dificuldade = choice;
   console.log(dificuldade);
-  instructions (`Chute um número entre 1 e ${dificuldade}`);
+  resetGame();
+  instructions(`Chute um número entre 1 e ${dificuldade}`);
 }
