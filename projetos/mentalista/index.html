@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br" >
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
   <link rel="manifest" href="./assets/icons/site.webmanifest">
-  
+
   <meta name="description" content="Jogo Desenvolvido para o aprendizado de javaScript">
   <meta name="keywords" content="HTML, CSS, JavaScript, Game, Adivinhação">
   <meta name="author" content="Filipe Lima">
@@ -21,6 +24,7 @@
 
   <link rel="stylesheet" href="./style/styles.css">
   <script src="./script.js" defer></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pZx4UZCB"></script>  
 </head>
 
 <body>
@@ -32,13 +36,15 @@
     <img src="./assets/img/mentalist-img.jpg" alt="Mentalista adivinhando o número" class="mentalist-img" />
     <div class="container">
       <h1 class="container__titulo">Bem vindo ao jogo Mentalista!</h1>
-      <h2 class="container__subtitulo">Tente adivinhar qual o número secreto</h2>
+      <h2 class="container__subtitulo">Tente adivinhar qual é o número secreto</h2>
       <div class="container__input">
         <p class="container__text" id="instructions"></p>
         <input id="container__input" title="chute" type="number">
         <div class="container__buttons">
-          <button class="container__button" onclick="adivinharNumero()" id="guess" type="button">Enviar Chute</button>
-          <button class="container__button" onclick="resetGame()" id="reset" type="button" disabled>Reiniciar Jogo</button>
+          <button class="container__button" onclick="adivinharNumero()" id="guess" type="button" disabled>Enviar
+            Chute</button>
+          <button class="container__button" onclick="resetGame()" id="reset" type="button" disabled>Reiniciar
+            Jogo</button>
         </div>
       </div>
       <div class="container__results" id="results"></div>
@@ -52,11 +58,15 @@
       <button id="btn-medium" onclick="difficultyChoice(100)" class="settings__btn">Médio</button>
       <button id="btn-hard" onclick="difficultyChoice(1000)" class="settings__btn">Difícil</button>
     </div>
-    <div class="settings__number">
-      <input type="range" min="10" max="1000" value="100" class="slider" id="secretNumber" title="Secret Number">
-    </div>
-    <div class="settings_tries">
-      <input type="range" min="1" max="100" value="5" class="slider" id="numberTries" title="Number of tries">
+    <div class="slider__container">
+      <div class="settings__number">
+        <input type="range" min="10" max="1000" value="10" class="slider" id="numberSecret" title="Secret Number">
+        <p class="value">Limite Superior: <span id="numberValue"></span></p>
+      </div>
+      <div class="settings_tries">
+        <input type="range" min="1" max="50" value="4" class="slider" id="triesNumber" title="Number of tries">
+        <p class="value">Número de Tentativas: <span id="triesValue"></span></p>
+      </div>
     </div>
   </div>
 

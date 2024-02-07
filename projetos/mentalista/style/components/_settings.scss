@@ -8,7 +8,7 @@
 #settings__menu.show {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 #settings__menu {
@@ -31,7 +31,7 @@
         font-family: variables.$ft-titulo;
     }
 
-    .btn__difficulty{
+    .btn__difficulty {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -40,7 +40,7 @@
 
         margin: 1rem 0;
 
-        .settings__btn{
+        .settings__btn {
             padding: .2rem .5rem;
 
             background-color: variables.$cor-rosa-bg;
@@ -63,43 +63,71 @@
                 outline: none;
             }
 
-            
+
         }
     }
 
-    .slider {
-        -webkit-appearance: none;
-        appearance: none;
-
+    .slider__container {
         width: 100%;
-        height: 25px;
 
-        background: variables.$cor-azul-bg;
-        outline: none;
-        opacity: 0.7;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: .5rem;
+        text-align: center;
 
-        &:hover {
-            opacity: 1;
-        }
-    
-        &::-webkit-slider-thumb {
+
+        .slider {
             -webkit-appearance: none;
             appearance: none;
-            width: 25px;
+
+            width: 100%;
             height: 25px;
-            background: variables.$cor-laranja;
-            cursor: pointer;
+
+            background: variables.$cor-azul-bg;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 25px;
+                background: variables.$cor-laranja;
+                cursor: pointer;
+            }
+
+            &::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                background: variables.$cor-laranja;
+                cursor: pointer;
+            }
         }
-    
-        &::-moz-range-thumb {
-            width: 25px;
-            height: 25px;
-            background:  variables.$cor-laranja;
-            cursor: pointer;
+
+        .value {
+            color: variables.$cor-azul;
+            span {
+                color: variables.$cor-azul;
+            }
+        }
+
+        .settings__number {
+            width: 50%;
+        }
+
+        .settings_tries {
+            width: 50%;
+
+            #triesNumber {
+                direction: rtl;
+            }
         }
     }
-
-
 }
