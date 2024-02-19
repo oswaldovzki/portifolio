@@ -15,9 +15,10 @@
 * [Licença](#Licença)
 
 # Descrição
-Este é o projeto dedicado ao meu portifólio de desenvolvimento Fron-End, com a maioria dos meus projetos desenvolvidos durante os estudos na Alura.
+Este é o projeto dedicado ao meu portifólio de desenvolvimento Fron-End, com a maioria dos meus projetos desenvolvidos durante os estudos na Alura e aprimorados/personalizados posteriormente por mim mesmo.
 
 Aqui você também encontra projetos próprios e aplicações de diversas técnicas e tecnologias a mérito de demonstração.
+
 # Status do Projeto
 <h4>Em Desenvolvimento</h4>
 
@@ -28,15 +29,22 @@ Aqui você também encontra projetos próprios e aplicações de diversas técni
     Página de venda de livros <br><br>
 🧑‍⚕️ Alura Med <br>
     Página de consultas médicas <br>
-    🚧Em Desenvolvimento🚧 <br><br>
+🎧 Alura Play <br>
+    Página de Podcasts<br>
+📩 Alura Newsletter <br>
+    Página de cadastro de e-mail para recebimento de Newsletter<br>
+💃 Culturama <br>
+    Página de divulgação e compra de eventos culturais<br>
+⚒️ Optimus Tech <br>
+    Página de Contratação de uma empresa fictícia<br>
+📱 jsApps <br>
+    Pasta dedicada para aplicações simples em JavaScript<br>
 🪙 Conversor de Moedas <br>
     Converte Moedas dos Países da União Européia, UK, Brazil e USA. <br>
     🚧Em Desenvolvimento🚧 <br><br>
 🔢 Mentalista <br>
     Jogo em JavaScript de adivinhar números, com tabela de pontos. <br>
-    🚧Em Desenvolvimento🚧 <br><br>
-⚒️ Optimus Tech <br>
-    Página de Contratação de uma empresa fictícia<br>
+
 
 # Acesso ao Projeto
 Atualmente o projeto está disponível em dois locais:
@@ -56,9 +64,10 @@ Atualmente o projeto está disponível em dois locais:
 
 Sou Biólogo de Formação e atuei na rede publica de ensino como professor de Biologia e Ciências. Em algum momento do espaço tempo, decidi entrar para o mundo profissional da tecnologia, área que sempre fui fascinado mas nunca meu aventurei. 
 
-Iniciei essa jornada com atendimento ao cliente, passando por um período como Quality Assurance e Suporte técnico, focado em processos e triagem de bugs. Atualmente estou estudando desenvolvimento Front-End como um profissional em T. 
+Iniciei essa jornada com atendimento ao cliente, passando por um período como Quality Assurance e Suporte técnico, focado em processos, triagem de bugs e gerenciamento ITIL. Atualmente estou estudando desenvolvimento Front-End como um profissional em T. 
+
 # Licença
 
 The MIT License (MIT)
 
-Copyright ©️ 2023 - Portifólio de Filipe "oswaldovzki" Lima - Dev Front
+Copyright ©️ 2024 - Portifólio de Filipe "oswaldovzki" Lima - Dev Front
