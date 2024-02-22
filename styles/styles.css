@@ -442,8 +442,18 @@ body {
   margin: 0.25rem;
   overflow: auto;
 }
+.project .project__list .active {
+  border-bottom: solid 2px #FBF1EB;
+  border-radius: 0.5rem;
+}
+.project .project__list .project__container {
+  padding: 0.25rem;
+}
 .project .project__list .project__container .project__container__icon {
   border-radius: 1rem;
+  border: solid 1px #FBF1EB;
+  height: 32px;
+  width: 32px;
 }
 .project .project__list .project__container .projetc__container__name {
   display: none;

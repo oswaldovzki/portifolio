@@ -16,11 +16,20 @@
         margin: .25rem;
         
         overflow: auto;
+
+        .active {
+            border-bottom: solid 2px variables.$cor-primaria;
+            border-radius: 0.5rem;
+        }
         
         .project__container {
+            padding: 0.25rem;
 
             .project__container__icon {
                 border-radius: 1rem;
+                border: solid 1px variables.$cor-primaria;
+                height: 32px;
+                width: 32px;
             }
             
             .projetc__container__name {
