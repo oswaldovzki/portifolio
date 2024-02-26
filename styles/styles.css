@@ -430,36 +430,104 @@ body {
 }
 
 .project {
-  margin: 6rem 1rem 3rem 1rem;
+  margin: 6rem 1rem 4rem 1rem;
 }
-.project .project__row {
+.project .project__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  overflow: auto;
+}
+.project .project__list .active {
+  border-bottom: solid 2px #FBF1EB;
+  border-radius: 0.5rem;
+}
+.project .project__list .project__container {
+  padding: 0.25rem;
+  cursor: pointer;
+}
+.project .project__list .project__container .project__container__icon {
+  border-radius: 1rem;
+  border: solid 1px #FBF1EB;
+  height: 32px;
+  width: 32px;
+}
+.project .project__list .project__container .projetc__container__name {
+  display: none;
+}
+.project .project__list .project__container .projetc__container__site {
+  display: none;
+}
+.project .project__frame {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-.project .project__row .project__squares {
+.project .project__frame .project__square {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 450px;
+  height: 550px;
 }
-.project .project__row .project__squares .project__preview {
+.project .project__frame .project__square .project__title__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 1rem;
+}
+.project .project__frame .project__square .project__title__container .project__square__title {
+  font-size: 1.5rem;
+}
+.project .project__frame .project__square .project__square__preview {
   height: 100%;
   width: 320px;
 }
-.project .project__row .project__squares .project__title {
-  font-size: 1.5rem;
-}
+
 @media screen and (min-width: 1024px) {
-  .project .project__row {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
+  .active {
+    border: 2px solid #FBF1EB;
+    background-color: rgba(255, 192, 153, 0.3764705882);
+  }
+  .project {
+    display: flex;
+    justify-content: space-around;
+  }
+  .project .project__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: auto;
+  }
+  .project .project__list .project__container {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project .project__list .project__container .projetc__container__name {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .project .project__list .project__container .projetc__container__site {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .project .project__frame .project__square .project__title__container .projetc__square__site {
+    font-size: 1.5rem;
+  }
+  .project .project__frame .project__square {
+    height: 100%;
+  }
+  .project .project__frame .project__square .project__square__preview {
+    width: 520px;
   }
 }
-
 .footer {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;

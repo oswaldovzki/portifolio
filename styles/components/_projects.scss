@@ -2,38 +2,138 @@
 @use '../abstract/mixins';
 
 .project {
-    margin: 6rem 1rem 3rem 1rem;
 
-    .project__row {
+    margin: 6rem 1rem 4rem 1rem;
+
+    .project__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+
+        width: 100%;
+        padding: .25rem;
+        margin: .25rem;
+
+        overflow: auto;
+
+        .active {
+            border-bottom: solid 2px variables.$cor-primaria;
+            border-radius: 0.5rem;
+        }
+
+        .project__container {
+            padding: 0.25rem;
+            cursor: pointer;
+
+            .project__container__icon {
+                border-radius: 1rem;
+                border: solid 1px variables.$cor-primaria;
+                height: 32px;
+                width: 32px;
+            }
+
+            .projetc__container__name {
+                display: none;
+            }
+
+            .projetc__container__site {
+                display: none;
+            }
+        }
+    }
+
+    .project__frame {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
 
-        .project__squares {
+        .project__square {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            height: 450px;
+            height: 550px;
 
-            .project__preview {
-                height: 100%;
-                width: 320px;
+            .project__title__container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 100%;
+                padding: 0px 1rem;
+
+                .project__square__title {
+                    font-size: 1.5rem;
+                }
             }
 
-            .project__title{
-                font-size: 1.5rem;
+            .project__square__preview {
+                height: 100%;
+                width: 320px;
             }
         }
     }
 
-    @media screen and (min-width: 1024px) {
-        .project__row{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    .active {
+        border: 2px solid variables.$cor-primaria;
+        background-color: variables.$cor-secundaria-opc;
+    }
+
+    .project {
+        display: flex;
+        justify-content: space-around;
+
+        .project__list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: auto;
+
+            .project__container {
+                width: 320px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .projetc__container__name {
+                    display: block;
+                    font-size: 1.5rem;
+                }
+
+                .projetc__container__site {
+                    display: block;
+                    font-size: 1.5rem;
+                }
+            }
         }
+
+        .project__frame {
+            .project__square {
+                .project__title__container {
+                    .projetc__square__site {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .project__square {
+                height: 100%;
+
+                .project__square__preview {
+                    width: 520px;
+                }
+
+            }
+
+
+        }
+
     }
 }
