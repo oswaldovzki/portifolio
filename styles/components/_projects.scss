@@ -37,9 +37,11 @@
                 display: none;
             }
 
-            .projetc__container__site {
+            .projetc__container__info {
                 display: none;
+
             }
+
         }
     }
 
@@ -101,15 +103,41 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                border: 1px solid variables.$cor-primaria;
+                border-radius: 0.5rem;
+                padding: 0 0.5rem;
 
                 .projetc__container__name {
                     display: block;
                     font-size: 1.5rem;
+                    padding-bottom: 0.3rem;
                 }
 
-                .projetc__container__site {
+                .projetc__container__info {
                     display: block;
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
+                    color: #E6D6BB;
+                    
+                    &:hover .projetc__container__info__tooltip{
+                        display: block;
+                        position: absolute;
+                        cursor: auto;
+
+                        background-color: variables.$cor-secundaria;
+                        color: variables.$cor-terciaria;
+                        font-family: variables.$ft-texto;
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                        text-align: justify;
+
+                        padding: 0.5rem;
+                        border-radius: 1rem;
+                        width: 13rem;
+                    }
+                    .projetc__container__info__tooltip {
+                        display: none;
+
+                    }
                 }
             }
         }
@@ -117,6 +145,8 @@
         .project__frame {
             .project__square {
                 .project__title__container {
+                    padding: 0.5rem 1rem;
+
                     .projetc__square__site {
                         font-size: 1.5rem;
                     }
@@ -124,7 +154,7 @@
             }
 
             .project__square {
-                height: 100%;
+                height: 80vh;
 
                 .project__square__preview {
                     width: 520px;

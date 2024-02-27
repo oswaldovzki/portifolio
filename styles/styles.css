@@ -459,7 +459,7 @@ body {
 .project .project__list .project__container .projetc__container__name {
   display: none;
 }
-.project .project__list .project__container .projetc__container__site {
+.project .project__list .project__container .projetc__container__info {
   display: none;
 }
 .project .project__frame {
@@ -509,20 +509,45 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #FBF1EB;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
   }
   .project .project__list .project__container .projetc__container__name {
     display: block;
     font-size: 1.5rem;
+    padding-bottom: 0.3rem;
   }
-  .project .project__list .project__container .projetc__container__site {
+  .project .project__list .project__container .projetc__container__info {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    color: #E6D6BB;
+  }
+  .project .project__list .project__container .projetc__container__info:hover .projetc__container__info__tooltip {
+    display: block;
+    position: absolute;
+    cursor: auto;
+    background-color: #FFC099;
+    color: #492f1d;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 13rem;
+  }
+  .project .project__list .project__container .projetc__container__info .projetc__container__info__tooltip {
+    display: none;
+  }
+  .project .project__frame .project__square .project__title__container {
+    padding: 0.5rem 1rem;
   }
   .project .project__frame .project__square .project__title__container .projetc__square__site {
     font-size: 1.5rem;
   }
   .project .project__frame .project__square {
-    height: 100%;
+    height: 80vh;
   }
   .project .project__frame .project__square .project__square__preview {
     width: 520px;
