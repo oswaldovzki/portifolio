@@ -2,8 +2,14 @@
 @use '../abstract/mixins';
 
 .project {
+    margin: 6rem 1rem 0 1rem;
 
-    margin: 6rem 1rem 4rem 1rem;
+    .project__titulo {
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: "Chakra Petch", sans-serif;
+        text-align: center;
+    }
 
     .project__list {
         display: flex;
@@ -126,17 +132,15 @@
                         background-color: variables.$cor-secundaria;
                         color: variables.$cor-terciaria;
                         font-family: variables.$ft-texto;
-                        font-size: 0.8rem;
+                        font-size: 0.9rem;
                         font-weight: 400;
-                        text-align: justify;
 
                         padding: 0.5rem;
                         border-radius: 1rem;
-                        width: 13rem;
+                        width: 15rem;
                     }
                     .projetc__container__info__tooltip {
                         display: none;
-
                     }
                 }
             }

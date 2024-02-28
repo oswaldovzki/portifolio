@@ -27,6 +27,7 @@ body {
   border: none;
   background: transparent;
   margin: 0.5rem;
+  cursor: pointer;
 }
 .header .header_mobile_btn_logo {
   width: 4rem;
@@ -115,7 +116,7 @@ body {
 }
 
 .main {
-  margin: 6rem 1rem;
+  margin: 6rem 1rem 0 1rem;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: nowrap;
@@ -218,7 +219,7 @@ body {
 }
 
 .about {
-  margin: 6rem 1rem;
+  margin: 6rem 1rem 0 1rem;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: nowrap;
@@ -315,7 +316,7 @@ body {
 }
 
 .cv {
-  margin: 6rem 1rem;
+  margin: 6rem 1rem 0 1rem;
 }
 .cv .cv__conteudo {
   display: flex;
@@ -430,7 +431,13 @@ body {
 }
 
 .project {
-  margin: 6rem 1rem 4rem 1rem;
+  margin: 6rem 1rem 0 1rem;
+}
+.project .project__titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
 }
 .project .project__list {
   display: flex;
@@ -530,12 +537,11 @@ body {
     background-color: #FFC099;
     color: #492f1d;
     font-family: "Oswald", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    text-align: justify;
     padding: 0.5rem;
     border-radius: 1rem;
-    width: 13rem;
+    width: 15rem;
   }
   .project .project__list .project__container .projetc__container__info .projetc__container__info__tooltip {
     display: none;

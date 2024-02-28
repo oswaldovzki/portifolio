@@ -22,6 +22,8 @@
     <link rel="manifest" href="./img/assets/favicon//site.webmanifest">
     
     <script src="./scripts/hamburguer-menu.js" defer></script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript" defer></script>
+    <script src="./scripts/chat-bot.js" defer></script>
     
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -35,11 +37,11 @@
             <img class="header_mobile_btn_logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site">
         </button>
         <ul class="lista-menu" id="mobileMenu">
-            <li class="lista-menu__item"><a href="index.html" class="header__nav__link">Home</a></li>
-            <li class="lista-menu__item"><a href="about.html" class="header__nav__link">Sobre mim</a></li>
-            <li class="lista-menu__item"><a href="curriculo.html" class="header__nav__link">Curriculo</a></li>
-            <li class="lista-menu__item"><a href="projetos.html" class="header__nav__link">Projetos</a></li>
-            <li class="lista-menu__item"><a href="contato.html" class="header__nav__link">Contato</a></li>
+            <li class="lista-menu__item"><a href="#main" class="header__nav__link">Home</a></li>
+            <li class="lista-menu__item"><a href="#about-title" class="header__nav__link">Sobre mim</a></li>
+            <li class="lista-menu__item"><a href="#cv-title" class="header__nav__link">Curriculo</a></li>
+            <li class="lista-menu__item"><a href="#project-list" class="header__nav__link">Projetos</a></li>
+            <li class="lista-menu__item"><a href="#contact" class="header__nav__link">Contato</a></li>
             <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrine Dev</a></li>
         </ul>
         <div class="header__nav__title">
@@ -48,32 +50,220 @@
         </div>
     </header>
 
-    <main class="main">
-        <section class="main__conteudo">
-            <h1 class="main__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo__destaque">com um
-                    <span class="front__end">Front-end</span> de qualidade!</strong></h1>
-            <p class="main__conteudo__texto">Olá! Sou Filipe Lima, desenvolvedor Front-end com especialidade em
-                <strong class="titulo__destaque">HTML</strong> e <strong class="titulo__destaque">CSS</strong>.
-                Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
-            </p>
-            <div class="main__links">
-                <h2 class="main__botao__subt">Acesse minhas redes</h2>
-                <a class="main__botao__text" class="main__botao__inst" href="https://www.instagram.com/oswaldovzki/ "
-                    target="_blank" rel="noopener noreferrer">
-                    <img src="./img/assets/instagram.png" alt="Logo do Instagram">
-                    Instagram</a>
-                <a class="main__botao__text" href="https://www.linkedin.com/in/ofilipelima/" target="_blank"
-                    rel="noopener noreferrer">
-                    <img src="./img/assets/linkedin.png" alt="Logo do LinkedIn">
-                    LinkedIn</a>
-                <a class="main__botao__text" href="https://github.com/oswaldovzki" target="_blank"
-                    rel="noopener noreferrer">
-                    <img src="./img/assets/github.png" alt="Logo do Github">
-                    GitHub</a>
-            </div>
-        </section>
-        <img class="minha__foto" src="./img/guy-coding-dragons.png"
-            alt="Pessoa homem programando em um laptop no colo, em frente a uma janela e ao fundo tem uma paisagem de campos verdes com dragões. Criado por DALL-e">
+    <main>
+        <div class="main">
+            <section class="main__conteudo" id="main">
+                <h1 class="main__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo__destaque">com um
+                        <span class="front__end">Front-end</span> de qualidade!</strong></h1>
+                <p class="main__conteudo__texto">Olá! Sou Filipe Lima, desenvolvedor Front-end com especialidade em
+                    <strong class="titulo__destaque">HTML</strong> e <strong class="titulo__destaque">CSS</strong>.
+                    Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
+                </p>
+                <div class="main__links">
+                    <h2 class="main__botao__subt">Acesse minhas redes</h2>
+                    <a class="main__botao__text" class="main__botao__inst" href="https://www.instagram.com/oswaldovzki/ "
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="./img/assets/instagram.png" alt="Logo do Instagram">
+                        Instagram</a>
+                    <a class="main__botao__text" href="https://www.linkedin.com/in/ofilipelima/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./img/assets/linkedin.png" alt="Logo do LinkedIn">
+                        LinkedIn</a>
+                    <a class="main__botao__text" href="https://github.com/oswaldovzki" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./img/assets/github.png" alt="Logo do Github">
+                        GitHub</a>
+                </div>
+            </section>
+            <img class="minha__foto" src="./img/guy-coding-dragons.png"
+                alt="Pessoa homem programando em um laptop no colo, em frente a uma janela e ao fundo tem uma paisagem de campos verdes com dragões. Criado por DALL-e">
+        </div>
+    
+        <div class="about">
+            <section class="about__conteudo">
+                <h2 class="about__conteudo__titulo" id="about-title">Sobre mim</h2>
+                <p class="about__conteudo__texto">
+                    Olá! Sou Filipe, Casado, Mineiro, curto Heavy Metal e Video Games.
+                    <br>
+                    <br>
+                    Me Graduei em Ciências Biológicas, com Bacharelado e Licenciatura, pela Universidade Federal de Ouro Preto, onde também conquistei meu mestrado em Ensino de Ciências.
+                    <br>
+                    <br>
+                    Há alguns anos realizei uma transição de carreira, integrando a Stilingue, uma empresa que destaca-se pela NLP brasileira e Social Listening. Inicialmente, contribuí para o Atendimento ao Cliente antes de transitar para a área de Quality Assurance. Desempenhei um papel significativo na criação do time de Atendimento N2, responsável pela gestão de tickets de suporte técnico e relatórios de bugs, assegurando a manutenção e aderência aos processos internos para garantir um atendimento ao cliente ágil e eficaz.
+                </p>
+            </section>
+        </div>
+    
+        <div class="cv">
+            <section class="cv__conteudo">
+                <h2 class="cv__conteudo__titulo" id="cv-title">
+                    Desenvolvedor Front-end<br>
+                    HTML | CSS | JS
+                </h2>
+                <h3 class="cv__conteudo__subtitulo exp">Experiências</h3>
+                <ul class="cv__conteudo__experiência">
+                    <li> Blip (2023 - Atual)
+                        <p>Analista de Suporte Técnico (N2)</p>
+                    </li>
+                    <li> Stilingue (2019 - 2023)
+                        <p>Analista de Suporte Técnico (2021 - 2023)</p>
+                        <p>Analista de Quality Assurance (2020 - 2021)</p>
+                        <p>Analista de Atendimento ao Cliente (2019 - 2020)</p>
+                    </li>
+                </ul>
+                <h3 class="cv__conteudo__subtitulo certificados">Certificações</h3>
+                <div class="cv__conteudo__certificados">
+                    <ul class="cv__conteudo__cursos">
+                        <li>HTML<br>
+                            <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/degree-html-css-v527396-527396/certificate">Alura Cursos com certificado</a>
+                        </li>
+                        <li>CSS<br>
+                            <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/degree-css-estilos-v671897-671897/certificate">Alura Cursos com certificado</a>
+                        </li>
+                        <li>JavaScript<br>
+                            <a rel="noopener" target="_blank" href="linkdocertificado">Alura Cursos com certificado</a>
+                        </li>
+                        <br>
+                        <li class="certification_full">
+                            <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/fullCertificate/70c35dea02b345e12c388fc9730cc015">🎓 Certificação completa 🎓</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+        <div class="project">
+            <h2 class="project__titulo" id="project-list">
+                Projetos
+            </h2>
+            <section class="project__list">
+                <div class="project__container active" id="alurabooks">
+                    <img class="project__container__icon" src="./projetos/alura_books/assets/logo.png" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">Alura Books</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="alurabooksInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Site de venda de livros de Tecnologia, com menu hamburguer, caixa de busca, sessão 'swipe' e outros elementos. <br>
+                            Tecnologias usadas: HTML e CSS.
+                        </span>
+                    </i>
+                </div>
+                <div class="project__container" id="aluraplus">
+                    <img class="project__container__icon" src="./projetos/alura_plus/assets/Logo.svg" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">Alura+</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="aluraplusInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Landing Page de uma plataforma de Stremaing.<br>
+                            Tecnologias usadas: HTML, CSS e JS (swipe).
+                        </span>    
+                    </i>
+                </div>
+                <div class="project__container" id="optimustech">
+                    <img class="project__container__icon" src="./projetos/optimus_tech/assets/logo.png" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">Optimus Tech</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="optimustechInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Página de divulgação de vagas em uma empresa de tecnologia e cadastro de curriculos.<br>
+                            Tecnologias usadas: HTML e CSS.
+                        </span> 
+                    </i>
+                </div>
+                <div class="project__container" id="aluramed">
+                    <img class="project__container__icon" src="./projetos/aluramed/assets/logo.png" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">AluraMed</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="aluramedInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Página de consultas de uma clínica fictícia.<br>
+                            Tecnologias usadas: HTML e CSS.
+                        </span> 
+                    </i>
+                </div>
+                <div class="project__container" id="wavecast">
+                    <img class="project__container__icon" src="./projetos/wavecast/assets/imagens/Logos/Favicon.svg" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">Wavecast</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="wavecastInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Página de podcasts.<br>
+                            Tecnologias usadas: HTML e CSS.
+                        </span> 
+                    </i>
+                </div>
+                <div class="project__container" id="spotify-imersao">
+                    <img class="project__container__icon" src="./projetos/spotify-imersao/src/assets/icons/logo.png" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">Spotify Clone</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="spotifyInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Página clone do Spotfy, Desenvolvido em uma imersão da Alura.<br>
+                            Tecnologias usadas: HTML e CSS.
+                        </span> 
+                    </i>
+                </div>
+                <div class="project__container" id="CalmariaSpa">
+                    <img class="project__container__icon" src="./projetos/CalmariaSpa/assets/logo_icon.png" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">Calmaria Spa</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="CalmariaSpaInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Landing page de uma empresa fictícia de SPA.<br>
+                            Tecnologias usadas: HTML e CSS.
+                        </span> 
+                    </i>
+                </div>
+                <div class="project__container" id="culturama">
+                    <img class="project__container__icon" src="./projetos/culturama/assets/img/Favicon2.png" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">Culturama</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="culturamaInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Página de divulgação de eventos.<br>
+                            Tecnologias usadas: HTML e CSS.
+                        </span>
+                    </i>
+                </div>
+                <div class="project__container" id="mentalista">
+                    <img class="project__container__icon" src="./projetos/mentalista/assets/icons/favicon-32x32.png" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">Mentalista</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="mentalistaInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Jogo de adivinhação de números, com seleção de dificuldade.<br>
+                            Tecnologias usadas: HTML, CSS e JavaScript.
+                        </span> 
+                    </i>
+                </div>
+                <div class="project__container" id="jsApps">
+                    <img class="project__container__icon" src="./img/assets/favicon/favicon-32x32.png" alt="Ícone do projeto X">
+                    <p class="projetc__container__name">javaScript Apps</p>
+                    <i class="projetc__container__info fa-solid fa-circle-info" id="jsAppsInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Aplicações em JavaScript.
+                        </span>  
+                    </i>
+                </div>
+                <div class="project__container" id="placeholder">
+                    <img class="project__container__icon" src="./img/assets/favicon/favicon-32x32.png" alt="">
+                    <p class="projetc__container__name">Placeholder</p>
+                    <i class=" projetc__container__info fa-solid fa-circle-info" id="placeholderInfo">
+                        <span class="projetc__container__info__tooltip">
+                            Em Construção.
+                        </span> 
+                    </i>
+                </div>
+            </section>
+    
+            <section class="project__frame">
+                <div class="project__square">
+                    <div class="project__title__container">
+                        <p class="project__square__title">Alura Books</p>
+                        <a class="projetc__square__site" href="./projetos/alura_books/alura_books.html"  target="_blank">🌐</a>
+                    </div>
+                    <iframe class="project__square__preview" title="Landing Page for Alura Plus" src="./projetos/alura_books/alura_books.html"></iframe>
+                </div>
+            </section>
+        </div>
+    
+        <div class="contact__container">
+            <section class="contact" id="contact">
+                +5531900000000
+                contato@gmail.com
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
