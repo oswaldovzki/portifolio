@@ -24,9 +24,9 @@ Aqui você também encontra projetos próprios e aplicações de diversas técni
 
 # Projetos
 📚 Alura Books <br>
-    Landing Page de uma plataforma de Streaming <br><br>
+    Landing Page de uma plataforma de Streaming <br>
 📺 Alura + <br>
-    Página de venda de livros <br><br>
+    Página de venda de livros <br>
 🧑‍⚕️ Alura Med <br>
     Página de consultas médicas <br>
 🎧 Alura Play <br>
@@ -39,19 +39,19 @@ Aqui você também encontra projetos próprios e aplicações de diversas técni
     Página de Contratação de uma empresa fictícia<br>
 📱 jsApps <br>
     Pasta dedicada para aplicações simples em JavaScript<br>
-🪙 Conversor de Moedas <br>
-    Converte Moedas dos Países da União Européia, UK, Brazil e USA. <br>
-    🚧Em Desenvolvimento🚧 <br><br>
 🔢 Mentalista <br>
     Jogo em JavaScript de adivinhar números, com tabela de pontos. <br>
+🪙 Conversor de Moedas <br>
+    Converte Moedas dos Países da União Européia, UK, Brazil e USA. <br>
+    🚧Em Desenvolvimento🚧 <br>
 
 
 # Acesso ao Projeto
 Atualmente o projeto está disponível em dois locais:
 
-[Vercel](https://meu-portifolio-ft1nzugng-filipe-paixao-de-limas-projects.vercel.app/index.html): que representa a versão principal e final do projeto.
+[Vercel](https://meu-portifolio-ft1nzugng-filipe-paixao-de-limas-projects.vercel.app/index.html): que representa a versão principal e final do projeto (Produção).
 
-[GitHub Pages](https://oswaldovzki.github.io/landing-front/index.html): que representa a mais atual versão em desenvolvimento.
+[GitHub Pages](https://oswaldovzki.github.io/landing-front/index.html): que representa a mais atual versão em desenvolvimento (Staging).
 
 # Tecnologias Utilizadas
 ![Static Badge](https://img.shields.io/badge/HTML-red?style=plastic&logo=html5)
