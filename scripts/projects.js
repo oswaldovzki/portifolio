@@ -71,7 +71,6 @@ function alterarProjectPreview(projectId) {
             projectTitle.textContent = 'JS Apps';
             projectSite.src = projectPreview.src;
             break;
-        // Add cases for other projects as needed
         default:
             break;
     }
