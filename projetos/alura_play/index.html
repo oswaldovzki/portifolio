@@ -18,17 +18,23 @@
 
     <!-- Cabecalho -->
     <header>
-
         <nav class="cabecalho__container">
 
-            <h1 class="logo__item" href="#"></h1>
+            <div class="logo__item">
+                <img src="./img/cabecalho/Logo.png" alt="Logo do AluraPlay">
+            </div>
 
             <div class="cabecalho__pesquisar__item">
-                <form action="">
-                    <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
-                    <label for="pesquisar" class="pesquisar__label"></label>
+                <form class="form__pesquisa">
+                    <input type="search" class="pesquisar__input" placeholder="Pesquisar">
+                    <img src="./img/cabecalho/keyboard.png" alt="Ícone de teclado" class="pesquisar__input-teclado">
+                    <button class="pesquisar__btn">
+                        <img src="./img/cabecalho/search.png" alt="ícone de lupa">
+                    </button>
+                    <button class="cabecalho__audio">
+                        <img src="./img/cabecalho/mic.png" alt="ícone de microfone">
+                    </button>
                 </form>
-                <a href="#" class="cabecalho__audio"></a>
             </div>
 
             <div class="cabecalho__icones__item">
@@ -36,10 +42,13 @@
                 <a href="#" class="cabecalho__apps"></a>
                 <a href="#" class="cabecalho__notificacoes"></a>
                 <a href="#" class="cabecalho__avatar"></a>
+                <label class="cabecalho__switch">
+                    <input type="checkbox" class="cabecalho__switch-input">
+                    <span class="cabecalho__switch-slider"></span>
+                </label>
             </div>
 
         </nav>
-
     </header>
 
     <!-- Menu lateral -->
