@@ -23,44 +23,40 @@ body {
 }
 
 /* CABEÇALHO */
-
 .cabecalho__container {
-    background-color: white;
+    background-color: var(--azul-claro);
     height: 80px;
     width: 100%;
-}
-
-.logo__item {
-    background-image: url(../img/cabecalho/Logo.png);
-    background-repeat: no-repeat;
-    padding: 15px 65px;
-    cursor: pointer;
-}
+    padding: 0 25px;
+  }
 
 .pesquisar__input {
-    width: 260px;
-    height: 32px;
-    border: 1px solid rgb(211, 211, 211);
+    color: var(--cinza-texto);
+    padding: 8px;
+    border: 2px solid var(--cinza-claro);
+    border-radius: 32px 0px 0px 32px;
     font-size: 16px;
-    padding: 3px 8px;
-    border: 1px solid rgb(211, 211, 211);
 }
 
-.pesquisar__label {
-    background-image: url(../img/cabecalho/search.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid rgb(211, 211, 211);
-    background-color: #F9F9F9;
+.pesquisar__input-teclado{
+    position: absolute;
+    right: 16%;
+    top: 30%;
+}
+
+.pesquisar__btn {
+    background-color: var(--cinza-claro);
+    border: 0px;
+    border-radius: 0px 32px 32px 0px;
+    padding: 8px;
+    padding-right: 15px;
     border-left: none;
-    padding: 8px 18px 5px;
     cursor: pointer;
 }
 
 .cabecalho__audio {
-    background-image: url(../img/cabecalho/mic.png);
-    padding: 20px;
-    display: none;
+    border: 0px;
+    background-color: var(--azul-claro);
 }
 
 .cabecalho__videos {
@@ -88,8 +84,62 @@ body {
     background-image: url(../img/cabecalho/Avatar.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 13px 30px 13px 13px;
+    padding: 13px 30px 13px 33px;
 }
+
+.cabecalho__switch {
+    position: relative;
+    display: inline-block;
+    padding: 13px 30px 13px 13px;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .cabecalho__switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .cabecalho__switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--azul-medio);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .cabecalho__switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--azul-claro);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  .cabecalho__switch-input:checked + .cabecalho__switch-slider {
+    background-color: var(--azul-escuro);
+  }
+  
+  .cabecalho__switch-input:focus + .cabecalho__switch-slider {
+    box-shadow: 0 0 1px var(--cinza-claro);
+  }
+  
+  .cabecalho__switch-input:checked + .cabecalho__switch-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
 
 /* MENU LATERAL */
 

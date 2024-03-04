@@ -5,11 +5,24 @@
     align-items: center;
     position: fixed;
     top: 0;
-}
-
-.cabecalho__pesquisar__item {
+  }
+  
+  .cabecalho__pesquisar__item {
     display: none;
-}
+  }
+  
+  .form__pesquisa {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* SECAO SUPERIOR */
+  
+  .superior__slider {
+    display: none;
+  }
 
 /* MENU */
 .menu__container {
