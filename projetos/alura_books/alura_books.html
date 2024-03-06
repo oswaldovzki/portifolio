@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/reset.css">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+    <script src="./script/main.js" defer></script>
+
     <title>AluraBooks</title>
 </head>
 
@@ -61,11 +64,42 @@
             </a>
         </div class="cabecalho__botoes">
     </header>
+
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner_busca" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <!-- Sessão de Livros -->
+    <nav class="wrap">
+        <ul class="nav">
+            <li><button class="btn btn-front" href="#" id="btnFiltrarLivrosFront" value="front-end">LIVROS DE
+                    FRONT-END</button>
+            </li>
+            <li><button class="btn btn-back" href="#" id="btnFiltrarLivrosBack" value="back-end">LIVROS DE BACK-END</button>
+            </li>
+            <li><button class="btn btn-dados" href="#" id="btnFiltrarLivrosDados" value="dados">LIVROS DE DADOS</button>
+            </li>
+            <li><button class="btn btn-disponiveis" href="#" id="btnLivrosDisponiveis">LIVROS DISPONÍVEIS</button></li>
+            <li><button class="btn btn-ordenacao" href="#" id="btnOrdenarPorPreco">ORDENAR POR PREÇO</button></li>
+        </ul>
+    </nav>
+    <section class="livros wrap" id="livros">
+        <!-- <div class="livro">
+            <img class="livro__imagens" src="imagens/Cangaceiro-Javascript.png" alt="Capa do livro Cangaceiro JavaScript" />
+            <h2 class="livro__titulo">
+              Cangaceiro JavaScript:
+              Uma aventura no sertão da programação
+            </h2>
+            <p class="livro__descricao">Flávio Almeida</p>
+            <p class="livro__preco" id="preco">R$29,90</p>
+            <div class="tags">
+              <span class="tag">Front-end</span>
+            </div>
+        </div> -->
+    </section>
+
     <!-- Primeira Linha de Carrousel + Card -->
     <section class="carrousel">
         <h2 class="carrousel__titulo">últimos lançamentos</h2>
@@ -172,7 +206,7 @@
     <section class="contato">
         <div class="contato_descricao">
             <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <p class="contato__texto">Atualizações de e-livros, novos livros, promoções e outros.</p>
         </div>
         <input class="contato__email" type="email" placeholder="Cadastre seu email">
     </section>
