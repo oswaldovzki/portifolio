@@ -19,59 +19,61 @@ projectBtns.forEach((btn) => {
     });
 });
 
-function alterarProjectPreview(projectId) {
-    switch (projectId) {
-        case "alurabooks":
-            projectPreview.src = "./projetos/alura_books/alura_books.html";
-            projectTitle.textContent = 'Alura Books';
-            projectSite.href = projectPreview.src;
-            break;
-        case "aluraplus":
-            projectPreview.src = "./projetos/alura_plus/alura+_standalone.html";
-            projectTitle.textContent = 'Alura +';
-            projectSite.href = projectPreview.src;
-            break;
-        case "optimustech":
-            projectPreview.src = "./projetos/optimus_tech/index.html";
-            projectTitle.textContent = 'Optimus Tech';
-            projectSite.href = projectPreview.src;
-            break;
-        case "aluramed":
-            projectPreview.src = "./projetos/aluramed/index.html";
-            projectTitle.textContent = 'Alura Med';
-            projectSite.href = projectPreview.src;
-            break;
-        case "wavecast":
-            projectPreview.src = "./projetos/wavecast/index.html";
-            projectTitle.textContent = 'Wave Cast';
-            projectSite.href = projectPreview.src;
-            break;
-        case "spotify-imersao":
-            projectPreview.src = "./projetos/spotify-imersao/index.html";
-            projectTitle.textContent = 'Spotify Clone';
-            projectSite.href = projectPreview.src;
-            break;
-        case "CalmariaSpa":
-            projectPreview.src = "./projetos/CalmariaSpa/index.html";
-            projectTitle.textContent = 'Calmaria Spa';
-            projectSite.href = projectPreview.src;
-            break;
-        case "culturama":
-            projectPreview.src = "./projetos/culturama/index.html";
-            projectTitle.textContent = 'Culturma';
-            projectSite.href = projectPreview.src;
-            break;
-        case "mentalista":
-            projectPreview.src = "./projetos/mentalista/index.html";
-            projectTitle.textContent = 'Mentalista';
-            projectSite.href = projectPreview.src;
-            break;
-        case "jsApps":
-            projectPreview.src = "./projetos/jsApps/index.html";
-            projectTitle.textContent = 'JS Apps';
-            projectSite.src = projectPreview.src;
-            break;
-        default:
-            break;
+// Object mapping project IDs to their titles and URLs
+const projects = {
+    alurabooks: {
+      title: 'Alura Books',
+      url: './projetos/alura_books/alura_books.html'
+    },
+    aluraplus: {
+      title: 'Alura +',
+      url: './projetos/alura_plus/alura+_standalone.html'
+    },
+    aluraplay: {
+      title: 'Alura Play',
+      url: './projetos/alura_play/index.html'
+    },
+    optimustech: {
+      title: 'Optimus Tech',
+      url: './projetos/optimus_tech/index.html'
+    },
+    aluramed: {
+      title: 'Alura Med',
+      url: './projetos/aluramed/index.html'
+    },
+    wavecast: {
+      title: 'Wave Cast',
+      url: './projetos/wavecast/index.html'
+    },
+    'spotify-imersao': {
+      title: 'Spotify Clone',
+      url: './projetos/spotify-imersao/index.html'
+    },
+    CalmariaSpa: {
+      title: 'Calmaria Spa',
+      url: './projetos/CalmariaSpa/index.html'
+    },
+    culturama: {
+      title: 'Culturama',
+      url: './projetos/culturama/index.html'
+    },
+    mentalista: {
+      title: 'Mentalista',
+      url: './projetos/mentalista/index.html'
+    },
+    jsApps: {
+      title: 'JS Apps',
+      url: './projetos/jsApps/index.html'
     }
-}
+  };
+  
+  // Function to alter project preview based on project ID
+  function alterarProjectPreview(projectId) {
+    if (projects.hasOwnProperty(projectId)) {
+      const project = projects[projectId];
+      projectPreview.src = project.url;
+      projectTitle.textContent = project.title;
+      projectSite.href = project.url;
+    }
+  }
+  
