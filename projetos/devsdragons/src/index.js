@@ -1,16 +1,6 @@
-const personagemPedrinho = {
-    nome: 'Pedrinho',
-    vida: 7,
-    mana: 12,
-    level: 5,
-    tipo: 'Mago',
-}
+import { Personagem } from "./modules/personagem.js";
 
-const personagemJose = {
-    nome: 'Jose',
-    vida: 7,
-    mana: 6,
-    level: 3,
-    tipo: 'Arqueiro',
-}
+const personagemPedrinho = new Personagem ('Pedrinho', 7, 12, 3, 'Mago', 'Mago de Fogo Especialista');
+const personagemJose = new Personagem ('Jose', 7, 6, 3, 'Arqueiro', 'Marksmenship');
+const personagemOswaldo = new Personagem ('Oswaldo', 10, 15, 5, 'Mago', 'Maestro do Tempo');
 
