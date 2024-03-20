@@ -64,6 +64,14 @@ const projects = {
     jsApps: {
       title: 'JS Apps',
       url: './projetos/jsApps/index.html'
+    },
+    currencyMonitor: {
+      title: 'Cotações de Moedas',
+      url: './projetos/currencymonitor/index.html'
+    },
+    oswBank: {
+      title: 'Banco do Oswaldo',
+      url: './projetos/oswbank/index.html'
     }
   };
   
