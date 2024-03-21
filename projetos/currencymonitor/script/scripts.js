@@ -1,5 +1,24 @@
 import imprimeCotacao from "./imprimeCotacao.js";
 
+function geraHorario() {
+    let data = new Date();
+    let hours = String(data.getHours()).padStart(2, '0');
+    let minutes = String(data.getMinutes()).padStart(2, '0');
+    let seconds = String(data.getSeconds()).padStart(2, '0');
+    let horario = `${hours}:${minutes}:${seconds}`;
+    return horario;
+}
+
+function addData(chart, label, newData) {
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.push(newData);
+    });
+    chart.update();
+}
+
+//Gráfico Libra
+
 const graficoLibra = document.getElementById('graficoLibra');
 
 const graficoParaLibra = new Chart(graficoLibra, {
@@ -21,31 +40,44 @@ const graficoParaLibra = new Chart(graficoLibra, {
     }
 });
 
-conectaAPI();
-setInterval(() => conectaAPI(), 30000);
-async function conectaAPI() {
-    const conecta = await fetch("https://economia.awesomeapi.com.br/json/last/GBP-BRL");
-    const conectaTraduzido = await conecta.json();
+let workerLibra = new Worker('script/workers/workerLibra.js');
+workerLibra.postMessage('gbp');
+
+workerLibra.addEventListener("message", event => {
     let tempo = geraHorario();
-    let valor = conectaTraduzido.GBPBRL.ask;
+    let valor = event.data.ask;
+    imprimeCotacao("libra", valor);
     addData(graficoParaLibra, tempo, valor);
-    imprimeCotacao('Libra', valor);
-}
+})
 
+//Gráfico Euro
 
-function geraHorario() {
-    let data = new Date();
-    let hours = String(data.getHours()).padStart(2, '0');
-    let minutes = String(data.getMinutes()).padStart(2, '0');
-    let seconds = String(data.getSeconds()).padStart(2, '0');
-    let horario = `${hours}:${minutes}:${seconds}`;    
-    return horario;
-}
+const graficoEuro = document.getElementById('graficoEuro');
 
-function addData(chart, label, newData) {
-    chart.data.labels.push(label);
-    chart.data.datasets.forEach((dataset) => {
-        dataset.data.push(newData);
-    });
-    chart.update();
-}
+const graficoParaEuro = new Chart(graficoEuro, {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: [{
+            label: 'Cotação da Euro',
+            data: [],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+let workerEuro = new Worker('script/workers/workerEuro.js');
+workerEuro.postMessage('eur');
+workerEuro.addEventListener("message", event => {
+    let tempo = geraHorario();
+    let valor = event.data.ask;
+    imprimeCotacao("euro", valor);
+    addData(graficoParaEuro, tempo, valor);
+})
