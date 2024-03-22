@@ -1,0 +1,12 @@
+.rodape {
+    padding-bottom: 2em;
+    text-align: center;
+    color: var(--roxo);
+}
+
+@media screen and (max-width: 1440px) {
+    .rodape {
+        font-size: 13px;
+    }
+
+}
