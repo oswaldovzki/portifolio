@@ -10,7 +10,7 @@
   <link rel="icon" sizes="180x180" href="./imagens/cifrao.png">
   <link rel="stylesheet" href="./styles.css">
 
-  <title>ByteBank</title>
+  <title>Monitor de Cotações</title>
 </head>
 
 <body class="container">
@@ -68,8 +68,26 @@
       </div>
     </article>
 
+    <article class="dadosDolar">
+      <div class="grafico">
+        <div class="grafico__titulo">
+          <span class="grafico__ilustracao-libra"></span>
+          <h2>Variação da moeda desde o login</h2>
+        </div>
+        <div>
+          <canvas id="graficoDolar"></canvas>
+        </div>
+      </div>
+
+      <div class="investimentos">
+        <h2>Valores da moeda</h2>
+        <ul class="investimentos__lista" id="dolar" data-lista>
+        </ul>
+      </div>
+    </article>
+
     <footer class="rodape">
-      <p>Dashboard - Desenvolvido por Alura</p>
+      <p>Dashboard - Desenvolvido por Oswaldovzki</p>
     </footer>
   </main>
 

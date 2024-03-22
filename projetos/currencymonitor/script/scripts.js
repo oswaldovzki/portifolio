@@ -1,4 +1,4 @@
-import imprimeCotacao from "./imprimeCotacao.js";
+import selecionaCotacao from "./imprimeCotacao.js";
 
 function geraHorario() {
     let data = new Date();
@@ -45,8 +45,8 @@ workerLibra.postMessage('gbp');
 
 workerLibra.addEventListener("message", event => {
     let tempo = geraHorario();
-    let valor = event.data.ask;
-    imprimeCotacao("libra", valor);
+    let valor = event.data.bid;
+    selecionaCotacao("libra", valor);
     addData(graficoParaLibra, tempo, valor);
 })
 
@@ -67,7 +67,7 @@ const graficoParaEuro = new Chart(graficoEuro, {
     options: {
         scales: {
             y: {
-                beginAtZero: true
+                beginAtZero: false
             }
         }
     }
@@ -78,6 +78,38 @@ workerEuro.postMessage('eur');
 workerEuro.addEventListener("message", event => {
     let tempo = geraHorario();
     let valor = event.data.ask;
-    imprimeCotacao("euro", valor);
+    selecionaCotacao("euro", valor);
     addData(graficoParaEuro, tempo, valor);
+})
+
+//Gráfico Dolar
+
+const graficoDolar = document.getElementById('graficoDolar');
+
+const graficoParaDolar = new Chart(graficoDolar, {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: [{
+            label: 'Cotação da Dolar',
+            data: [],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: false
+            }
+        }
+    }
+});
+
+let workerDolar = new Worker('script/workers/workerDolar.js');
+workerDolar.postMessage('eur');
+workerDolar.addEventListener("message", event => {
+    let tempo = geraHorario();
+    let valor = event.data.ask;
+    selecionaCotacao("dolar", valor);
+    addData(graficoParaDolar, tempo, valor);
 })

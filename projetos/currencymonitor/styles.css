@@ -25,3 +25,13 @@
     grid-template-columns: 20% auto;
     background-color: var(--lilas);
 }
+
+@media screen and (max-width: 1440px) {
+    * {
+        line-height: 25px;
+    }
+
+    .container {
+        display: block;
+    }
+}

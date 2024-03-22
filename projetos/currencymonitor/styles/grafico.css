@@ -47,3 +47,39 @@
 .investimentos__lista li {
     margin: 1em 0;
 }
+
+@media screen and (max-width: 1440px) {
+    .grafico {
+        width: auto;
+    }
+
+    .dadosDolar {
+        flex-direction: column;
+        padding: 1em;
+        width: 98%;
+    }
+
+    .grafico__titulo h2 {
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .investimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .investimentos__lista {
+        margin: 0;
+    }
+
+    .investimentos__lista li {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}

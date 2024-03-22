@@ -33,6 +33,11 @@
     color: white;
     text-decoration: none;
     margin: 1em 0;
+    cursor: not-allowed;
+}
+
+.sidebar__links a:first-child {
+    cursor: pointer;
 }
 
 .sidebar__links a:first-of-type {
@@ -51,7 +56,7 @@
 }
 
 .dashboard {
-    background-image: url("../imagens/icon-dashboard.png")
+    background-image: url("../imagens/icon-dashboard.png");
 }
 
 .cofre {
@@ -64,4 +69,10 @@
 
 .duvida {
     background-image: url("../imagens/icon-duvida.png")
+}
+
+@media screen and (max-width: 1440px) {
+    .sidebar {
+        display: none;
+    }
 }
