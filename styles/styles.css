@@ -163,7 +163,6 @@ body {
 .main .main__conteudo .main__conteudo__texto {
   font-weight: 300;
   letter-spacing: 0.05rem;
-  text-align: justify;
 }
 .main .main__conteudo .main__links {
   display: flex;
@@ -260,7 +259,6 @@ body {
 .about .about__conteudo .about__conteudo__texto {
   font-weight: 300;
   letter-spacing: 0.05rem;
-  text-align: justify;
 }
 .about .about__conteudo .about__links {
   display: flex;
