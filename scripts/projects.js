@@ -23,19 +23,19 @@ projectBtns.forEach((btn) => {
 const projects = {
     alurabooks: {
       title: 'Alura Books',
-      url: './projetos/alura_books/alura_books.html'
+      url: './projetos/alura-books/index.html'
     },
     aluraplus: {
       title: 'Alura +',
-      url: './projetos/alura_plus/alura+_standalone.html'
+      url: './projetos/alura-plus/index.html'
     },
     aluraplay: {
       title: 'Alura Play',
-      url: './projetos/alura_play/index.html'
+      url: './projetos/alura-play/index.html'
     },
     optimustech: {
       title: 'Optimus Tech',
-      url: './projetos/optimus_tech/index.html'
+      url: './projetos/optimus-tech/index.html'
     },
     aluramed: {
       title: 'Alura Med',
