@@ -147,7 +147,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 .main .main__conteudo .main__conteudo__titulo {
   font-size: 2rem;
@@ -163,6 +163,7 @@ body {
 .main .main__conteudo .main__conteudo__texto {
   font-weight: 300;
   letter-spacing: 0.05rem;
+  padding-left: 0.625rem;
 }
 .main .main__conteudo .main__links {
   display: flex;
@@ -193,7 +194,7 @@ body {
 .main .minha__foto {
   width: 60%;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .main {
     flex-direction: row;
     align-items: center;
@@ -203,7 +204,6 @@ body {
   .main .main__conteudo {
     justify-content: center;
     align-items: center;
-    padding: 5% 4rem 0 4rem;
   }
   .main .main__conteudo__titulo {
     font-size: 3.5rem;
@@ -286,9 +286,6 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.about .minha__foto {
-  width: 60%;
-}
 @media screen and (min-width: 1440px) {
   .about {
     flex-direction: row;
@@ -327,9 +324,6 @@ body {
     color: #FBF1EB;
     font-size: 1.5rem;
     font-weight: 500;
-  }
-  .about .minha__foto {
-    width: 50%;
   }
 }
 
@@ -377,8 +371,10 @@ body {
   font-weight: 300;
   font-size: 1rem;
 }
+.cv .cv__conteudo .cv__conteudo__cursos {
+  height: 100%;
+}
 .cv .cv__conteudo .cv__conteudo__cursos li {
-  padding-top: 0.5rem;
   letter-spacing: 0.05rem;
   font-size: 1.2rem;
   text-align: center;

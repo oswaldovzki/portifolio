@@ -25,7 +25,6 @@
         .about__conteudo__texto {
             font-weight: 300;
             letter-spacing: 0.05rem;
-            text-align: justify;
         }
 
         .about__links {
@@ -45,10 +44,6 @@
                 @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%)
             }
         }
-    }
-
-    .minha__foto {
-        width: 60%;
     }
 
     @media screen and (min-width: 1440px) {
@@ -82,10 +77,6 @@
                     @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%)
                 }
             }
-        }
-
-        .minha__foto {
-            width: 50%;
         }
     }
 }
