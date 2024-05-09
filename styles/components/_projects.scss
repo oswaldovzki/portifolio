@@ -4,11 +4,8 @@
 .project {
     margin: 6rem 1rem 0 1rem;
 
-    .project__titulo {
-        font-size: 3rem;
-        font-weight: 700;
-        font-family: "Chakra Petch", sans-serif;
-        text-align: center;
+    .titulo__h2 {
+        @include mixins.titulo_h2(variables.$ft-titulo);
     }
 
     .project__group {
@@ -106,7 +103,7 @@
         display: flex;
         flex-direction: column;
 
-        .project__titulo {
+        .titulo__h2 {
             margin-bottom: 3rem;
         }
 

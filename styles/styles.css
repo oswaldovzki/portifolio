@@ -251,10 +251,11 @@ body {
   flex-wrap: nowrap;
   gap: 1rem;
 }
-.about .about__conteudo .about__conteudo__titulo {
+.about .about__conteudo .titulo__h2 {
   font-size: 3rem;
   font-weight: 500;
   font-family: "Chakra Petch", sans-serif;
+  text-align: center;
 }
 .about .about__conteudo .about__conteudo__texto {
   font-weight: 300;
@@ -339,9 +340,9 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-.cv .cv__conteudo .cv__conteudo__titulo {
-  font-size: 2rem;
-  font-weight: 700;
+.cv .cv__conteudo .titulo__h2 {
+  font-size: 3rem;
+  font-weight: 500;
   font-family: "Chakra Petch", sans-serif;
   text-align: center;
 }
@@ -350,22 +351,18 @@ body {
   font-size: 2rem;
   font-weight: 400;
   align-self: center;
-  border-radius: 8px;
+}
+.cv .cv__conteudo .cv__conteudo__experiência {
   display: flex;
-  justify-content: center;
-  gap: 16px;
-  border: 2px solid #FFC099;
-  width: 100%;
-  text-align: center;
-  padding: 21.5px 0px;
-  text-decoration: none;
-  color: #FBF1EB;
-  font-size: 1.5rem;
-  font-weight: 500;
+  flex-direction: column;
+  gap: 1rem;
 }
 .cv .cv__conteudo .cv__conteudo__experiência li {
   font-size: 1.2rem;
   text-align: center;
+}
+.cv .cv__conteudo .cv__conteudo__experiência li .cv__conteudo__experiência--ent {
+  color: #E6D6BB;
 }
 .cv .cv__conteudo .cv__conteudo__experiência li p {
   font-weight: 300;
@@ -378,6 +375,10 @@ body {
   letter-spacing: 0.05rem;
   font-size: 1.2rem;
   text-align: center;
+  padding: 0.5rem;
+}
+.cv .cv__conteudo .cv__conteudo__cursos li div {
+  line-height: 0.25;
 }
 .cv .cv__conteudo .cv__conteudo__cursos li a {
   font-weight: 300;
@@ -451,9 +452,9 @@ body {
 .project {
   margin: 6rem 1rem 0 1rem;
 }
-.project .project__titulo {
+.project .titulo__h2 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Chakra Petch", sans-serif;
   text-align: center;
 }
@@ -527,7 +528,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .project .project__titulo {
+  .project .titulo__h2 {
     margin-bottom: 3rem;
   }
   .project .project__group {
@@ -597,6 +598,21 @@ body {
     width: 100%;
   }
 }
+.contact__container {
+  margin: 6rem 1rem 0 1rem;
+}
+.contact__container .titulo__h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+.contact__container .contact {
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
 .footer {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;

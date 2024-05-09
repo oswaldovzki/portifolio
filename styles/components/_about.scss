@@ -16,10 +16,8 @@
         flex-wrap: nowrap;
         gap: 1rem;
 
-        .about__conteudo__titulo {
-            font-size: 3rem;
-            font-weight: 500;
-            font-family: variables.$ft-titulo;
+        .titulo__h2 {
+            @include mixins.titulo_h2(variables.$ft-titulo);
         }
 
         .about__conteudo__texto {
@@ -41,7 +39,7 @@
 
             .about__botao__text {
                 align-self: center;
-                @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%)
+                @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%);
             }
         }
     }
