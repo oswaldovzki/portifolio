@@ -57,17 +57,9 @@ const projects = {
       title: 'Culturama',
       url: '../projects/culturama/index.html'
     },
-    mentalista: {
-      title: 'Mentalista',
-      url: '../projects/mentalista/index.html'
-    },
     jsApps: {
       title: 'JS Apps',
-      url: '../projects/jsApps/index.html'
-    },
-    currencyMonitor: {
-      title: 'Cotações de Moedas',
-      url: '../projects/currencymonitor/index.html'
+      url: '../projects/jsapps/index.html'
     },
     oswBank: {
       title: 'Banco do Oswaldo',

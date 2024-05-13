@@ -144,7 +144,7 @@
                         &:hover .projetc__container__info__tooltip {
                             display: block;
                             position: absolute;
-                            cursor: auto;
+                            pointer-events: none;
 
                             background-color: variables.$cor-secundaria;
                             color: variables.$cor-terciaria;
@@ -159,6 +159,7 @@
 
                         .projetc__container__info__tooltip {
                             display: none;
+                            pointer-events: none;
                         }
                     }
                 }

@@ -566,7 +566,7 @@ body {
   .project .project__group .project__list .project__container .projetc__container__info:hover .projetc__container__info__tooltip {
     display: block;
     position: absolute;
-    cursor: auto;
+    pointer-events: none;
     background-color: #FFC099;
     color: #492f1d;
     font-family: "Oswald", sans-serif;
@@ -578,6 +578,7 @@ body {
   }
   .project .project__group .project__list .project__container .projetc__container__info .projetc__container__info__tooltip {
     display: none;
+    pointer-events: none;
   }
   .project .project__frame {
     flex: 3;
