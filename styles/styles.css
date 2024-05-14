@@ -147,7 +147,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 .main .main__conteudo .main__conteudo__titulo {
   font-size: 2rem;
@@ -163,6 +163,7 @@ body {
 .main .main__conteudo .main__conteudo__texto {
   font-weight: 300;
   letter-spacing: 0.05rem;
+  padding-left: 0.625rem;
 }
 .main .main__conteudo .main__links {
   display: flex;
@@ -193,7 +194,7 @@ body {
 .main .minha__foto {
   width: 60%;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .main {
     flex-direction: row;
     align-items: center;
@@ -203,7 +204,6 @@ body {
   .main .main__conteudo {
     justify-content: center;
     align-items: center;
-    padding: 5% 4rem 0 4rem;
   }
   .main .main__conteudo__titulo {
     font-size: 3.5rem;
@@ -251,10 +251,11 @@ body {
   flex-wrap: nowrap;
   gap: 1rem;
 }
-.about .about__conteudo .about__conteudo__titulo {
-  font-size: 3rem;
+.about .about__conteudo .titulo__h2 {
+  font-size: 4rem;
   font-weight: 500;
   font-family: "Chakra Petch", sans-serif;
+  text-align: center;
 }
 .about .about__conteudo .about__conteudo__texto {
   font-weight: 300;
@@ -285,9 +286,6 @@ body {
   color: #FBF1EB;
   font-size: 1.5rem;
   font-weight: 500;
-}
-.about .minha__foto {
-  width: 60%;
 }
 @media screen and (min-width: 1440px) {
   .about {
@@ -328,9 +326,6 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
   }
-  .about .minha__foto {
-    width: 50%;
-  }
 }
 
 .contact__container {
@@ -345,9 +340,9 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-.cv .cv__conteudo .cv__conteudo__titulo {
-  font-size: 2rem;
-  font-weight: 700;
+.cv .cv__conteudo .titulo__h2 {
+  font-size: 4rem;
+  font-weight: 500;
   font-family: "Chakra Petch", sans-serif;
   text-align: center;
 }
@@ -356,37 +351,39 @@ body {
   font-size: 2rem;
   font-weight: 400;
   align-self: center;
-  border-radius: 8px;
+}
+.cv .cv__conteudo .cv__conteudo__experiência {
   display: flex;
-  justify-content: center;
-  gap: 16px;
-  border: 2px solid #FFC099;
-  width: 100%;
-  text-align: center;
-  padding: 21.5px 0px;
-  text-decoration: none;
-  color: #FBF1EB;
-  font-size: 1.5rem;
-  font-weight: 500;
+  flex-direction: column;
+  gap: 1rem;
 }
 .cv .cv__conteudo .cv__conteudo__experiência li {
   font-size: 1.2rem;
   text-align: center;
 }
+.cv .cv__conteudo .cv__conteudo__experiência li .cv__conteudo__experiência--ent {
+  color: #E6D6BB;
+}
 .cv .cv__conteudo .cv__conteudo__experiência li p {
   font-weight: 300;
   font-size: 1rem;
 }
+.cv .cv__conteudo .cv__conteudo__cursos {
+  height: 100%;
+}
 .cv .cv__conteudo .cv__conteudo__cursos li {
-  padding-top: 0.5rem;
   letter-spacing: 0.05rem;
   font-size: 1.2rem;
   text-align: center;
+  padding: 0.5rem;
+}
+.cv .cv__conteudo .cv__conteudo__cursos li div {
+  color: #E6D6BB;
 }
 .cv .cv__conteudo .cv__conteudo__cursos li a {
   font-weight: 300;
   font-size: 1rem;
-  color: #FFC099;
+  text-decoration: underline;
 }
 .cv .cv__conteudo .cv__links {
   display: flex;
@@ -408,14 +405,16 @@ body {
     row-gap: 1rem;
     padding: 0 3%;
   }
-  .cv .cv__conteudo .cv__conteudo__titulo {
-    font-size: 4rem;
-    text-align: center;
-    grid-area: 1/1/1/3;
+  .cv .cv__conteudo hr {
+    display: none;
+  }
+  .cv .cv__conteudo .titulo__h2 {
+    grid-area: 1/1/2/3;
   }
   .cv .cv__conteudo .cv__conteudo__subtitulo {
     font-size: 3rem;
     font-weight: 600;
+    text-align: center;
   }
   .cv .cv__conteudo .exp {
     grid-area: 2/1/3/2;
@@ -435,7 +434,7 @@ body {
   .cv .cv__conteudo .certificados {
     grid-area: 2/2/3/3;
   }
-  .cv .cv__conteudo .cv__conteudo__certificados {
+  .cv .cv__conteudo .cv__conteudo__cursos {
     grid-area: 3/2/4/3;
   }
   .cv .cv__conteudo .cv__conteudo__cursos li {
@@ -455,9 +454,9 @@ body {
 .project {
   margin: 6rem 1rem 0 1rem;
 }
-.project .project__titulo {
-  font-size: 3rem;
-  font-weight: 700;
+.project .titulo__h2 {
+  font-size: 4rem;
+  font-weight: 500;
   font-family: "Chakra Petch", sans-serif;
   text-align: center;
 }
@@ -531,7 +530,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .project .project__titulo {
+  .project .titulo__h2 {
     margin-bottom: 3rem;
   }
   .project .project__group {
@@ -569,7 +568,7 @@ body {
   .project .project__group .project__list .project__container .projetc__container__info:hover .projetc__container__info__tooltip {
     display: block;
     position: absolute;
-    cursor: auto;
+    pointer-events: none;
     background-color: #FFC099;
     color: #492f1d;
     font-family: "Oswald", sans-serif;
@@ -581,6 +580,7 @@ body {
   }
   .project .project__group .project__list .project__container .projetc__container__info .projetc__container__info__tooltip {
     display: none;
+    pointer-events: none;
   }
   .project .project__frame {
     flex: 3;
@@ -601,6 +601,21 @@ body {
     width: 100%;
   }
 }
+.contact__container {
+  margin: 6rem 1rem 0 1rem;
+}
+.contact__container .titulo__h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+.contact__container .contact {
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
 .footer {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;

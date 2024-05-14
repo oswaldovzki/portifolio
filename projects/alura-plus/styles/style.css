@@ -63,7 +63,7 @@ body {
 /*-------------Primeira Sessao-------------*/
 
 .plus__header__backgound {
-    background-image: url(./alura-plus-img/Background.png);
+    background-image: url("../assets/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
 }

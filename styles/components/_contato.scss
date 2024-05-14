@@ -1,0 +1,18 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+
+.contact__container {
+    margin: 6rem 1rem 0 1rem;
+
+    .titulo__h2 {
+        @include mixins.titulo_h2(variables.$ft-titulo);
+    }
+
+    .contact {
+        font-weight: 300;
+        line-height: 1.5rem;
+        text-align: center;
+}
+
+}

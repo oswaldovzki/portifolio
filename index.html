@@ -23,9 +23,9 @@
     
     <script src="./scripts/hamburguer-menu.js" defer></script>
     <script src="./scripts/projects.js" defer></script>
-    <script src="https://kit.fontawesome.com/5033a35e06.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript" defer></script>
     <script src="./scripts/chat-bot.js" defer></script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/5033a35e06.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -36,12 +36,12 @@
 
     <header class="header">
         <button type="button" id="toggleBtn" class="header_mobile_btn">
-            <img class="header_mobile_btn_logo" src="./img/oswaldovzki_logo_art_half.jpg" alt="Logo artístico do site">
+            <img class="header_mobile_btn_logo" src="./assets/img/oswaldovzki_logo_art_half.jpg" alt="Menu">
         </button>
         <ul class="lista-menu" id="mobileMenu">
             <li class="lista-menu__item"><a href="#main" class="header__nav__link">Home</a></li>
             <li class="lista-menu__item"><a href="#about-title" class="header__nav__link">Sobre mim</a></li>
-            <li class="lista-menu__item"><a href="#cv-title" class="header__nav__link">Curriculo</a></li>
+            <li class="lista-menu__item"><a href="#cv-title" class="header__nav__link">Carreira</a></li>
             <li class="lista-menu__item"><a href="#project-list" class="header__nav__link">Projetos</a></li>
             <li class="lista-menu__item"><a href="#contact" class="header__nav__link">Contato</a></li>
             <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrine Dev</a></li>
@@ -65,24 +65,24 @@
                     <h2 class="main__botao__subt">Acesse minhas redes</h2>
                     <a class="main__botao__text" class="main__botao__inst" href="https://www.instagram.com/oswaldovzki/ "
                         target="_blank" rel="noopener noreferrer">
-                        <img src="./img/assets/instagram.png" alt="Logo do Instagram">
+                        <img src="./assets/icons/instagram.png" alt="">
                         Instagram</a>
                     <a class="main__botao__text" href="https://www.linkedin.com/in/ofilipelima/" target="_blank"
                         rel="noopener noreferrer">
-                        <img src="./img/assets/linkedin.png" alt="Logo do LinkedIn">
+                        <img src="./assets/icons/linkedin.png" alt="">
                         LinkedIn</a>
                     <a class="main__botao__text" href="https://github.com/oswaldovzki" target="_blank"
                         rel="noopener noreferrer">
-                        <img src="./img/assets/github.png" alt="Logo do Github">
+                        <img src="./assets/icons/github.png" alt="">
                         GitHub</a>
                 </div>
             </section>
-            <img class="minha__foto" src="./img/guy-coding-dragons.png" alt="Pessoa homem programando em um laptop no colo, em frente a uma janela e ao fundo tem uma paisagem de campos verdes com dragões. Criado por DALL-e">
+            <img class="minha__foto" src="./assets/img/guy-coding-dragons.png" alt="">
         </div>
     
         <div class="about">
             <section class="about__conteudo">
-                <h2 class="about__conteudo__titulo" id="about-title">Sobre mim</h2>
+                <h2 class="titulo__h2" id="about-title">Sobre mim</h2>
                 <p class="about__conteudo__texto">
                     Olá! Sou Filipe, Casado, Mineiro, curto Heavy Metal e Video Games.
                     <br>
@@ -97,53 +97,56 @@
     
         <div class="cv">    
             <section class="cv__conteudo">
-                <h2 class="cv__conteudo__titulo" id="cv-title">
-                    Desenvolvedor Front-end<br>
-                    HTML | CSS | JS
+                <h2 class="titulo__h2" id="cv-title">
+                    Carreira
                 </h2>
                 <h3 class="cv__conteudo__subtitulo exp">Experiências</h3>
                 <ul class="cv__conteudo__experiência">
-                    <li> Blip (2023 - Atual)
+                    <li>
+                        <span class="cv__conteudo__experiência--ent">Blip (2023 - Atual)</span>
                         <p>Analista de Suporte Técnico (N2)</p>
                     </li>
-                    <li> Varsity Tutors (2023 - 2023)
+                    <li>
+                        <span class="cv__conteudo__experiência--ent">Varsity Tutors (2023 - 2023)</span>
                         <p>Analista de Suporte Técnico</p>
                     </li>
-                    <li> Stilingue (2019 - 2023)
+                    <li>
+                        <span class="cv__conteudo__experiência--ent">Stilingue (2019 - 2023)</span>
                         <p>Analista de Suporte Técnico (2021 - 2023)</p>
                         <p>Analista de Quality Assurance (2020 - 2021)</p>
                         <p>Analista de Atendimento ao Cliente (2019 - 2020)</p>
                     </li>
                 </ul>
+                <hr>
                 <h3 class="cv__conteudo__subtitulo certificados">Certificações</h3>
-                <div class="cv__conteudo__certificados">
-                    <ul class="cv__conteudo__cursos">
-                        <li>HTML<br>
+                 <ul class="cv__conteudo__cursos">
+                        <li>
+                            <div>HTML</div>
                             <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/degree-html-css-v527396-527396/certificate">Alura Cursos com certificado</a>
                         </li>
-                        <li>CSS<br>
+                        <li>
+                            <div>CSS</div>
                             <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/degree-css-estilos-v671897-671897/certificate">Alura Cursos com certificado</a>
                         </li>
-                        <li>JavaScript<br>
+                        <li>
+                            <div>JavaScript</div>
                             <a rel="noopener" target="_blank" href="linkdocertificado">Alura Cursos com certificado</a>
                         </li>
-                        <br>
                         <li class="certification_full">
                             <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/fullCertificate/70c35dea02b345e12c388fc9730cc015">🎓 Certificação completa 🎓</a>
                         </li>
                     </ul>
-                </div>
             </section>
         </div>
         
         <div class="project">
-            <h2 class="project__titulo" id="project-list">
+            <h2 class="titulo__h2" id="project-list">
                 Projetos
             </h2>
             <span class="project__group">
                 <section class="project__list">
                     <div class="project__container active" id="alurabooks">
-                        <img class="project__container__icon" src="./projetos/alura_books/assets/logo.png" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/alura-books/assets/logo.png" alt="">
                         <p class="projetc__container__name">Alura Books</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="alurabooksInfo">
                             <span class="projetc__container__info__tooltip">
@@ -154,7 +157,7 @@
                         </i>
                     </div>
                     <div class="project__container" id="aluraplay">
-                        <img class="project__container__icon" src="./projetos/alura_play/img/favicon.ico" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/alura-play/assets/favicon.ico" alt="">
                         <p class="projetc__container__name">Alura Play</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="aluraplayInfo">
                             <span class="projetc__container__info__tooltip">
@@ -164,7 +167,7 @@
                         </i>
                     </div>
                     <div class="project__container" id="aluraplus">
-                        <img class="project__container__icon" src="./projetos/alura_plus/assets/Logo.svg" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/alura-plus/assets/Logo.svg" alt="">
                         <p class="projetc__container__name">Alura+</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="aluraplusInfo">
                             <span class="projetc__container__info__tooltip">
@@ -174,7 +177,7 @@
                         </i>
                     </div>
                     <div class="project__container" id="optimustech">
-                        <img class="project__container__icon" src="./projetos/optimus_tech/assets/logo.png" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/optimus-tech/assets/logo.png" alt="">
                         <p class="projetc__container__name">Optimus Tech</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="optimustechInfo">
                             <span class="projetc__container__info__tooltip">
@@ -184,7 +187,7 @@
                         </i>
                     </div>
                     <div class="project__container" id="aluramed">
-                        <img class="project__container__icon" src="./projetos/aluramed/assets/logo.png" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/aluramed/assets/logo.png" alt="">
                         <p class="projetc__container__name">AluraMed</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="aluramedInfo">
                             <span class="projetc__container__info__tooltip">
@@ -194,7 +197,7 @@
                         </i>
                     </div>
                     <div class="project__container" id="wavecast">
-                        <img class="project__container__icon" src="./projetos/wavecast/assets/imagens/Logos/Favicon.svg" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/wavecast/assets/imagens/Logos/Favicon.svg" alt="">
                         <p class="projetc__container__name">Wavecast</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="wavecastInfo">
                             <span class="projetc__container__info__tooltip">
@@ -204,7 +207,7 @@
                         </i>
                     </div>
                     <div class="project__container" id="spotify-imersao">
-                        <img class="project__container__icon" src="./projetos/spotify-imersao/src/assets/icons/logo.png" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/spotify-imersao/src/assets/icons/logo.png" alt="">
                         <p class="projetc__container__name">Spotify Clone</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="spotifyInfo">
                             <span class="projetc__container__info__tooltip">
@@ -214,7 +217,7 @@
                         </i>
                     </div>
                     <div class="project__container" id="CalmariaSpa">
-                        <img class="project__container__icon" src="./projetos/CalmariaSpa/assets/logo_icon.png" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/CalmariaSpa/assets/logo_icon.png" alt="">
                         <p class="projetc__container__name">Calmaria Spa</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="CalmariaSpaInfo">
                             <span class="projetc__container__info__tooltip">
@@ -224,7 +227,7 @@
                         </i>
                     </div>
                     <div class="project__container" id="culturama">
-                        <img class="project__container__icon" src="./projetos/culturama/assets/img/Favicon2.png" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./projects/culturama/assets/img/Favicon2.png" alt="">
                         <p class="projetc__container__name">Culturama</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="culturamaInfo">
                             <span class="projetc__container__info__tooltip">
@@ -233,18 +236,8 @@
                             </span>
                         </i>
                     </div>
-                    <div class="project__container" id="mentalista">
-                        <img class="project__container__icon" src="./projetos/mentalista/assets/icons/favicon-32x32.png" alt="Ícone do projeto X">
-                        <p class="projetc__container__name">Mentalista</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="mentalistaInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Jogo de adivinhação de números, com seleção de dificuldade.<br>
-                                Tecnologias usadas: HTML, CSS e JavaScript.
-                            </span>
-                        </i>
-                    </div>
                     <div class="project__container" id="oswBank">
-                        <img class="project__container__icon" src="./projetos/oswbank/img/cartao-credito.png" alt="">
+                        <img class="project__container__icon" src="./projects/oswbank/img/cartao-credito.png" alt="">
                         <p class="projetc__container__name">Banco do Oswaldo</p>
                         <i class=" projetc__container__info fa-solid fa-circle-info" id="oswBankInfo">
                             <span class="projetc__container__info__tooltip">
@@ -253,18 +246,8 @@
                             </span>
                         </i>
                     </div>
-                    <div class="project__container" id="currencyMonitor">
-                        <img class="project__container__icon" src="./projetos/currencymonitor/imagens/cifrao.png" alt="">
-                        <p class="projetc__container__name">Cotações de Moedas</p>
-                        <i class=" projetc__container__info fa-solid fa-circle-info" id="currencyMonitorInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Aplicação de Contação de Moedas, conectadas à uma API e uma biblioteca.
-                                Tecnologias usadas: HTML, CSS e JavaScript.
-                            </span>
-                        </i>
-                    </div>
                     <div class="project__container" id="jsApps">
-                        <img class="project__container__icon" src="./img/assets/favicon/favicon-32x32.png" alt="Ícone do projeto X">
+                        <img class="project__container__icon" src="./assets/icons/menu-hamburguer-aberto.svg" alt="">
                         <p class="projetc__container__name">javaScript Apps</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="jsAppsInfo">
                             <span class="projetc__container__info__tooltip">
@@ -279,17 +262,19 @@
                 <div class="project__square">
                     <div class="project__title__container">
                         <p class="project__square__title">Alura Books</p>
-                        <a class="projetc__square__site" href="./projetos/alura_books/alura_books.html"  target="_blank">🌐</a>
+                        <a class="projetc__square__site" href="./projects/alura-books/index.html"  target="_blank">🌐</a>
                     </div>
-                    <iframe class="project__square__preview" title="Landing Page for Alura Plus" src="./projetos/alura_books/alura_books.html"></iframe>
+                    <iframe class="project__square__preview" title="Landing Page for Alura Plus" src="./projects/alura-books/index.html"></iframe>
                 </div>
             </section>
         </div>
     
         <div class="contact__container">
+            <h2 class="titulo__h2">Contato</h2>
             <section class="contact" id="contact">
-                +5531900000000
-                contato@gmail.com
+                <p>WhatsApp: +55 31 9511-7017</p>
+                <p>E-mail: fpaixaol@gmail.com</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ofilipelima/">/in/ofilipelima/</a></p>
             </section>
         </div>
     </main>

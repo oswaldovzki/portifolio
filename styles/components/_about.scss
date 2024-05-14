@@ -16,16 +16,13 @@
         flex-wrap: nowrap;
         gap: 1rem;
 
-        .about__conteudo__titulo {
-            font-size: 3rem;
-            font-weight: 500;
-            font-family: variables.$ft-titulo;
+        .titulo__h2 {
+            @include mixins.titulo_h2(variables.$ft-titulo);
         }
 
         .about__conteudo__texto {
             font-weight: 300;
             letter-spacing: 0.05rem;
-            text-align: justify;
         }
 
         .about__links {
@@ -42,13 +39,9 @@
 
             .about__botao__text {
                 align-self: center;
-                @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%)
+                @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%);
             }
         }
-    }
-
-    .minha__foto {
-        width: 60%;
     }
 
     @media screen and (min-width: 1440px) {
@@ -82,10 +75,6 @@
                     @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 70%)
                 }
             }
-        }
-
-        .minha__foto {
-            width: 50%;
         }
     }
 }
