@@ -57,14 +57,14 @@ const projects = {
       title: 'Culturama',
       url: '../projects/culturama/index.html'
     },
+    oswBank: {
+      title: 'Banco do Oswaldo',
+      url: '../projects/oswbank/index.html'
+    },
     jsApps: {
       title: 'JS Apps',
       url: '../projects/jsapps/index.html'
     },
-    oswBank: {
-      title: 'Banco do Oswaldo',
-      url: '../projects/oswbank/index.html'
-    }
   };
   
   // Function to alter project preview based on project ID
