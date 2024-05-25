@@ -20,6 +20,11 @@
     -webkit-font-smoothing: antialiased;
 
     background: variables.$bg-degrade;
+
+    max-width: 590px;
+    margin: auto;
+
+    min-height: 100vh;
   }
 
   

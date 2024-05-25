@@ -16,6 +16,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(to top, #e4d458, #ffb535);
+  max-width: 590px;
+  margin: auto;
+  min-height: 100vh;
 }
 
 img, picture, video, canvas, svg {
@@ -123,6 +126,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #462C1C;
   font-family: "Pixelify Sans", sans-serif;
   color: #F7F5FF;
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
