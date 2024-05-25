@@ -23,47 +23,47 @@ projectBtns.forEach((btn) => {
 const projects = {
     alurabooks: {
       title: 'Alura Books',
-      url: '../projects/alura-books/index.html'
+      url: '../portifolio/projects/alura-books/index.html'
     },
     aluraplus: {
       title: 'Alura +',
-      url: '../projects/alura-plus/index.html'
+      url: '../portifolio/projects/alura-plus/index.html'
     },
     aluraplay: {
       title: 'Alura Play',
-      url: '../projects/alura-play/index.html'
+      url: '../portifolio/projects/alura-play/index.html'
     },
     optimustech: {
       title: 'Optimus Tech',
-      url: '../projects/optimus-tech/index.html'
+      url: '../portifolio/projects/optimus-tech/index.html'
     },
     aluramed: {
       title: 'Alura Med',
-      url: '../projects/aluramed/index.html'
+      url: '../portifolio/projects/aluramed/index.html'
     },
     wavecast: {
       title: 'Wave Cast',
-      url: '../projects/wavecast/index.html'
+      url: '../portifolio/projects/wavecast/index.html'
     },
     'spotify-imersao': {
       title: 'Spotify Clone',
-      url: '../projects/spotify-imersao/index.html'
+      url: '../portifolio/projects/spotify-imersao/index.html'
     },
     CalmariaSpa: {
       title: 'Calmaria Spa',
-      url: '../projects/CalmariaSpa/index.html'
+      url: '../portifolio/projects/CalmariaSpa/index.html'
     },
     culturama: {
       title: 'Culturama',
-      url: '../projects/culturama/index.html'
+      url: '../portifolio/projects/culturama/index.html'
     },
     oswBank: {
       title: 'Banco do Oswaldo',
-      url: '../projects/oswbank/index.html'
+      url: '../portifolio/projects/oswbank/index.html'
     },
     jsApps: {
       title: 'JS Apps',
-      url: '../projects/jsapps/index.html'
+      url: '../portifolio/projects/jsapps/index.html'
     },
   };
   
