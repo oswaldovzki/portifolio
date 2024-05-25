@@ -1,0 +1,8 @@
+@use '../abstract/variables';
+
+.footer {
+    text-align: center;
+    background-color: variables.$dark;
+    font-family: variables.$ft-texto;
+    color: variables.$white;
+}

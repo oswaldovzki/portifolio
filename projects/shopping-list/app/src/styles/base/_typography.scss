@@ -1,0 +1,5 @@
+@use '../abstract/variables';
+
+.body__main {
+    font-family: variables.$ft-texto;
+}

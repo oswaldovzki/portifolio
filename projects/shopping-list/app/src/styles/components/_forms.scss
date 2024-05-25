@@ -1,0 +1,45 @@
+@use '../abstract/mixins';
+@use '../abstract/variables';
+
+.body__main__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin: 1rem;
+
+    .body__main__form-input {
+        margin: .5rem;
+        padding: .5rem;
+        width: 100%;
+    }
+
+    .radio-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .radio {
+            @include mixins.invisble-input;
+        }
+
+        .label {
+          @include mixins.button(1rem, variables.$color1);
+          width: 30%;
+          margin: .25rem;
+        }
+
+        input[type="radio"]:checked + .label {
+            background-color: variables.$white;
+        }
+    }
+
+    .submit-button {
+        @include mixins.button(.25rem, variables.$color5);
+        color: variables.$white;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+    }
+}
