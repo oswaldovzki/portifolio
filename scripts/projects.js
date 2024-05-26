@@ -23,47 +23,47 @@ projectBtns.forEach((btn) => {
 const projects = {
     alurabooks: {
       title: 'Alura Books',
-      url: '../projects/alura-books/index.html'
+      url: './projects/alura-books/index.html'
     },
     aluraplus: {
       title: 'Alura +',
-      url: '../projects/alura-plus/index.html'
+      url: './projects/alura-plus/index.html'
     },
     aluraplay: {
       title: 'Alura Play',
-      url: '../projects/alura-play/index.html'
+      url: './projects/alura-play/index.html'
     },
     optimustech: {
       title: 'Optimus Tech',
-      url: '../projects/optimus-tech/index.html'
+      url: './projects/optimus-tech/index.html'
     },
     aluramed: {
       title: 'Alura Med',
-      url: '../projects/aluramed/index.html'
+      url: './projects/aluramed/index.html'
     },
     wavecast: {
       title: 'Wave Cast',
-      url: '../projects/wavecast/index.html'
+      url: './projects/wavecast/index.html'
     },
     'spotify-imersao': {
       title: 'Spotify Clone',
-      url: '../projects/spotify-imersao/index.html'
+      url: './projects/spotify-imersao/index.html'
     },
     CalmariaSpa: {
       title: 'Calmaria Spa',
-      url: '../projects/CalmariaSpa/index.html'
+      url: './projects/CalmariaSpa/index.html'
     },
     culturama: {
       title: 'Culturama',
-      url: '../projects/culturama/index.html'
+      url: './projects/culturama/index.html'
     },
     oswBank: {
       title: 'Banco do Oswaldo',
-      url: '../projects/oswbank/index.html'
+      url: './projects/oswbank/index.html'
     },
     jsApps: {
       title: 'JS Apps',
-      url: '../projects/jsapps/index.html'
+      url: './projects/jsapps/index.html'
     },
   };
   

@@ -1,0 +1,15 @@
+@use '../abstract/variables';
+
+@mixin invisble-input {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+@mixin button($radius, $bgcolor) {
+    padding: 0 .25rem;
+    border: solid 2px;
+    border-radius: $radius;
+    border-color: variables.$dark;
+    text-align: center;
+    background-color: $bgcolor;
+}

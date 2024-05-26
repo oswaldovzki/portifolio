@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Pixelify+Sans:wght@400..700&display=swap">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>Lista de compras</title>
+</head>
+
+<body class="body">
+
+    <main class="body__main">
+
+        <form class="body__main__form" id="form-itens" > 
+            <input class="body__main__form-input" type="text" required placeholder="Digite o item que deseja adicionar" id="receber-item">
+            <div class="radio-container">
+                <input type="radio" id="bebida" class="radio" name="shopping_category" value="01">
+                <label class="label" for="bebida">Bebidas</label>
+                <input type="radio" id="grain" class="radio" name="shopping_category" value="02">
+                <label class="label" for="grain">Grãos</label>
+                <input type="radio" id="snack" class="radio" name="shopping_category" value="03">
+                <label class="label" for="snack">Lanche</label>
+                <input type="radio" id="candy" class="radio" name="shopping_category" value="04">
+                <label class="label" for="candy">Doces</label>
+                <input type="radio" id="pasta" class="radio" name="shopping_category" value="05">
+                <label class="label" for="pasta">Massa</label>
+                <input type="radio" id="season" class="radio" name="shopping_category" value="06">
+                <label class="label" for="season">Tempero</label>
+                <input type="radio" id="diet" class="radio" name="shopping_category" value="07">
+                <label class="label" for="diet">Diet</label>
+                <input type="radio" id="cookie" class="radio" name="shopping_category" value="08">
+                <label class="label" for="cookie">Biscoito</label>
+                <input type="radio" id="higiene" class="radio" name="shopping_category" value="09">
+                <label class="label" for="higiene">Higiene</label>
+                <input type="radio" id="bath" class="radio" name="shopping_category" value="10">
+                <label class="label" for="bath">Banho</label>
+                <input type="radio" id="stuff" class="radio" name="shopping_category" value="11">
+                <label class="label" for="stuff">Coisas</label>
+                <input type="radio" id="cold" class="radio" name="shopping_category" value="12">
+                <label class="label" for="cold">Frios</label>
+                <input type="radio" id="produce" class="radio" name="shopping_category" value="13">
+                <label class="label" for="produce">Sacolão</label>
+                <input type="radio" id="coop" class="radio" name="shopping_category" value="13">
+                <label class="label" for="coop">Coop</label>
+            </div>
+            <button for="salvar" type="submit" class="submit-button">Salvar item</button>
+        </form>
+
+        <div class="body__main__list">
+            <section class="body__main__list-container">
+                <h2 class="body__main__list-title">Lista de compras</h2>
+                <ul class="body__main__list-items" id="lista-de-itens">
+                </ul>
+            </section>
+            <section class="body__main__list-container">
+                <h2 class="body__main__list-title">Comprados</h2>
+                <ul class="body__main__list-items" id="itens-comprados">
+                </ul>
+            </section>
+        </div>
+        <footer class="footer">Desenvolvido por Oswladovzki</footer>
+    </main>
+    
+
+    <script src="./script/main.js" defer></script>
+
+</body>
+
+
+</html>

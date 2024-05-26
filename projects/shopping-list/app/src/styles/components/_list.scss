@@ -1,0 +1,36 @@
+@use '../abstract/variables';
+
+
+.body__main__list {
+
+    margin: 1rem;
+    padding: .5rem;
+    border: solid 2.5px;
+    border-radius: .5rem;
+    background-image: url("../assets/list-bg.jpeg");
+
+    .body__main__list-container {
+
+        .body__main__list-title {
+            font-family: variables.$ft-titulo;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .body__main__list-items-compra {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            color: variables.$dark;
+
+            .text-input{ 
+                color: variables.$dark;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
