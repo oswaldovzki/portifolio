@@ -1,0 +1,159 @@
+body {
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1A1E28;
+}
+.header .header_mobile_btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.header .header_mobile_btn_logo {
+  width: 4rem;
+  border-radius: 999px;
+}
+.header .lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60%;
+  background-color: #1A1E28;
+}
+.header .lista-menu .lista-menu__item {
+  padding: 0.3rem 0.5rem;
+}
+.header .lista-menu .lista-menu__item .header__nav__link {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  border-left: solid 2px transparent;
+  padding-left: 0.6rem;
+  transition: border 400ms;
+}
+.header .lista-menu .lista-menu__item .header__nav__link:hover {
+  border-left: solid 2px #FFC099;
+  transition-timing-function: ease;
+}
+.header .header__nav__title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 1rem;
+  font-size: 1.4rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+.header .lista-menu.show {
+  display: block;
+}
+
+.apps {
+  margin: auto;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+.apps__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+
+  margin: auto;
+
+  z-index: -1;
+  position: relative;
+}
+
+.apps__container-item {
+  height: 7rem;
+  width: 7rem;
+  padding: .5rem 0;
+
+  border: solid 1px;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(217deg, #614e8b, #b5a2a200 70.71%),
+              linear-gradient(127deg, #b85416, #406b4000 70.71%),
+              linear-gradient(336deg, #2b3652, #2c2c9300 70.71%);
+
+  font-size: 1.25rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #2b3652;
+
+}
+
+.footer {
+  position: absolute;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+  }
+  .header .header__nav__title {
+    display: none;
+  }
+  .header .header_mobile_btn {
+    display: block;
+  }
+  .header .lista-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    text-wrap: nowrap;
+    gap: 1rem;
+    width: 100%;
+    margin-left: 3rem;
+  }
+  .header .lista-menu .lista-menu__item .header__nav__link {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    border-left: none;
+    padding-left: 0;
+    border-bottom: solid 2px transparent;
+    padding-bottom: 0.6rem;
+    transition: border 400ms;
+  }
+  .header .lista-menu .lista-menu__item .header__nav__link:hover {
+    border-left: none;
+    border-bottom: solid 2px #FFC099;
+    transition-timing-function: ease;
+  }
+  .header .lista-menu .lista-menu__item:first-child {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .header .lista-menu {
+    gap: 2rem;
+    margin-left: 5rem;
+  }
+  .header .lista-menu .lista-menu__item:first-child {
+    display: block;
+  }
+}
+

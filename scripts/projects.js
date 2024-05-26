@@ -63,7 +63,7 @@ const projects = {
     },
     jsApps: {
       title: 'JS Apps',
-      url: '../portifolio/projects/jsapps/index.html'
+      url: './projects/jsapps/index.html'
     },
   };
   
