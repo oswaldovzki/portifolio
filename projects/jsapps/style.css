@@ -74,9 +74,6 @@ body {
   gap: 2rem;
 
   margin: auto;
-
-  z-index: -1;
-  position: relative;
 }
 
 .apps__container-item {
