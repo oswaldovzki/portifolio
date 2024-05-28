@@ -1,0 +1,63 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+
+// .contact-modal-hide {
+//     display: none;
+// }
+
+.contact-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18rem;
+    height: 16rem;
+    background-color: white;
+    padding: 1.3rem;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px #888888;
+    font-size: 1.2rem;
+
+}
+
+.js-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    label {
+        color: variables.$cor-header;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .form-field {
+        color: variables.$cor-header;
+    }
+
+    .message {
+        height: 3rem;
+        line-break: normal;
+        color: variables.$cor-header;
+        padding: .5rem;
+        resize: none;
+        width: 100%;
+    }
+
+    .submit-btn {
+        margin: 1rem;
+        width: 50%;
+        margin: .6rem auto;
+
+        padding: .5rem 0;
+        border: solid 1px;
+        border-radius: 1rem;
+        background: linear-gradient(217deg, #614e8b, #b5a2a200 70.71%), linear-gradient(127deg, #b85416, #406b4000 70.71%), linear-gradient(336deg, #2b3652, #2c2c9300 70.71%);
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 2px #2b3652;
+    }
+}

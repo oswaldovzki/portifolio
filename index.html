@@ -16,10 +16,10 @@
     <meta name="keywords" content="HTML, CSS, SASS, JavaScript">
     <meta name="author" content="Filipe Lima">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
     
     <script src="./scripts/hamburguer-menu.js" defer></script>
     <script src="./scripts/projects.js" defer></script>
@@ -145,7 +145,16 @@
             </h2>
             <span class="project__group">
                 <section class="project__list">
-                    <div class="project__container active" id="alurabooks">
+                    <div class="project__container active" id="jsApps">
+                        <img class="project__container__icon" src="./assets/icons/menu-hamburguer-aberto.svg" alt="">
+                        <p class="projetc__container__name">javaScript Apps</p>
+                        <i class="projetc__container__info fa-solid fa-circle-info" id="jsAppsInfo">
+                            <span class="projetc__container__info__tooltip">
+                                Aplicações em JavaScript.
+                            </span>
+                        </i>
+                    </div>
+                    <div class="project__container" id="alurabooks">
                         <img class="project__container__icon" src="./projects/alura-books/assets/logo.png" alt="">
                         <p class="projetc__container__name">Alura Books</p>
                         <i class="projetc__container__info fa-solid fa-circle-info" id="alurabooksInfo">
@@ -246,25 +255,16 @@
                             </span>
                         </i>
                     </div>
-                    <div class="project__container" id="jsApps">
-                        <img class="project__container__icon" src="./assets/icons/menu-hamburguer-aberto.svg" alt="">
-                        <p class="projetc__container__name">javaScript Apps</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="jsAppsInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Aplicações em JavaScript.
-                            </span>
-                        </i>
-                    </div>
             </span>
             </section>
     
             <section class="project__frame">
                 <div class="project__square">
                     <div class="project__title__container">
-                        <p class="project__square__title">Alura Books</p>
-                        <a class="projetc__square__site" href="./projects/alura-books/index.html"  target="_blank">🌐</a>
+                        <p class="project__square__title">JavaScript Apps</p>
+                        <a class="projetc__square__site" href="./projects/jsapps/index.html"  target="_blank">🌐</a>
                     </div>
-                    <iframe class="project__square__preview" title="Landing Page for Alura Plus" src="./projects/alura-books/index.html"></iframe>
+                    <iframe class="project__square__preview" title="Aplicativos em JavaScript" src="./projects/jsapps/index.html"></iframe>
                 </div>
             </section>
             
@@ -278,8 +278,8 @@
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/ofilipelima/">/in/ofilipelima/</a></p>
             </section>
         </div>
-        
-        <form class="contact-modal contact-modal-hide js-form">
+        <div class="contact-modal contact-modal-hide">
+        <form class="js-form">
             <label for="name">
                 Nome
                 <input class="form-field js-field" id="name" maxlength="120" name="name" required type="text">
@@ -290,10 +290,11 @@
             </label>
             <label for="message">
                 Mensagem
-                <input class="form-field js-field" id="message" name="message" required type="text">
+                <textarea class="form-field js-field message" id="message" name="message" rows="3" required type="text"></textarea>
             </label>
-            <button type="submit">Salvar</button>
+            <button class="submit-btn" type="submit">Enviar</button>
         </form>
+        </div>
     </main>
 
     <footer class="footer">
