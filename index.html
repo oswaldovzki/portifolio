@@ -24,6 +24,7 @@
     <script src="./scripts/hamburguer-menu.js" defer></script>
     <script src="./scripts/projects.js" defer></script>
     <script src="./scripts/chat-bot.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
     <script src="https://unpkg.com/blip-chat-widget" type="text/javascript" defer></script>
     <script src="https://kit.fontawesome.com/5033a35e06.js" crossorigin="anonymous"></script>
     
@@ -276,24 +277,26 @@
                 <p>WhatsApp: +55 31 9511-7017</p>
                 <p>E-mail: fpaixaol@gmail.com</p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/ofilipelima/">/in/ofilipelima/</a></p>
+                <button type="button" class="submit-btn" id="openform">Enviar uma Mensagem</button>
             </section>
         </div>
+        
         <div class="contact-modal contact-modal-hide">
-        <form class="js-form">
-            <label for="name">
-                Nome
-                <input class="form-field js-field" id="name" maxlength="120" name="name" required type="text">
-            </label>
-            <label for="email">
-                E-mail
-                <input class="form-field js-field" id="email" maxlength="120" name="email" required type="email">
-            </label>
-            <label for="message">
-                Mensagem
-                <textarea class="form-field js-field message" id="message" name="message" rows="3" required type="text"></textarea>
-            </label>
-            <button class="submit-btn" type="submit">Enviar</button>
-        </form>
+            <form class="js-form">
+                <label for="name">
+                    Nome
+                    <input class="form-field js-field" id="name" maxlength="120" name="name" required type="text">
+                </label>
+                <label for="email">
+                    E-mail
+                    <input class="form-field js-field" id="email" maxlength="120" name="email" required type="email">
+                </label>
+                <label for="message">
+                    Mensagem
+                    <textarea class="form-field js-field message" id="message" name="message" rows="3" required type="text"></textarea>
+                </label>
+                <button class="submit-btn" type="submit" id="submit-btn">Enviar</button>
+            </form>
         </div>
     </main>
 

@@ -615,6 +615,20 @@ body {
   line-height: 1.5rem;
   text-align: center;
 }
+.contact__container .submit-btn {
+  margin: 1rem;
+  width: 60%;
+  margin: 0.6rem auto;
+  padding: 0.5rem 0;
+  border: solid 1px;
+  border-radius: 1rem;
+  background: linear-gradient(217deg, #614e8b, rgba(181, 162, 162, 0) 70.71%), linear-gradient(127deg, #b85416, rgba(64, 107, 64, 0) 70.71%), linear-gradient(336deg, #2b3652, rgba(44, 44, 147, 0) 70.71%);
+  text-shadow: 1px 1px 2px #2b3652;
+}
+
+.contact-modal-hide {
+  display: none;
+}
 
 .contact-modal {
   position: absolute;
@@ -682,7 +696,7 @@ body {
     position: fixed;
     font-size: 1.2rem;
     font-weight: 500;
-    background-image: url("../img/assets/technologies.svg");
+    background-image: url("../assets/icons/technologies.svg");
     background-repeat: no-repeat;
     background-position: 99%;
     background-size: 11rem;
