@@ -3,7 +3,7 @@
 
 
 .contact__container {
-    margin: 6rem 1rem 0 1rem;
+    margin: 6rem 1rem;
 
     .titulo__h2 {
         @include mixins.titulo_h2(variables.$ft-titulo);
@@ -18,7 +18,8 @@
     .submit-btn {
         margin: 1rem;
         width: 60%;
-        margin: .6rem auto;
+        max-width: 240px;
+        margin: 1.5rem auto;
 
         padding: .5rem 0;
         border: solid 1px;
@@ -27,4 +28,20 @@
         text-shadow: 1px 1px 2px #2b3652;
     }
 
+}
+
+@media screen and (min-width: 1440px) {
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+
+        .contact {
+            font-size: 1.25rem;
+            line-height: 150%;
+        }
+
+        .submit-btn {
+            font-size: 1.25rem;
+        }
+    }
 }

@@ -72,8 +72,9 @@ const projects = {
     if (projects.hasOwnProperty(projectId)) {
       const project = projects[projectId];
       projectPreview.src = project.url;
-      projectTitle.textContent = project.title;
-      projectSite.href = project.url;
+      // projectTitle.textContent = project.title;
+      // projectSite.href = project.url;
     }
   }
+
   
