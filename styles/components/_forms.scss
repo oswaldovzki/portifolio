@@ -26,6 +26,24 @@
     flex-direction: column;
     flex-wrap: nowrap;
 
+    .xmark {
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        color: #ff0000;
+        cursor: pointer;
+
+    }
+
+    .xmark:hover {
+        color: #e80000;
+    }
+
+    .xmark:active {
+        color: #000000;
+    }
+
+
     label {
         color: variables.$cor-header;
 

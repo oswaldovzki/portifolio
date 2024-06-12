@@ -33,9 +33,8 @@
             cursor: pointer;
 
             &:hover {
-                background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), variables.$cor-secundaria-opc);
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), variables.$cor-secundaria-opc);
                 border-radius: 0.5rem;
-                transition: background-image 600ms;
             }
 
             .project__container__icon {
@@ -52,6 +51,9 @@
             .projetc__container__info {
                 display: none;
 
+                .icons {
+                    margin: 3px;
+                }
             }
 
         }
@@ -139,7 +141,7 @@
 
                     .projetc__container__info {
                         display: block;
-                        font-size: 1.6rem;
+                        font-size: 1.2rem;
                         color: #E6D6BB;
 
                         &:hover .projetc__container__info__tooltip {

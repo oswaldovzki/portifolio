@@ -13,26 +13,6 @@ body {
   background-color: #262B3A;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #FBF1EB;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #FFC099;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #492f1d;
-}
-
 .header {
   width: 100%;
   position: fixed;
@@ -483,9 +463,8 @@ body {
   cursor: pointer;
 }
 .project .project__group .project__container:hover {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 192, 153, 0.3764705882));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 192, 153, 0.3764705882));
   border-radius: 0.5rem;
-  transition: background-image 600ms;
 }
 .project .project__group .project__container .project__container__icon {
   border-radius: 1rem;
@@ -498,6 +477,9 @@ body {
 }
 .project .project__group .project__container .projetc__container__info {
   display: none;
+}
+.project .project__group .project__container .projetc__container__info .icons {
+  margin: 3px;
 }
 .project .project__group .project__frame .project__square {
   display: flex;
@@ -566,7 +548,7 @@ body {
   }
   .project .project__group .project__list .project__container .projetc__container__info {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: #E6D6BB;
   }
   .project .project__group .project__list .project__container .projetc__container__info:hover .projetc__container__info__tooltip {
@@ -608,9 +590,6 @@ body {
     width: 100%;
   }
 }
-.contact__container {
-  margin: 6rem 1rem;
-}
 .contact__container .titulo__h2 {
   font-size: 4rem;
   font-weight: 500;
@@ -638,6 +617,7 @@ body {
   .contact__container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 6rem;
   }
   .contact__container .contact {
     font-size: 1.25rem;
@@ -669,6 +649,19 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+.js-form .xmark {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  color: #ff0000;
+  cursor: pointer;
+}
+.js-form .xmark:hover {
+  color: #e80000;
+}
+.js-form .xmark:active {
+  color: #000000;
 }
 .js-form label {
   color: #1A1E28;
@@ -722,4 +715,30 @@ body {
     background-position: 99%;
     background-size: 11rem;
   }
+}
+
+/* Animação backgroundFill */
+@keyframes background-fill {
+  to {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 192, 153, 0.3764705882));
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FBF1EB;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFC099;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #492f1d;
 }/*# sourceMappingURL=styles.css.map */
