@@ -16,14 +16,15 @@
     <meta name="keywords" content="HTML, CSS, SASS, JavaScript">
     <meta name="author" content="Filipe Lima">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
     
     <script src="./scripts/hamburguer-menu.js" defer></script>
     <script src="./scripts/projects.js" defer></script>
     <script src="./scripts/chat-bot.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
     <script src="https://unpkg.com/blip-chat-widget" type="text/javascript" defer></script>
     <script src="https://kit.fontawesome.com/5033a35e06.js" crossorigin="anonymous"></script>
     
@@ -65,15 +66,15 @@
                     <h2 class="main__botao__subt">Acesse minhas redes</h2>
                     <a class="main__botao__text" class="main__botao__inst" href="https://www.instagram.com/oswaldovzki/ "
                         target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/icons/instagram.png" alt="">
+                        <img class="social" src="./assets/icons/instagram.svg" alt="">
                         Instagram</a>
                     <a class="main__botao__text" href="https://www.linkedin.com/in/ofilipelima/" target="_blank"
                         rel="noopener noreferrer">
-                        <img src="./assets/icons/linkedin.png" alt="">
+                        <img class="social" src="./assets/icons/linkedin.svg" alt="">
                         LinkedIn</a>
                     <a class="main__botao__text" href="https://github.com/oswaldovzki" target="_blank"
                         rel="noopener noreferrer">
-                        <img src="./assets/icons/github.png" alt="">
+                        <img class="social" src="./assets/icons/github.svg" alt="">
                         GitHub</a>
                 </div>
             </section>
@@ -108,7 +109,7 @@
                     </li>
                     <li>
                         <span class="cv__conteudo__experiência--ent">Varsity Tutors (2023 - 2023)</span>
-                        <p>Analista de Suporte Técnico</p>
+                        <p>Especialista de Suporte Técnico</p>
                     </li>
                     <li>
                         <span class="cv__conteudo__experiência--ent">Stilingue (2019 - 2023)</span>
@@ -145,126 +146,159 @@
             </h2>
             <span class="project__group">
                 <section class="project__list">
-                    <div class="project__container active" id="alurabooks">
+                    <div class="project__container active" id="jsApps">
+                        <img class="project__container__icon" src="./assets/icons/menu-hamburguer-aberto.svg" alt="">
+                        <p class="projetc__container__name">javaScript Apps</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/jsapps/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="jsAppsInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Aplicações em JavaScript.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="alurabooks">
                         <img class="project__container__icon" src="./projects/alura-books/assets/logo.png" alt="">
                         <p class="projetc__container__name">Alura Books</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="alurabooksInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Site de venda de livros de Tecnologia, com menu hamburguer, caixa de busca, sessão 'swipe' e
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/alura-books/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="alurabooksInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Site de venda de livros de Tecnologia, com menu hamburguer, caixa de busca, sessão 'swipe' e
                                 outros elementos. <br>
-                                Tecnologias usadas: HTML e CSS.
-                            </span>
-                        </i>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="aluraplay">
                         <img class="project__container__icon" src="./projects/alura-play/assets/favicon.ico" alt="">
                         <p class="projetc__container__name">Alura Play</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="aluraplayInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Site de armazenamento de Vídeos de Tecnologia, com funcionalidade de adição de novos videos e busca por texto. <br>
-                                Tecnologias usadas: HTML, CSS e JS.
-                            </span>
-                        </i>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/alura-play/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="alurabooksInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Site de armazenamento de Vídeos de Tecnologia, com funcionalidade de adição de novos videos e busca por texto. <br>
+                                    Tecnologias usadas: HTML, CSS e JS.
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="aluraplus">
                         <img class="project__container__icon" src="./projects/alura-plus/assets/Logo.svg" alt="">
                         <p class="projetc__container__name">Alura+</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="aluraplusInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Landing Page de uma plataforma de Stremaing.<br>
-                                Tecnologias usadas: HTML, CSS e JS (swipe).
-                            </span>
-                        </i>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/alura-plus/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="alurabooksInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Landing Page de uma plataforma de Stremaing.<br>
+                                    Tecnologias usadas: HTML, CSS e JS (swipe).
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="optimustech">
                         <img class="project__container__icon" src="./projects/optimus-tech/assets/logo.png" alt="">
                         <p class="projetc__container__name">Optimus Tech</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="optimustechInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Página de divulgação de vagas em uma empresa de tecnologia e cadastro de curriculos.<br>
-                                Tecnologias usadas: HTML e CSS.
-                            </span>
-                        </i>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/optimus-tech/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="alurabooksInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página de divulgação de vagas em uma empresa de tecnologia e cadastro de curriculos.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="aluramed">
                         <img class="project__container__icon" src="./projects/aluramed/assets/logo.png" alt="">
                         <p class="projetc__container__name">AluraMed</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="aluramedInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Página de consultas de uma clínica fictícia.<br>
-                                Tecnologias usadas: HTML e CSS.
-                            </span>
-                        </i>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/aluramed/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="aluramedInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página de consultas de uma clínica fictícia.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="wavecast">
                         <img class="project__container__icon" src="./projects/wavecast/assets/imagens/Logos/Favicon.svg" alt="">
                         <p class="projetc__container__name">Wavecast</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="wavecastInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Página de podcasts.<br>
-                                Tecnologias usadas: HTML e CSS.
-                            </span>
-                        </i>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/wavecast/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="wavecastInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página de podcasts.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="spotify-imersao">
                         <img class="project__container__icon" src="./projects/spotify-imersao/src/assets/icons/logo.png" alt="">
                         <p class="projetc__container__name">Spotify Clone</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="spotifyInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Página clone do Spotfy, Desenvolvido em uma imersão da Alura.<br>
-                                Tecnologias usadas: HTML e CSS.
-                            </span>
-                        </i>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/spotify-imersao/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="spotifyInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página clone do Spotfy, Desenvolvido em uma imersão da Alura.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="CalmariaSpa">
                         <img class="project__container__icon" src="./projects/CalmariaSpa/assets/logo_icon.png" alt="">
                         <p class="projetc__container__name">Calmaria Spa</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="CalmariaSpaInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Landing page de uma empresa fictícia de SPA.<br>
-                                Tecnologias usadas: HTML e CSS.
-                            </span>
-                        </i>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/CalmariaSpa/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="CalmariaSpaInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Landing page de uma empresa fictícia de SPA.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="culturama">
                         <img class="project__container__icon" src="./projects/culturama/assets/img/Favicon2.png" alt="">
                         <p class="projetc__container__name">Culturama</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="culturamaInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Página de divulgação de eventos.<br>
-                                Tecnologias usadas: HTML e CSS.
-                            </span>
-                        </i>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/culturama/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="culturamaInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página de divulgação de eventos.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
                     </div>
                     <div class="project__container" id="oswBank">
                         <img class="project__container__icon" src="./projects/oswbank/img/cartao-credito.png" alt="">
                         <p class="projetc__container__name">Banco do Oswaldo</p>
-                        <i class=" projetc__container__info fa-solid fa-circle-info" id="oswBankInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Aplicação de cadastro e envio de formulários, com exemplo de um banco.
-                                Tecnologias usadas: HTML, CSS e JavaScript.
-                            </span>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/oswbank/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="oswBankInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Aplicação de cadastro e envio de formulários, com exemplo de um banco.
+                                    Tecnologias usadas: HTML, CSS e JavaScript.
+                                </span>
                         </i>
-                    </div>
-                    <div class="project__container" id="jsApps">
-                        <img class="project__container__icon" src="./assets/icons/menu-hamburguer-aberto.svg" alt="">
-                        <p class="projetc__container__name">javaScript Apps</p>
-                        <i class="projetc__container__info fa-solid fa-circle-info" id="jsAppsInfo">
-                            <span class="projetc__container__info__tooltip">
-                                Aplicações em JavaScript.
-                            </span>
-                        </i>
+                        </div>
                     </div>
             </span>
             </section>
     
             <section class="project__frame">
                 <div class="project__square">
-                    <div class="project__title__container">
-                        <p class="project__square__title">Alura Books</p>
-                        <a class="projetc__square__site" href="./projects/alura-books/index.html"  target="_blank">🌐</a>
-                    </div>
-                    <iframe class="project__square__preview" title="Landing Page for Alura Plus" src="./projects/alura-books/index.html"></iframe>
+                    <!-- <div class="project__title__container">
+                        <p class="project__square__title">JavaScript Apps</p>
+                        <a class="projetc__square__site" href="./projects/jsapps/index.html"  target="_blank">🌐</a>
+                    </div> -->
+                    <iframe class="project__square__preview" title="Aplicativos em JavaScript" src="./projects/jsapps/index.html"></iframe>
                 </div>
             </section>
             
@@ -273,10 +307,30 @@
         <div class="contact__container">
             <h2 class="titulo__h2">Contato</h2>
             <section class="contact" id="contact">
-                <p>WhatsApp: +55 31 9511-7017</p>
+                <p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=553195117017" target="_blank" rel="noopener">+55 31 9511-7017</a></p>
                 <p>E-mail: fpaixaol@gmail.com</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/ofilipelima/">/in/ofilipelima/</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ofilipelima/" target="_blank" rel="noopener">/in/ofilipelima/</a></p>
+                <button type="button" class="submit-btn btn-disable" id="openform">Enviar uma Mensagem</button>
             </section>
+        </div>
+        
+        <div class="contact-modal contact-modal-hide">
+            <form class="js-form">
+                <i class="fa-solid fa-square-xmark xmark"></i>
+                <label for="name">
+                    Nome
+                    <input class="form-field js-field" id="name" maxlength="120" name="name" required type="text">
+                </label>
+                <label for="email">
+                    E-mail
+                    <input class="form-field js-field" id="email" maxlength="120" name="email" required type="email">
+                </label>
+                <label for="message">
+                    Mensagem
+                    <textarea class="form-field js-field message" id="message" name="message" rows="3" required type="text"></textarea>
+                </label>
+                <button class="submit-btn" type="submit" id="submit-btn">Enviar</button>
+            </form>
         </div>
     </main>
 

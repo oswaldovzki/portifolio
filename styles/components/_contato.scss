@@ -3,8 +3,7 @@
 
 
 .contact__container {
-    margin: 6rem 1rem 0 1rem;
-
+    
     .titulo__h2 {
         @include mixins.titulo_h2(variables.$ft-titulo);
     }
@@ -13,6 +12,46 @@
         font-weight: 300;
         line-height: 1.5rem;
         text-align: center;
+
+        a:hover {
+            color: variables.$cor-footer;
+        }
+    }
+
+    .submit-btn {
+        margin: 1rem;
+        width: 60%;
+        max-width: 240px;
+        margin: 1.5rem auto;
+        cursor: pointer;
+
+        padding: .5rem 0;
+        border: solid 1px;
+        border-radius: 1rem;
+        background: linear-gradient(217deg, #614e8b, #b5a2a200 70.71%), linear-gradient(127deg, #b85416, #406b4000 70.71%), linear-gradient(336deg, #2b3652, #2c2c9300 70.71%);
+        text-shadow: 1px 1px 2px #2b3652;
+    }
+
+    .btn-disable {
+        background: none;
+        cursor: not-allowed;
+    }
 }
 
+@media screen and (min-width: 1440px) {
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6rem;
+
+        .contact {
+            font-size: 1.25rem;
+            line-height: 150%;
+        }
+
+        .submit-btn {
+            font-size: 1.25rem;
+        }
+    }
 }
+

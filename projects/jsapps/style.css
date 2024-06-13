@@ -87,7 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   background: linear-gradient(217deg, #614e8b, #b5a2a200 70.71%),

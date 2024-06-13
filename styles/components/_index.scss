@@ -47,7 +47,12 @@
 
             .main__botao__text {
                 align-self: center;
+                align-items: center;
                 @include mixins.botao-transparente(variables.$cor-primaria,variables.$cor-secundaria, 100%);
+
+                .social {
+                    height: 30px;
+                }
             }
         }
     }

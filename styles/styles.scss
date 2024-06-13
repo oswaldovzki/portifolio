@@ -1,11 +1,3 @@
 @use './abstract/root';
-
-@use './components/scroll';
-
-@use './components/header';
-@use './components/index';
-@use './components/about';
-@use './components/curriculum';
-@use './components/projects';
-@use './components/contato';
-@use './components/footer';
+@use './components/global-comp';
+@use './cosmetic/global-ani';

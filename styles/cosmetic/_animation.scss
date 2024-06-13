@@ -1,0 +1,14 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+/* Animação backgroundFill */
+
+@keyframes background-fill {
+    to {
+        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), variables.$cor-secundaria-opc)
+    }
+}
+
+@mixin easefin-out($animation, $time){
+    animation: $animation $time ease-in forwards
+}
