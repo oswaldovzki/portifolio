@@ -61,6 +61,10 @@ const projects = {
       title: 'Banco do Oswaldo',
       url: './projects/oswbank/index.html'
     },
+    watchlist: {
+      title: 'Watchlist',
+      url: './projects/watchlist/index.html'
+    },
     jsApps: {
       title: 'JS Apps',
       url: './projects/jsapps/index.html'
