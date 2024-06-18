@@ -116,9 +116,9 @@ meter {
 }
 
 /* Revert inputs to default */
-input {
+/* input {
     all: revert;
-}
+} */
 
 /**** END OF RESET ****/
 
@@ -246,8 +246,45 @@ body {
     gap: .5em;
 }
 
+.movieslist__items-fav {
+    cursor: pointer;
+}
+
+.movieslist__items-fav-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /* Remove default checkbox styles */
+
+    background-image: url('./assets/icons/heart-off.svg');
+    height: 22px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+    transition: background-image 0.3s ease-in-out;
+}
+
+.movieslist__items-fav-checkbox:checked {
+    background-image: url('./assets/icons/heart-on.svg');
+    animation: pulse 0.3s ease-in-out 2;
+}
+
+/* Define keyframes for pulsing animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
 .movieslist__items-info-description {
     margin-top: 1em;
+    line-height: 150%;
+    font-size: 1.5em;
 }
 
 .footer {
