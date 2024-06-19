@@ -12,6 +12,7 @@ Favourite Movies is a simple web application that allows users to search for mov
 ## Disclaimer
 
 **API Key Required:** To run this application, you need an API key from The Movie Database (TMDb). Please follow the instructions below to obtain your API key.
+
 By default, there is an alert for you to manually input your API key, but you can also create another .js file and import it (more below).
 
 ## Getting Started
