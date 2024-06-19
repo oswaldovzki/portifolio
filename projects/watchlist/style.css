@@ -253,10 +253,6 @@ body {
     margin: 0 .5em;
 }
 
-.movieslist__container {
-    width: 100vw;
-}
-
 .movieslist {
     margin: 1em 10%;
     width: 80%;
