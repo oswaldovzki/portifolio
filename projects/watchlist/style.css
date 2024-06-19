@@ -1,0 +1,408 @@
+/**** START OF RESET ****/
+
+/***
+    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Fix mobile Safari increase font-size on landscape mode */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu,
+summary {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+    -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+    display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+    display: none;
+}
+
+/* Revert/Sets inputs to default */
+input {
+    /* all: revert; */
+    all: unset;
+
+}
+
+/**** END OF RESET ****/
+
+/**** KEY FRAMES ****/
+
+/* Define keyframes for pulsing animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/**** END OF KEY FRAMES ****/
+
+/**** VARIABLES ****/
+:root {
+    --Movies-0: #fff3bbc1;
+    --Movies-1: #FACD00;
+    --Movies-2: #DCCD00;
+    --Movies-3: #B5E200;
+    --Movies-4: #BCDC48;
+    --Movies-5: #51DC00;
+    --Movies-6: #00DC0B;
+    --Movies-7: #100d00;
+    --Movies-8: #1d1c19;
+
+    --Font-title: "Nabla", system-ui;
+    --Font-text: "Englebert", cursive;
+}
+
+/**** MAIN CSSS ****/
+
+body {
+    background-color: var(--Movies-8);
+    font-family: var(--Font-text);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin: auto;
+}
+
+.header__container {
+    margin: 2em 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.page__title {
+    font-size: 3em;
+    font-family: var(--Font-title);
+    text-align: center;
+}
+
+.search__container__input {
+    width: 90%;
+    margin: 1em 5%;
+    height: 4em;
+
+    background-color: var(--Movies-0);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search__input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 0 .5em;
+
+    font-size: 1.15em;
+    font-family: var(--Font-text);
+}
+
+.search__icon {
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.search__container__checkbox {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+    margin: 1em;
+}
+
+.checkbox__text {
+    color: var(--Movies-1);
+}
+
+.search__checkbox {
+    margin: 0 .5em;
+}
+
+.movieslist {
+    margin: 1em 10%;
+    width: 80%;
+}
+
+.movieslist__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 2em;
+    border-radius: 5px;
+
+    background-color: var(--Movies-0);
+    padding: 1.5em 2em;
+
+    opacity: 0;
+    animation: fadeIn .5s forwards;
+}
+
+.movieslist__items.fade-out {
+    animation: fadeOut .5s forwards;
+}
+
+.movieslist__items-img {
+    border: ridge 7px #c69800;
+}
+
+.movieslist__items-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.year {
+    font-size: .8em;
+}
+
+.movieslist__items-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    font-size: 1.25em;
+}
+
+.movieslist__items-rating,
+.movieslist__items-fav {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.movieslist__items-fav {
+    cursor: pointer;
+}
+
+.movieslist__items-rating-star {
+    width: 25px;
+}
+
+.movieslist__items-fav-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url('./assets/icons/heart-off.svg');
+    height: 22px;
+    width: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    transition: background-image 0.3s ease-in-out;
+}
+
+.movieslist__items-fav-checkbox:checked {
+    background-image: url('./assets/icons/heart-on.svg');
+    height: 22px;
+    width: 25px;
+    background-repeat: no-repeat;
+    animation: pulse 0.3s ease-in-out 2;
+}
+
+.movieslist__items-info-description {
+    font-size: 1.25em;
+}
+
+.footer {
+    width: 100vw;
+    background-color: var(--Movies-7);
+    padding: .5em;
+
+    position: fixed;
+    bottom: 0;
+}
+
+.footer__credits {
+    text-align: center;
+    color: var(--Movies-0);
+    font-size: .75em;
+}
+
+@media screen and (min-width: 1024px) {
+    .header__container{
+        width: 40vw;
+    }
+
+    .search__input {
+        font-size: 1.5em;
+    }
+
+    .movieslist__items {
+        display: grid;
+        grid-template-areas:
+            "title-img title-text description"
+            "title-img info description";
+
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 2fr 2fr 5fr;
+        row-gap: 1em;
+    }
+
+    .movieslist__items-img {
+        grid-area: title-img;
+    }
+
+    .movieslist__items-title {
+        grid-area: title-text;
+    }
+
+    .movieslist__items-rating {
+        grid-area: info;
+    }
+
+    .movieslist__items-fav {
+        grid-area: info;
+    }
+
+    .movieslist__items-info-description {
+        grid-area: description;
+
+        margin-left: 2em;
+        line-height: 125%;
+        font-size: 1.5em;
+    }
+
+}
