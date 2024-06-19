@@ -115,15 +115,57 @@ meter {
     display: none;
 }
 
-/* Revert inputs to default */
-/* input {
-    all: revert;
-} */
+/* Revert/Sets inputs to default */
+input {
+    /* all: revert; */
+    all: unset;
+
+}
 
 /**** END OF RESET ****/
 
+/**** KEY FRAMES ****/
+
+/* Define keyframes for pulsing animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/**** END OF KEY FRAMES ****/
+
+/**** VARIABLES ****/
 :root {
-    --Movies-0: #fff3bb;
+    --Movies-0: #fff3bbc1;
     --Movies-1: #FACD00;
     --Movies-2: #DCCD00;
     --Movies-3: #B5E200;
@@ -131,11 +173,13 @@ meter {
     --Movies-5: #51DC00;
     --Movies-6: #00DC0B;
     --Movies-7: #100d00;
-    --Movies-8: #f6ffd6;
+    --Movies-8: #1d1c19;
 
     --Font-title: "Nabla", system-ui;
     --Font-text: "Englebert", cursive;
 }
+
+/**** MAIN CSSS ****/
 
 body {
     background-color: var(--Movies-8);
@@ -150,7 +194,7 @@ body {
 }
 
 .header__container {
-    margin: 4em 0;
+    margin: 2em 0;
 
     display: flex;
     flex-direction: column;
@@ -169,7 +213,7 @@ body {
     margin: 1em 5%;
     height: 4em;
 
-    background-color: var(--Movies-1);
+    background-color: var(--Movies-0);
     border-radius: 5px;
 
     display: flex;
@@ -182,8 +226,9 @@ body {
     background-color: transparent;
     width: 100%;
     height: 100%;
+    padding: 0 .5em;
 
-    font-size: 1.5em;
+    font-size: 1.15em;
     font-family: var(--Font-text);
 }
 
@@ -195,12 +240,17 @@ body {
 .search__container__checkbox {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 
     margin: 1em;
 }
 
+.checkbox__text {
+    color: var(--Movies-1);
+}
+
 .search__checkbox {
-    margin: 0 1em;
+    margin: 0 .5em;
 }
 
 .movieslist__container {
@@ -220,29 +270,48 @@ body {
     align-items: center;
     gap: 2em;
     margin: 2em;
+    border-radius: 5px;
 
-    background-color: var(--Movies-4);
-    padding: 2em;
-    }
+    background-color: var(--Movies-0);
+    padding: 1.5em 2em;
+
+    opacity: 0;
+    animation: fadeIn .5s forwards;
+}
+
+.movieslist__items.fade-out {
+    animation: fadeOut .5s forwards;
+}
+
+.movieslist__items-img {
+    border: ridge 7px #c69800;
+}
 
 .movieslist__items-title {
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+
+.year {
+    font-size: .8em;
 }
 
 .movieslist__items-info {
-    width: 100%;
-
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    font-size: 1.25em;
 }
 
-.movieslist__items-rating, .movieslist__items-fav {
+.movieslist__items-rating,
+.movieslist__items-fav {
     display: flex;
+    align-items: center;
     gap: .5em;
 }
 
@@ -250,16 +319,19 @@ body {
     cursor: pointer;
 }
 
+.movieslist__items-rating-star {
+    width: 25px;
+}
+
 .movieslist__items-fav-checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none; /* Remove default checkbox styles */
+    appearance: none;
 
     background-image: url('./assets/icons/heart-off.svg');
     height: 22px;
-    width: 24px;
+    width: 25px;
     background-repeat: no-repeat;
-    background-size: cover;
     cursor: pointer;
 
     transition: background-image 0.3s ease-in-out;
@@ -267,24 +339,14 @@ body {
 
 .movieslist__items-fav-checkbox:checked {
     background-image: url('./assets/icons/heart-on.svg');
+    height: 22px;
+    width: 25px;
+    background-repeat: no-repeat;
     animation: pulse 0.3s ease-in-out 2;
 }
 
-/* Define keyframes for pulsing animation */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-}
-
-
 .movieslist__items-info-description {
-    margin-top: 1em;
-    line-height: 150%;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .footer {
@@ -303,39 +365,48 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+    .header__container{
+        width: 40vw;
+    }
+
+    .search__input {
+        font-size: 1.5em;
+    }
 
     .movieslist__items {
         display: grid;
         grid-template-areas:
             "title-img title-text description"
-            "title-img rating description"
-            "title-img favorite description";
-    
+            "title-img info description";
+
         justify-items: center;
         align-items: center;
-        grid-template-columns: 1fr 2fr 6fr;
-        }
-    
+        grid-template-columns: 2fr 2fr 5fr;
+        row-gap: 1em;
+    }
+
     .movieslist__items-img {
         grid-area: title-img;
     }
-    
+
     .movieslist__items-title {
         grid-area: title-text;
     }
-    
+
     .movieslist__items-rating {
-        grid-area: rating;
+        grid-area: info;
     }
-    
+
     .movieslist__items-fav {
-        grid-area: favorite;
+        grid-area: info;
     }
-    
+
     .movieslist__items-info-description {
         grid-area: description;
 
-        margin-left: 64px;
+        margin-left: 2em;
+        line-height: 125%;
+        font-size: 1.5em;
     }
 
 }

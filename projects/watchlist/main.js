@@ -1,7 +1,7 @@
 // import { apiKey } from "./key.js"
 let apiKey = prompt('Pease, isert your API Key');
 
-let movieContainer = document.querySelector('.movieslist');
+const movieContainer = document.querySelector('.movieslist');
 const searchInput = document.getElementById('movie-search');
 const searchBtn = document.getElementById('search-btn');
 
@@ -50,21 +50,38 @@ window.onload = async function() {
   movies.forEach(movie => renderMovie(movie));
 }
 
+function updateMovieList(movies) {
+  const existingMovies = Array.from(movieContainer.children);
+
+  existingMovies.forEach(item => {
+    item.classList.add('fade-out');
+    item.addEventListener('animationend', () => item.remove());
+  });
+
+  movies.forEach(movie => renderMovie(movie));
+}
+
 function renderMovie(movie) {
+  const rating = Math.round(movie.vote_average*100/100);
   const li = document.createElement("li");
   movieContainer.appendChild(li);
   li.classList.add('movieslist__items');
+
+  const yearRegex = /(\d{4})-\d{2}-\d{2}/;
+  const match = movie.release_date.match(yearRegex);
+  const year = match ? match[1] : 'N/A';
+
   li.innerHTML = `
     <img class="movieslist__items-img" src="https://media.themoviedb.org/t/p/w220_and_h330_face${movie.poster_path}" alt="${movie.original_title} poster">
-    <h2 class="movieslist__items-title">${movie.original_title}<br>(${movie.release_date})</h2>
+    <h2 class="movieslist__items-title">${movie.original_title}<br><span class="year">(${year})</span></h2>
     <div class="movieslist__items-info">
         <div class="movieslist__items-rating">
             <img class="movieslist__items-rating-star" src="./assets/icons/star.svg" alt="Rating from 0 to 10">
-            <p class="movieslist__items-rating-text">${movie.vote_average}</p>
+            <p class="movieslist__items-rating-text">${rating}</p>
         </div>
         <div class="movieslist__items-fav">
             <input type="checkbox" class="movieslist__items-fav-checkbox" id="${movie.id}" data-movie-id="${movie.id}" ${isMovieFavorited(movie.id) ? 'checked' : ''}>
-            <label for="${movie.id}" class="movieslist__items-fav-text">favorite</label>
+            <label for="${movie.id}" class="movieslist__items-fav-text">Favorite</label>
         </div>
     </div>
     <p class="movieslist__items-info-description">${movie.overview}</p>
