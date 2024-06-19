@@ -1,6 +1,6 @@
 // Open Forms
 const modalForms = document.querySelector('.contact-modal');
-const openFormBtn = document.getElementById('openform')
+// const openFormBtn = document.getElementById('openform');
 
 openFormBtn.addEventListener('click', showForm)
 
