@@ -1,0 +1,39 @@
+
+body, h1, p, footer {
+    margin: 0;
+}
+
+canvas {
+    background: black;
+
+    margin: 1em;
+}
+
+.title__container {
+    height: 35px;
+    padding: 20px 0 0 50px;
+    margin: 2em;
+
+    background-image: url('./pong.svg');
+    background-repeat: no-repeat;
+}
+
+.stage {
+    width: 600px;
+    height: 400px;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+footer { 
+    text-align: center;
+
+    background-color: blueviolet;
+}
+
+.footer__text {
+    padding: .5em;
+}
