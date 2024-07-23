@@ -1,0 +1,27 @@
+/* Reset CSS */
+
+* {
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: 300;
+    font-style: normal;
+
+    border: none;
+    box-sizing: border-box;
+
+}
+
+body, button {
+    background-color: white;
+}
+
+/* Body */
+
+button {
+    border: solid pink 2px;
+    border-radius: 5px;
+    margin: .1em;
+}
+
+
+/* Game */

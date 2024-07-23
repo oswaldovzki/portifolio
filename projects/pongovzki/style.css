@@ -37,3 +37,8 @@ footer {
 .footer__text {
     padding: .5em;
 }
+
+.game__settings {
+    display: flex;
+    gap: 1em;
+}

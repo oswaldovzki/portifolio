@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="./assets/img/favicon.png">
+
+    <title>Freeway JS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Freeway JS</h1>
+    </header>
+    <main>    
+        <section class="game__settings">
+            <div>
+                <button class="settings__play">Play</button>
+                <button>Pause</button>
+            </div>
+            <button>Sound On</button>
+            <label for="car-speed">
+                Car Speed
+                <input class="settings__speed" id="car-speed" min="0" max="50" name="car-speed" required type="number"
+                    value="10">
+            </label>
+        </section>
+    
+        <section class="stage" id="stage">
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Oswaldovzki
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="./app/canvas.js"></script>
+
+</body>
+
+</html>
