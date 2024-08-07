@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./pong.svg" type="image/x-icon">
+
+    <title>Pong in javacript</title>
+</head>
+
+<body>
+    <header class="title__container">
+        <h1 class="title">
+            Pongovzki
+        </h1>
+    </header>
+
+    <section class="game__settings">
+        <div>
+            <button class="settings__play">Play</button>
+            <button>Pause</button>
+        </div>
+        <div>
+            <button>COM</button>
+            <button>Player 2</button>
+        </div>
+        <button>Sound On</button>
+        <label for="ball-speed">
+            Ball Speed
+            <input class="settings__speed" id="ball-speed" min="0" max="50" name="ball-speed" required type="number"
+                value="10">
+        </label>
+    </section>
+
+    <section class="stage" id="stage">
+    </section>
+
+    <footer>
+        <p class="footer__text">Desenvolvido por Oswaldovzki</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
