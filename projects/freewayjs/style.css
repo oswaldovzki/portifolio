@@ -17,6 +17,11 @@ body, button {
 
 /* Body */
 
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
 button {
     border: solid pink 2px;
     border-radius: 5px;
@@ -25,3 +30,25 @@ button {
 
 
 /* Game */
+main {
+    width: 100%;
+}
+
+.stage {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    margin: 10px 0;
+    background-color: rgb(164, 164, 164);
+
+    text-align: center;
+}

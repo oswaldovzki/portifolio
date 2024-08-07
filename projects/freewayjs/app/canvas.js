@@ -1,10 +1,6 @@
 // Load assets
-let backgroundImage;
-let playerOneActor;
-let playerTwoActor;
-let greenCarActor;
-let blackCarActor;
-let yellowCarActor;
+let backgroundImage, playerOneActor, playerTwoActor, greenCarActor, blackCarActor, yellowCarActor, collisionSound, scoreSound, gameMusic;
+let carActors = [];
 
 function preload() {
     backgroundImage = loadImage('./assets/img/estrada.png');
@@ -14,131 +10,101 @@ function preload() {
     blackCarActor = loadImage('./assets/img/blackcar.png');
     yellowCarActor = loadImage('./assets/img/yellowcar.png');
     carActors = [greenCarActor, blackCarActor, yellowCarActor, blackCarActor, yellowCarActor, greenCarActor];
+    collisionSound = loadSound("./assets/sound/colidiu.mp3");
+    scoreSound = loadSound("./assets/sound/pontos.wav");
+    gameMusic = loadSound("./assets/sound/trilha.mp3");
 }
 
-// Players
-let xPlayerOne = 260;
-let yPlayerOne = 590;
-let xPlayerTwo = 1076;
-let yPlayerTwo = 590;
-let collision = false;
-let playerOneScore = 0;
-let playerTwoScore = 0;
+// Player and car settings
+const playerOne = { x: 260, y: 590, score: 0, collision: false };
+const playerTwo = { x: 1076, y: 590, score: 0, collision: false };
+const cars = {
+    xPositions: [1480, 1480, 1480, 20, 20, 20],
+    yPositions: [75, 160, 250, 345, 430, 520],
+    speeds: [2, 5, 7, 8, 4, 3],
+    length: 80,
+    height: 50,
+};
 
+// Draw functions
 function drawActors(actor, x, y) {
     image(actor, x, y, 60, 50);
 }
 
-function playerOneMovement() {
-    if (keyIsDown(UP_ARROW)) {
-        yPlayerOne -= 5;
-    } if (keyIsDown(DOWN_ARROW)) {
-        yPlayerOne += 5;
-    } if (keyIsDown(87)) {
-        yPlayerTwo -= 5;
-    } if (keyIsDown(83)) {
-        yPlayerTwo += 5;
-    }
-}
-
-function checkCowllision(xPlayer,yPlayer) {
-    //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter)
-    for (let i = 0; i < carActors.length; i++) {
-        collision = collideRectCircle(xCars[i], yCars[i], carLength, carHeight, xPlayer+30, yPlayer+25, 40)
-        if (collision) {
-            resetPosition();
-            playerOneScore -= 1;
-        }
-    }
-}
-
-function resetPosition() {
-    yPlayerOne = 590;    
-}
-
-function drawScoreOne() {
+function drawScore(player, position) {
     textAlign(CENTER);
     textSize(40);
-    stroke(color(255,200,30));
-    fill(color(255,200,30));
-    text(playerOneScore, width / 5, 43)
+    stroke(color(255, 200, 30));
+    fill(color(255, 200, 30));
+    text(player.score, position, 43);
 }
-
-function drawScoreTwo() {
-    textAlign(CENTER);
-    textSize(40);
-    stroke(color(255,200,30));
-    fill(color(255,200,30));
-    text(playerTwoScore, width * 0.75, 43)
-}
-
-function setScore() {
-    if (yPlayerOne < 15) {
-        playerOneScore += 1;
-        resetPosition();
-    }
-}
-
-
-
-
-// Cars
-let xCars = [1480, 1480, 1480, 20, 20, 20];
-let yCars = [75, 160, 250, 345, 430, 520];
-let carsSpeed = [2, 5, 7, 8, 4, 3];
-let carLength = 80;
-let carHeight = 50;
 
 function drawCars() {
-    for (
-        let i = 0;
-        i < carActors.length;
-        i = i + 1
-    ) {
-        image(carActors[i], xCars[i], yCars[i], carLength, carHeight);
+    for (let i = 0; i < carActors.length; i++) {
+        image(carActors[i], cars.xPositions[i], cars.yPositions[i], cars.length, cars.height);
     }
 }
 
-function carMovement() {
-    for (let i = 0; i < xCars.length; i++) {
-        xCars[i] -= carsSpeed[i];
-    };
+// Movement functions
+function movePlayer(player, upKey, downKey) {
+    if (keyIsDown(upKey)) {
+        player.y -= 5;
+    }
+    if (keyIsDown(downKey)) {
+        player.y += 5;
+    }
+    player.y = constrain(player.y, 0, height - 50);
 }
 
-function outOfCanvas(xCar) {
-    return xCar < -100;
-}
-
-function carInitialPosition() {
-    for (let i = 0; i < xCars.length; i++) {
-        if (outOfCanvas(xCars[i])) {
-            xCars[i] = 1480;
+function moveCars() {
+    for (let i = 0; i < cars.xPositions.length; i++) {
+        cars.xPositions[i] -= cars.speeds[i];
+        if (cars.xPositions[i] < -cars.length) {
+            cars.xPositions[i] = width;
         }
     }
 }
 
-// Game Canvas
-const canvasWidth = 1475;
-const canvasHeight = 643;
+// Collision and scoring functions
+function checkCollision(player) {
+    for (let i = 0; i < carActors.length; i++) {
+        let collision = collideRectCircle(cars.xPositions[i], cars.yPositions[i], cars.length, cars.height, player.x + 30, player.y + 25, 40);
+        if (collision) {
+            player.y = 590;
+            collisionSound.play();
+            player.score -= 1;
+        }
+    }
+}
 
+function checkScore(player) {
+    if (player.y < 15) {
+        player.score += 1;
+        player.y = 590;
+        scoreSound.play();
+    }
+}
 
+// Game setup and draw functions
 function setup() {
-    let canvas = createCanvas(canvasWidth, canvasHeight);
+    let canvas = createCanvas(1475, 643);
     canvas.parent('stage');
     stroke('magenta');
+    gameMusic.loop();
 }
 
 function draw() {
     background(backgroundImage);
-    drawActors(playerOneActor, xPlayerOne, yPlayerOne);
-    drawActors(playerTwoActor, xPlayerTwo, yPlayerTwo);
+    drawActors(playerOneActor, playerOne.x, playerOne.y);
+    drawActors(playerTwoActor, playerTwo.x, playerTwo.y);
     drawCars();
-    carMovement();
-    carInitialPosition();
-    playerOneMovement();
-    checkCowllision(xPlayerOne,yPlayerOne);
-    checkCowllision(xPlayerTwo,yPlayerTwo);
-    drawScoreOne();
-    drawScoreTwo();
-    setScore();
+    moveCars();
+    movePlayer(playerOne, UP_ARROW, DOWN_ARROW);
+    movePlayer(playerTwo, 87, 83); // W and S keys
+    checkCollision(playerOne);
+    checkCollision(playerTwo);
+    drawScore(playerOne, width / 5);
+    drawScore(playerTwo, width * 0.75);
+    checkScore(playerOne);
+    checkScore(playerTwo);
 }
