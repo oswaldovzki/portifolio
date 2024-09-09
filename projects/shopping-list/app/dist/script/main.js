@@ -5,6 +5,8 @@ const form = document.getElementById('form-itens')
 const itensInput = document.getElementById('receber-item')
 const ulItens = document.getElementById('lista-de-itens')
 const ulItensComprados = document.getElementById('itens-comprados')
+const containerComprados = document.querySelector('.comprados')
+const containerClasses = document.querySelector('.radio-container')
 const listaRecuperada = localStorage.getItem('listaDeItens')
 
 /* Atualização da Local Storage */
@@ -52,7 +54,31 @@ function salvarItem() {
 
 }
 
-/* Função para renderizar o tem no HTML */
+function toggleRadioContainer() {
+    if (itensInput.value.trim() === '') {
+        // If input is empty, add the .hidden class
+        containerClasses.classList.add('hidden');
+    } else {
+        // If input is not empty, remove the .hidden class
+        containerClasses.classList.remove('hidden');
+    }
+}
+
+// Attach the input event listener to the input field
+itensInput.addEventListener('input', toggleRadioContainer);
+
+// Initial check on page load
+toggleRadioContainer();
+
+function mostrarComprados() {
+    if (ulItensComprados.children.length === 0) {
+        containerComprados.classList.add("hidden")
+    } else {
+        containerComprados.classList.remove("hidden")
+    }
+}
+
+/* Função para renderizar o item no HTML */
 function mostrarItem() {
     ulItens.innerHTML = ""
     ulItensComprados.innerHTML = ""
@@ -101,9 +127,11 @@ function mostrarItem() {
 
     deletarObjetos.forEach(i => {
         i.addEventListener('click', (evento) => {
-            valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
-            listaDeItens.splice(valorDoElemento,1)
-            mostrarItem()
+            if (confirm(`Tem certeza que deseja remover o item?`)) {
+                valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
+                listaDeItens.splice(valorDoElemento,1)
+                mostrarItem()
+            }
         })
     })
 
@@ -117,7 +145,7 @@ function mostrarItem() {
     })
 
     atualizaLocalStorage()
-
+    mostrarComprados()
 }
 
 /* Salva o item editado */

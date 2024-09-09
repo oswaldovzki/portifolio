@@ -69,7 +69,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .text-input {
   background-color: transparent;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border: none;
 }
 
@@ -85,11 +85,11 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem;
   width: 100%;
 }
-.body__main__form .radio-container {
+.body__main__form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .body__main__form .radio-container .radio {
   display: none;
@@ -107,7 +107,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0.25rem;
 }
 .body__main__form .radio-container input[type=radio]:checked + .label {
-  background-color: #F7F5FF;
+  background-color: #FFD08E;
 }
 .body__main__form .submit-button {
   padding: 0 0.25rem;
@@ -127,6 +127,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Pixelify Sans", sans-serif;
   color: #F7F5FF;
   margin-top: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
