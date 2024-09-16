@@ -42,6 +42,13 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Pixelify Sans", sans-serif;
 }
 
+.flop-disk {
+  border: none;
+  background: transparent;
+  font-size: 1.1em;
+  color: #462C1C;
+}
+
 .body__main__list {
   margin: 1rem;
   padding: 0.5rem;
@@ -85,12 +92,6 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem;
   width: 100%;
 }
-.body__main__form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .body__main__form .radio-container .radio {
   display: none;
   position: absolute;
@@ -127,10 +128,6 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Pixelify Sans", sans-serif;
   color: #F7F5FF;
   margin-top: auto;
-}
-
-.hidden {
-  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
