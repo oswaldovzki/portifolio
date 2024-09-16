@@ -1,58 +1,80 @@
-let listaDeItens = []
-let itemAEditar
+let listaDeItens = [];
+let itemAEditar;
 
-const form = document.getElementById('form-itens')
-const itensInput = document.getElementById('receber-item')
-const ulItens = document.getElementById('lista-de-itens')
-const ulItensComprados = document.getElementById('itens-comprados')
-const listaRecuperada = localStorage.getItem('listaDeItens')
+const form = document.getElementById('form-itens');
+const itensInput = document.getElementById('receber-item');
+const ulItens = document.getElementById('lista-de-itens');
+const ulItensComprados = document.getElementById('itens-comprados');
+const containerComprados = document.querySelector('.comprados');
+const containerClasses = document.querySelector('.radio-container');
+const listaRecuperada = localStorage.getItem('listaDeItens');
 
 /* Atualização da Local Storage */
 function atualizaLocalStorage() {
-    localStorage.setItem('listaDeItens', JSON.stringify(listaDeItens))
+    localStorage.setItem('listaDeItens', JSON.stringify(listaDeItens));
 }
 
 /* Recupera Itens da Local Storage, se ela estiver populada */
 if(listaRecuperada) {
-    listaDeItens = JSON.parse(listaRecuperada)
-    mostrarItem()
+    listaDeItens = JSON.parse(listaRecuperada);
+    mostrarItem();
 } else {
-    listaDeItens = []
+    listaDeItens = [];
 }
 
 /* Evento de submissão dos dados do formulário */
 form.addEventListener('submit', function (event) {
-    event.preventDefault()
-    salvarItem()
-    mostrarItem()
-    itensInput.focus()
+    event.preventDefault();
+    salvarItem();
+    mostrarItem();
+    itensInput.focus();
 })
 
 /* Função de salvar item adicionado com tratamento de duplicidade */
 function salvarItem() {
     const comprasItem = itensInput.value;
     const category = document.querySelector('input[type="radio"][name="shopping_category"]:checked');
-    const checarDuplicado = listaDeItens.some((elemento) => elemento.valor.toUpperCase() === comprasItem.toUpperCase())
+    const checarDuplicado = listaDeItens.some((elemento) => elemento.valor.toUpperCase() === comprasItem.toUpperCase());
 
     if (checarDuplicado) {
-        alert("Item já existe.")
+        alert("Item já existe.");
     } else {
         listaDeItens.push({
             valor: comprasItem,
             checar: false,
             category: category.value
-        })
+        });
     }
 
-    itensInput.value = ""
-    category.checked = false
+    itensInput.value = "";
+    category.checked = false;
 
     const sortedItems = listaDeItens.sort(compareByCategory);
-    console.log(sortedItems)
+    console.log(sortedItems);
 
 }
 
-/* Função para renderizar o tem no HTML */
+function toggleRadioContainer() {
+    if (itensInput.value.trim() === '') {
+        containerClasses.classList.add('hidden');
+    } else {
+        containerClasses.classList.remove('hidden');
+    }
+}
+
+itensInput.addEventListener('input', toggleRadioContainer);
+
+toggleRadioContainer();
+
+function mostrarComprados() {
+    if (ulItensComprados.children.length === 0) {
+        containerComprados.classList.add("hidden");
+    } else {
+        containerComprados.classList.remove("hidden");
+    }
+}
+
+/* Função para renderizar o item no HTML */
 function mostrarItem() {
     ulItens.innerHTML = ""
     ulItensComprados.innerHTML = ""
@@ -78,7 +100,7 @@ function mostrarItem() {
                 </div>
 
                 <div>
-                    ${index === Number(itemAEditar) ? '<button onClick="salvarEdicao()"><i class="fa-regular fa-floppy-disk checkbox-input"></i></button>' : '<i class="fa-regular checkbox-input fa-pen-to-square editar"></i>'}
+                    ${index === Number(itemAEditar) ? '<button onClick="salvarEdicao()" class="flop-disk"><i class="fa-regular fa-floppy-disk checkbox-input"></i></button>' : '<i class="fa-regular checkbox-input fa-pen-to-square editar"></i>'}
                     <i class="fa-solid fa-trash checkbox-input deletar"></i>
                 </div>
             </li>
@@ -86,47 +108,49 @@ function mostrarItem() {
         }
     })
 
-    const inputsCheck = document.querySelectorAll('input[type="checkbox"]')
+    const inputsCheck = document.querySelectorAll('input[type="checkbox"]');
 
     inputsCheck.forEach(i => {
         i.addEventListener('click', (evento) => {
-            const valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
-            listaDeItens[valorDoElemento].checar = evento.target.checked
-            console.log(listaDeItens[valorDoElemento].checar)
-            mostrarItem()
+            const valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value');
+            listaDeItens[valorDoElemento].checar = evento.target.checked;
+            console.log(listaDeItens[valorDoElemento].checar);
+            mostrarItem();
         })
     })
 
-    const deletarObjetos = document.querySelectorAll(".deletar")
+    const deletarObjetos = document.querySelectorAll(".deletar");
 
     deletarObjetos.forEach(i => {
         i.addEventListener('click', (evento) => {
-            valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
-            listaDeItens.splice(valorDoElemento,1)
-            mostrarItem()
+            if (confirm(`Tem certeza que deseja remover o item?`)) {
+                valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value');
+                listaDeItens.splice(valorDoElemento,1);
+                mostrarItem();
+            }
         })
     })
 
-    const editarItens = document.querySelectorAll('.editar')
+    const editarItens = document.querySelectorAll('.editar');
 
     editarItens.forEach(i => {
         i.addEventListener('click', (evento) => {
-            itemAEditar = evento.target.parentElement.parentElement.getAttribute('data-value')
-            mostrarItem()
+            itemAEditar = evento.target.parentElement.parentElement.getAttribute('data-value');
+            mostrarItem();
         })
     })
 
-    atualizaLocalStorage()
-
+    atualizaLocalStorage();
+    mostrarComprados();
 }
 
 /* Salva o item editado */
 
 function salvarEdicao() {
-    const itemEditado = document.querySelector(`[data-value="${itemAEditar}"] input[type="text"]`)
-    listaDeItens[itemAEditar].valor = itemEditado.value
-    itemAEditar = -1
-    mostrarItem()
+    const itemEditado = document.querySelector(`[data-value="${itemAEditar}"] input[type="text"]`);
+    listaDeItens[itemAEditar].valor = itemEditado.value;
+    itemAEditar = -1;
+    mostrarItem();
 }
 
 /* Organizar por gategoria */
