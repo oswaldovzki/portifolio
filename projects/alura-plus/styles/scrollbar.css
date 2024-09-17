@@ -10,7 +10,7 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--botao-azul);
+    background: var(--cor-secundaria);
   }
   
   /* Handle on hover */
