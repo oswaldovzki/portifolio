@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/uploader_favicon.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Chain Uploader</title>
+</head>
+
+<body>
+    <div class="body__container">
+        <aside class="desktop__menu__container">
+                <div class="desktop__menu__logo">
+                    <img src="./assets/Logo.svg" alt="Chain Uploader Logo">
+                </div>
+                <ul class="desktop__menu__itens">
+                    <button type="button" class="desktop__menu__publish-button">Publish</button>
+                    <li class="desktop__menu__item-container">
+                        <img src="./assets/feed.svg" alt="feed icon">
+                        <a href="#" class="desktop__menu__item desktop__menu__item-feed">Feed</a>
+                    </li>
+                    <li class="desktop__menu__item-container">
+                        <img src="./assets/account_circle.svg" alt="account icon">
+                        <a href="#" class="desktop__menu__item desktop__menu__item-feed">Profile</a>
+                    </li>
+                    <li class="desktop__menu__item-container">
+                        <img src="./assets/info.svg" alt="more info icon">
+                        <a href="#" class="desktop__menu__item desktop__menu__item-feed">About Us</a>
+                    </li>
+                    <li class="desktop__menu__item-container">
+                        <img src="./assets/logout.svg" alt="leave icon">
+                        <a href="#" class="desktop__menu__item desktop__menu__item-feed">Logout</a>
+                    </li>
+                </ul>
+        </aside>
+        <main>
+            <div class="upload__container">
+                <div class="img__upload"></div>
+                <button type="button" class="load__button">Load Image</button>
+                <div class="list"></div>
+            </div>
+            <div class="container_info">
+                <h1 class="project__title"></h1>
+                <div class="project__info__container">
+                    <div class="name__input">
+                        <label for="project-name" class="name__input">Project Name</label>
+                        <input type="text" name="project-name" id="project-name">
+                    </div>
+                    <div class="description__input">
+                        <label for="project-description" class="description__input">Project Description</label>
+                        <input type="text" name="project-description" id="project-description">
+                    </div>
+                    <div class="tags">
+                        <label for="project-tags" class="tags__input">Project Description</label>
+                        <input type="text" name="project-tags" id="project-tags">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="discard__button">Discard Image</button>
+                    <button type="button" class="publish__button">Publish Image</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

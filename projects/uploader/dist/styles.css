@@ -1,0 +1,52 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a, ul, ol, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #01080E;
+  margin: auto;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.body__container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  gap: 27px;
+  padding: 56px 0;
+}
+
+.desktop__menu__container {
+  background-color: #3E3E3F;
+}
+
+/*# sourceMappingURL=styles.css.map */

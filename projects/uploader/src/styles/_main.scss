@@ -1,0 +1,16 @@
+@use './variables';
+@use './mixins';
+
+.body__container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    height: 100vh;
+    gap: 27px;
+    padding: 56px 0;
+}
+
+.desktop__menu__container {
+    background-color: variables.$grey;
+}

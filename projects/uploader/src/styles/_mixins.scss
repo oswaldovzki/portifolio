@@ -1,0 +1,67 @@
+@use './variables';
+
+// font variations
+
+@mixin prompt-heading {
+  font-family: "Prompt", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+@mixin prompt-heading-small {
+  font-family: "Prompt", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 120%;
+}
+
+@mixin prompt-subtitle-large {
+  font-family: "Prompt", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 150%;
+}
+
+@mixin prompt-subtitle {
+  font-family: "Prompt", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 150%;
+}
+
+@mixin prompt-paragraph-large {
+  font-family: "Prompt", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+@mixin prompt-paragraph {
+  font-family: "Prompt", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@mixin prompt-paragraph-small {
+  font-family: "Prompt", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+@mixin prompt-label {
+  font-family: "Prompt", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 150%;
+}
