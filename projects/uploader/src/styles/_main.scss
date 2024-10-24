@@ -12,5 +12,57 @@
 }
 
 .desktop__menu__container {
-    background-color: variables.$grey;
+    background-color: variables.$grey; 
+
+    .desktop__menu__logo {
+        margin: 1em;
+    }
+
+    .desktop__menu__itens {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .desktop__menu__item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li a {
+        @include mixins.prompt-paragraph-large(variables.$grey-light);
+        text-decoration: none;
+
+        &:hover {
+            color: variables.$green-pastel;
+        }
+    }
 }
+ 
+/*
+.container-botoes button {
+    width: 50%;
+    padding: 12px 32px 12px 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.botao-descartar::after {
+    content: "";
+    background-image: url("./img/trash.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+*/
