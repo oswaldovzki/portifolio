@@ -1,0 +1,65 @@
+/* Reset CSS */
+body, a, ul, li, h1, h2, h3, p {  
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Global Hide Class */
+.hidden {
+    display:none
+}
+
+/* Main CSS */
+.header__main {
+    background-color: rgb(255, 183, 0);
+}
+
+.header__navigation-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__navigation {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 1em;
+
+    border-bottom: 2px solid;
+}
+
+.header__navigation-button {
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 183, 0, 0);
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.header__navigation-button:hover {
+    background-color: rgba(255, 183, 0, 0.275);
+}
+
+.header__title-container {
+    height: 315px;
+}
+
+.header__title-text {
+    font-size: 3em;
+    padding: 19.5% 0;
+}
+
