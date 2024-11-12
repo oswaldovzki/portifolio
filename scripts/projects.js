@@ -61,6 +61,10 @@ const projects = {
       title: 'Banco do Oswaldo',
       url: './projects/oswbank/index.html'
     },
+    uploader: {
+      title: 'File Uploader',
+      url: './projects/uploader/index.html'
+    },
     watchlist: {
       title: 'Watchlist',
       url: './projects/watchlist/index.html'
