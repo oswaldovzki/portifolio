@@ -1,1 +1,0 @@
-This is a simple layout for a status page, with basic HTML 5 and CSS 3
